@@ -1,18 +1,29 @@
+import styled from '@emotion/styled';
 import type { NextPage } from 'next';
 import Head from 'next/head';
 
-import styles from '../styles/Home.module.css';
+export const Container = styled.div`
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const Title = styled.h1`
+  font-size: 6em;
+`;
 
 const Home: NextPage = function Home() {
   return (
-    <div className={styles.container}>
+    <Container>
       <Head>
         <title>Hello World!</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <h1 className={styles.title}>Hello World!</h1>
-    </div>
+      <Title>Hello World!</Title>
+    </Container>
   );
 };
 
