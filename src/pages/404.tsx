@@ -4,17 +4,17 @@ import Head from 'next/head';
 import Container from '../components/Container';
 import Title from '../components/Title';
 
-const Home: NextPage = function Home() {
+const NotFound: NextPage = function NotFound() {
   return (
     <Container>
       <Head>
-        <title>Hello World!</title>
+        <title>Not Found!</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Title>Hello World!</Title>
+      <Title>Not Found!</Title>
     </Container>
   );
 };
 
-export default Home;
+export default NotFound;
