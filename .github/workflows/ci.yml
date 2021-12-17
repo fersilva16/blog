@@ -41,11 +41,12 @@ jobs:
       - name: Build
         run: yarn build
 
-      - run: yarn export
+      - name: Export build
+        run: yarn export
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
-        if: ${{ github.ref == 'ref/head/main' }}
+        if: ${{ github.ref == 'refs/heads/main' }}
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./out
