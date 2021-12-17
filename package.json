@@ -15,6 +15,7 @@
     "build": "next build",
     "export": "next export",
     "format": "prettier --write .",
+    "format:check": "prettier --check .",
     "lint": "eslint .",
     "lint:fix": "yarn lint --fix",
     "postinstall": "simple-git-hooks",

@@ -1,13 +1,11 @@
-name: Deploy
+name: CI
 
-on:
-  push:
-    branches:
-      - main
+on: [push, pull_request]
 
 jobs:
-  deploy:
+  test_build_deploy:
     runs-on: ubuntu-latest
+    name: Test, build and deploy
     steps:
       - uses: actions/checkout@v2
 
@@ -28,12 +26,26 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-yarn-
 
-      - run: yarn install --frozen-lockfile
-      - run: yarn build
+      - name: Install Dependencies
+        run: yarn install --frozen-lockfile
+
+      - name: Lint
+        run: yarn lint
+
+      - name: Check formatting
+        run: yarn format:check
+
+      - name: Check types
+        run: yarn type-check
+
+      - name: Build
+        run: yarn build
+
       - run: yarn export
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
+        if: ${{ github.ref == 'ref/head/main' }}
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./out
