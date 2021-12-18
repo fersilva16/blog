@@ -9,7 +9,6 @@ const NotFound: NextPage = function NotFound() {
     <Container>
       <Head>
         <title>Not Found!</title>
-        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <Title>Not Found!</Title>

@@ -9,7 +9,6 @@ const Home: NextPage = function Home() {
     <Container>
       <Head>
         <title>Hello World!</title>
-        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <Title>Hello World!</Title>
