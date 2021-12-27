@@ -60,6 +60,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["prettier", "npm:2.5.1"],
             ["react", "npm:17.0.2"],
             ["react-dom", "virtual:583a5b48657e81e8c3705d41da68854bced8141dc15f354effa8a8599734170ee01b8c31e79c76fe06aac09043a8233b1afa18b5a6eff21e5a32bda7bf30a753#npm:17.0.2"],
+            ["react-icons", "virtual:583a5b48657e81e8c3705d41da68854bced8141dc15f354effa8a8599734170ee01b8c31e79c76fe06aac09043a8233b1afa18b5a6eff21e5a32bda7bf30a753#npm:4.3.1"],
             ["simple-git-hooks", "npm:2.7.0"],
             ["typescript", "patch:typescript@npm%3A4.5.3#~builtin<compat/typescript>::version=4.5.3&hash=493e53"]
           ],
@@ -5086,6 +5087,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["prettier", "npm:2.5.1"],
             ["react", "npm:17.0.2"],
             ["react-dom", "virtual:583a5b48657e81e8c3705d41da68854bced8141dc15f354effa8a8599734170ee01b8c31e79c76fe06aac09043a8233b1afa18b5a6eff21e5a32bda7bf30a753#npm:17.0.2"],
+            ["react-icons", "virtual:583a5b48657e81e8c3705d41da68854bced8141dc15f354effa8a8599734170ee01b8c31e79c76fe06aac09043a8233b1afa18b5a6eff21e5a32bda7bf30a753#npm:4.3.1"],
             ["simple-git-hooks", "npm:2.7.0"],
             ["typescript", "patch:typescript@npm%3A4.5.3#~builtin<compat/typescript>::version=4.5.3&hash=493e53"]
           ],
@@ -7366,6 +7368,28 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react-clientside-effect", "virtual:4026ec26e2ce9b536b8fc9f96b636f446f7542ea50364270dd31020eebc62040e628e9cad4c4ab105e6934de0e30d9181646745d81a0fea6eedd10827fb9711a#npm:1.2.5"],
             ["use-callback-ref", "virtual:4026ec26e2ce9b536b8fc9f96b636f446f7542ea50364270dd31020eebc62040e628e9cad4c4ab105e6934de0e30d9181646745d81a0fea6eedd10827fb9711a#npm:1.2.5"],
             ["use-sidecar", "virtual:4026ec26e2ce9b536b8fc9f96b636f446f7542ea50364270dd31020eebc62040e628e9cad4c4ab105e6934de0e30d9181646745d81a0fea6eedd10827fb9711a#npm:1.0.5"]
+          ],
+          "packagePeers": [
+            "@types/react",
+            "react"
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["react-icons", [
+        ["npm:4.3.1", {
+          "packageLocation": "./.yarn/unplugged/react-icons-virtual-019cb28436/node_modules/react-icons/",
+          "packageDependencies": [
+            ["react-icons", "npm:4.3.1"]
+          ],
+          "linkType": "SOFT",
+        }],
+        ["virtual:583a5b48657e81e8c3705d41da68854bced8141dc15f354effa8a8599734170ee01b8c31e79c76fe06aac09043a8233b1afa18b5a6eff21e5a32bda7bf30a753#npm:4.3.1", {
+          "packageLocation": "./.yarn/unplugged/react-icons-virtual-019cb28436/node_modules/react-icons/",
+          "packageDependencies": [
+            ["react-icons", "virtual:583a5b48657e81e8c3705d41da68854bced8141dc15f354effa8a8599734170ee01b8c31e79c76fe06aac09043a8233b1afa18b5a6eff21e5a32bda7bf30a753#npm:4.3.1"],
+            ["@types/react", "npm:17.0.37"],
+            ["react", "npm:17.0.2"]
           ],
           "packagePeers": [
             "@types/react",
