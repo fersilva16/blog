@@ -1,18 +1,16 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
-
-import Container from '../components/Container';
-import Title from '../components/Title';
+import { Box, Heading } from '@chakra-ui/react';
 
 const NotFound: NextPage = function NotFound() {
   return (
-    <Container>
+    <Box display="flex" justifyContent="center" alignItems="center" height="100vh" width="100vw">
       <Head>
         <title>Not Found!</title>
       </Head>
 
-      <Title>Not Found!</Title>
-    </Container>
+      <Heading>Not Found!</Heading>
+    </Box>
   );
 };
 
