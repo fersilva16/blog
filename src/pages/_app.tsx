@@ -1,10 +1,10 @@
 /* eslint-disable react/jsx-props-no-spreading */
 
 import type { AppProps } from 'next/app';
-import { Global } from '@emotion/react';
+import { ChakraProvider } from '@chakra-ui/react';
 import Head from 'next/head';
 
-import globalStyle from '../styles/global';
+import theme from '../styles/theme';
 
 const App = function App({ Component, pageProps }: AppProps) {
   return (
@@ -14,8 +14,9 @@ const App = function App({ Component, pageProps }: AppProps) {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
 
-      <Global styles={globalStyle} />
-      <Component {...pageProps} />
+      <ChakraProvider theme={theme}>
+        <Component {...pageProps} />
+      </ChakraProvider>
     </>
   );
 };

@@ -1,18 +1,16 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
-
-import Container from '../components/Container';
-import Title from '../components/Title';
+import { Box, Heading } from '@chakra-ui/react';
 
 const Home: NextPage = function Home() {
   return (
-    <Container>
+    <Box display="flex" justifyContent="center" alignItems="center" height="100vh" width="100vw">
       <Head>
         <title>Hello World!</title>
       </Head>
 
-      <Title>Hello World!</Title>
-    </Container>
+      <Heading>Hello World!</Heading>
+    </Box>
   );
 };
 
