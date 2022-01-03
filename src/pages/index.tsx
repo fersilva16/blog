@@ -31,48 +31,48 @@ const Home: NextPage = function Home() {
           fontSize="32"
           marginTop="8"
         >
-          <NextLink href={metadata.githubUrl} passHref>
-            <Tooltip label="Github">
+          <Tooltip label="Github">
+            <NextLink href={metadata.githubUrl} passHref>
               <Link>
                 <FaGithub />
               </Link>
-            </Tooltip>
-          </NextLink>
-          <NextLink href={metadata.twitterUrl} passHref>
-            <Tooltip label="Twitter">
+            </NextLink>
+          </Tooltip>
+          <Tooltip label="Twitter">
+            <NextLink href={metadata.twitterUrl} passHref>
               <Link>
                 <FaTwitter />
               </Link>
-            </Tooltip>
-          </NextLink>
-          <NextLink href={metadata.discordUrl} passHref>
-            <Tooltip label="Discord">
+            </NextLink>
+          </Tooltip>
+          <Tooltip label="Discord">
+            <NextLink href={metadata.discordUrl} passHref>
               <Link>
                 <FaDiscord />
               </Link>
-            </Tooltip>
-          </NextLink>
-          <NextLink href={metadata.devtoUrl} passHref>
-            <Tooltip label="Dev.to">
+            </NextLink>
+          </Tooltip>
+          <Tooltip label="Dev.to">
+            <NextLink href={metadata.devtoUrl} passHref>
               <Link>
                 <FaDev />
               </Link>
-            </Tooltip>
-          </NextLink>
-          <NextLink href={metadata.linkedinUrl} passHref>
-            <Tooltip label="Linkedin">
+            </NextLink>
+          </Tooltip>
+          <Tooltip label="Linkedin">
+            <NextLink href={metadata.linkedinUrl} passHref>
               <Link>
                 <FaLinkedin />
               </Link>
-            </Tooltip>
-          </NextLink>
-          <NextLink href={metadata.emailLink} passHref>
-            <Tooltip label="Email">
+            </NextLink>
+          </Tooltip>
+          <Tooltip label="Email">
+            <NextLink href={metadata.emailLink} passHref>
               <Link>
                 <FaEnvelope />
               </Link>
-            </Tooltip>
-          </NextLink>
+            </NextLink>
+          </Tooltip>
         </Box>
       </Box>
     </Box>
