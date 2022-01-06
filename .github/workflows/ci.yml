@@ -27,7 +27,7 @@ jobs:
             ${{ runner.os }}-yarn-
 
       - name: Install Dependencies
-        run: yarn install --frozen-lockfile
+        run: yarn install --immutable --immutable-cache
 
       - name: Lint
         run: yarn lint
