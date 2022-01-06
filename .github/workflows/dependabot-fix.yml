@@ -1,0 +1,55 @@
+name: Dependabot Fix
+
+on:
+  push:
+    branches:
+      - dependabot/npm_and_yarn/**
+
+jobs:
+  fix:
+    runs-on: ubuntu-latest
+    if: github.actor == 'dependabot[bot]'
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 2
+          persist-credentials: false
+
+      - name: Setup Node
+        uses: actions/setup-node@v2
+        with:
+          node-version: 16
+
+      - name: Fix lockfile
+        run: |
+          # change directory
+          cd .`git log -1 --pretty=%s | awk '{ print $9 }'`
+
+          # restore yarn.lock from the previous commit
+          git checkout HEAD^ -- yarn.lock
+
+          # if package.json was not updated, upgrade the dependency
+          git diff --name-only HEAD^ HEAD | grep -q 'package.json' || yarn up `git log -1 --pretty=%s | awk '{ print $3 }'`
+
+          # restore package.json from the last commit
+          git checkout HEAD -- package.json
+
+          yarn install
+        env:
+          YARN_ENABLE_SCRIPTS: 0 # disable postinstall script
+
+      - name: Config Git
+        run: |
+          # use personal access token to allow triggering new workflow
+          BASIC_AUTH=$(echo -n "x-access-token:${{ secrets.DEPENDABOT_GH_TOKEN }}" | base64)
+          echo "::add-mask::$BASIC_AUTH"
+          git config --global user.name '${{ github.event.commits[0].author.name }}'
+          git config --global user.email '${{ github.event.commits[0].author.email }}'
+          git config --local http.$GITHUB_SERVER_URL/.extraheader "AUTHORIZATION: basic $BASIC_AUTH"
+
+      - name: Commit changes
+        run: |
+          cd .`git log -1 --pretty=%s | awk '{ print $9 }'` # ditto
+          git add yarn.lock .yarn/cache .pnp.*
+          git commit -m "Dependabot autofix"
+          git push
