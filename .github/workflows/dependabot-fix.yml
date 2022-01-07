@@ -36,7 +36,8 @@ jobs:
 
           yarn install
         env:
-          YARN_ENABLE_SCRIPTS: 0 # disable postinstall script
+          YARN_ENABLE_SCRIPTS: false # disable postinstall script
+          YARN_ENABLE_IMMUTABLE_INSTALLS: false # disable immutable
 
       - name: Config Git
         run: |
