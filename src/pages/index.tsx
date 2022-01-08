@@ -1,6 +1,6 @@
+import { Box, Heading, Link, Tooltip } from '@chakra-ui/react';
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import { Box, Heading, Link, Tooltip } from '@chakra-ui/react';
 import NextLink from 'next/link';
 import { FaGithub, FaTwitter, FaLinkedin, FaDiscord, FaDev, FaEnvelope } from 'react-icons/fa';
 

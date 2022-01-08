@@ -1,5 +1,5 @@
-import type { NextPage } from 'next';
 import { Box, Button, Heading } from '@chakra-ui/react';
+import type { NextPage } from 'next';
 import Head from 'next/head';
 import NextLink from 'next/link';
 
