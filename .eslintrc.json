@@ -7,5 +7,12 @@
   },
   "parserOptions": {
     "project": "./tsconfig.eslint.json"
+  },
+  "settings": {
+    "import/resolver": {
+      "typescript": {
+        "project": "tsconfig.json"
+      }
+    }
   }
 }
