@@ -3,7 +3,31 @@
   "rules": {
     "react/react-in-jsx-scope": "off",
 
-    "jsx-a11y/anchor-is-valid": "off"
+    "jsx-a11y/anchor-is-valid": "off",
+
+    "import/order": [
+      "error",
+      {
+        "groups": [["builtin", "external"], "internal", ["parent", "sibling", "index"]],
+
+        "pathGroups": [
+          {
+            "pattern": "~/**",
+            "group": "internal",
+            "position": "after"
+          }
+        ],
+
+        "alphabetize": {
+          "order": "asc",
+          "caseInsensitive": true
+        },
+
+        "newlines-between": "always",
+
+        "pathGroupsExcludedImportTypes": []
+      }
+    ]
   },
   "parserOptions": {
     "project": "./tsconfig.eslint.json"
