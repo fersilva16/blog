@@ -39,13 +39,16 @@ jobs:
           YARN_ENABLE_SCRIPTS: false # disable postinstall script
           YARN_ENABLE_IMMUTABLE_INSTALLS: false # disable immutable
 
-      - name: Commit changes
+      - name: Config Git
         run: |
-          cd .`git log -1 --pretty=%s | awk '{ print $9 }'` # ditto
-
           git config --global user.name '${{ github.event.commits[0].author.name }}'
           git config --global user.email '${{ github.event.commits[0].author.email }}'
 
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
+
+      - name: Commit changes
+        run: |
+          cd .`git log -1 --pretty=%s | awk '{ print $9 }'` # ditto
           git add yarn.lock .yarn/cache .pnp.*
           git commit -m "Dependabot autofix"
           git push
