@@ -1,12 +1,16 @@
 import { Box, Heading, Link, Tooltip } from '@chakra-ui/react';
 import type { NextPage } from 'next';
+import { useTranslations } from 'next-intl';
 import Head from 'next/head';
 import NextLink from 'next/link';
 import { FaGithub, FaTwitter, FaLinkedin, FaDiscord, FaDev, FaEnvelope } from 'react-icons/fa';
 
 import metadata from '~/data/metadata';
+import getIntlMessagesProps from '~/utils/getIntlMessagesProps';
 
 const Home: NextPage = function Home() {
+  const t = useTranslations('home');
+
   return (
     <Box display="flex" justifyContent="center" alignItems="center" height="100vh" width="100vw">
       <Head>
@@ -18,7 +22,7 @@ const Home: NextPage = function Home() {
           Fernando Silva
         </Heading>
         <Heading as="h2" size="lg" marginTop="8">
-          A self-taught Full Stack Developer from Brazil
+          {t('title')}
         </Heading>
 
         <Box
@@ -80,3 +84,5 @@ const Home: NextPage = function Home() {
 };
 
 export default Home;
+
+export const getStaticProps = getIntlMessagesProps(['home']);
