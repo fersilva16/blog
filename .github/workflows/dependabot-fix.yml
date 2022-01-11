@@ -12,8 +12,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with:
-          fetch-depth: 2
           persist-credentials: false
+          fetch-depth: 0
 
       - name: Setup Node
         uses: actions/setup-node@v2
@@ -44,11 +44,12 @@ jobs:
           git config --global user.name '${{ github.event.commits[0].author.name }}'
           git config --global user.email '${{ github.event.commits[0].author.email }}'
 
-          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
-
-      - name: Commit changes
-        run: |
           cd .`git log -1 --pretty=%s | awk '{ print $9 }'` # ditto
           git add yarn.lock .yarn/cache .pnp.*
           git commit -m "Dependabot autofix"
-          git push
+
+      - name: Push changes
+        uses: ad-m/github-push-action
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.ref }}
