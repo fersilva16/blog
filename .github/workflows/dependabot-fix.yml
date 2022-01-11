@@ -20,36 +20,28 @@ jobs:
         with:
           node-version: 16
 
+      - name: Restore yarn.lock from the previous commit
+        run: git checkout HEAD^ -- yarn.lock
+
       - name: Fix lockfile
-        run: |
-          # change directory
-          cd .`git log -1 --pretty=%s | awk '{ print $9 }'`
-
-          # restore yarn.lock from the previous commit
-          git checkout HEAD^ -- yarn.lock
-
-          # if package.json was not updated, upgrade the dependency
-          git diff --name-only HEAD^ HEAD | grep -q 'package.json' || yarn up `git log -1 --pretty=%s | awk '{ print $3 }'`
-
-          # restore package.json from the last commit
-          git checkout HEAD -- package.json
-
-          yarn install
+        run: yarn install
         env:
           YARN_ENABLE_SCRIPTS: false # disable postinstall script
           YARN_ENABLE_IMMUTABLE_INSTALLS: false # disable immutable
 
-      - name: Config Git
+      - name: Config git username and email
         run: |
           git config --global user.name '${{ github.event.commits[0].author.name }}'
           git config --global user.email '${{ github.event.commits[0].author.email }}'
 
-          cd .`git log -1 --pretty=%s | awk '{ print $9 }'` # ditto
-          git add yarn.lock .yarn/cache .pnp.*
-          git commit -m "Dependabot autofix"
+      - name: Add changes
+        run: git add yarn.lock .yarn/cache .pnp.*
+
+      - name: Commit changes
+        run: git commit -m "dependabot autofix"
+
+      - name: Set remote origin
+        run: git remote set-url origin "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${GITHUB_REPOSITORY}.git"
 
       - name: Push changes
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{ secrets.DEPENDABOT_GH_TOKEN }}
-          branch: ${{ github.ref }}
+        run: git push
