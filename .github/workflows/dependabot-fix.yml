@@ -49,7 +49,7 @@ jobs:
           git commit -m "Dependabot autofix"
 
       - name: Push changes
-        uses: ad-m/github-push-action
+        uses: ad-m/github-push-action@v0.6
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: ${{ github.ref }}
