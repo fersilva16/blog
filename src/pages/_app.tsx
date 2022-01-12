@@ -5,6 +5,7 @@ import { NextIntlProvider } from 'next-intl';
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
 
+import Header from '~/components/Header';
 import theme from '~/styles/theme';
 
 const App = function App({ Component, pageProps }: AppProps) {
@@ -17,6 +18,7 @@ const App = function App({ Component, pageProps }: AppProps) {
 
       <NextIntlProvider messages={pageProps.messages}>
         <ChakraProvider theme={theme}>
+          <Header />
           <Component {...pageProps} />
         </ChakraProvider>
       </NextIntlProvider>
