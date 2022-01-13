@@ -5,8 +5,8 @@ import Head from 'next/head';
 import NextLink from 'next/link';
 import { FaGithub, FaTwitter, FaLinkedin, FaDiscord, FaDev, FaEnvelope } from 'react-icons/fa';
 
-import metadata from '~/data/metadata';
-import getIntlMessagesProps from '~/utils/getIntlMessagesProps';
+import { metadata } from '~/data/metadata';
+import { getIntlMessagesProps } from '~/utils/getIntlMessagesProps';
 
 const Home: NextPage = function Home() {
   const t = useTranslations('home');
