@@ -7,7 +7,7 @@ import { FaSun, FaMoon } from 'react-icons/fa';
 import FlagBR from '~/icons/flagBR.svg';
 import FlagUS from '~/icons/flagUS.svg';
 
-const Header: React.FC = function Header() {
+export const Header: React.FC = function Header() {
   const { colorMode, toggleColorMode } = useColorMode();
   const router = useRouter();
   const t = useTranslations('header');
@@ -48,5 +48,3 @@ const Header: React.FC = function Header() {
     </Box>
   );
 };
-
-export default Header;

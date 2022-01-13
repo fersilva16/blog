@@ -1,8 +1,8 @@
-import asyncReduce from './asyncReduce';
+import { asyncReduce } from './asyncReduce';
 
 const defaultNamespaces = ['header'];
 
-export default async function getIntlMessages(locale: string | undefined, namespaces: string[]) {
+export async function getIntlMessages(locale: string | undefined, namespaces: string[]) {
   if (!locale) {
     throw new Error('locale');
   }

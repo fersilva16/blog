@@ -1,4 +1,4 @@
-export default {
+export const metadata = {
   githubUrl: 'https://github.com/fersilva16',
   twitterUrl: 'https://twitter.com/fersilvaa16',
   linkedinUrl: 'https://linkedin.com/in/fersilva16',
