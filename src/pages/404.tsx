@@ -3,6 +3,8 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 import NextLink from 'next/link';
 
+import { getIntlMessagesProps } from '../utils/getIntlMessagesProps';
+
 const NotFound: NextPage = function NotFound() {
   return (
     <Box display="flex" justifyContent="center" alignItems="center" height="100vh" width="100vw">
@@ -26,3 +28,5 @@ const NotFound: NextPage = function NotFound() {
 };
 
 export default NotFound;
+
+export const getStaticProps = getIntlMessagesProps([]);
