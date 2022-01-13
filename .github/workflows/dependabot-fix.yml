@@ -29,19 +29,11 @@ jobs:
           YARN_ENABLE_SCRIPTS: false # disable postinstall script
           YARN_ENABLE_IMMUTABLE_INSTALLS: false # disable immutable
 
-      - name: Config git username and email
-        run: |
-          git config --global user.name '${{ github.event.commits[0].author.name }}'
-          git config --global user.email '${{ github.event.commits[0].author.email }}'
-
       - name: Add changes
         run: git add yarn.lock .yarn/cache .pnp.*
 
       - name: Commit changes
         run: git commit -m "dependabot autofix"
-
-      - name: Set remote origin
-        run: git remote set-url origin "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${GITHUB_REPOSITORY}.git"
 
       - name: Push changes
         run: git push
