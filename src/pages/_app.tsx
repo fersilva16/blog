@@ -1,6 +1,6 @@
 /* eslint-disable react/jsx-props-no-spreading */
 
-import { ChakraProvider } from '@chakra-ui/react';
+import { Box, ChakraProvider } from '@chakra-ui/react';
 import { NextIntlProvider } from 'next-intl';
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
@@ -19,7 +19,10 @@ const App = function App({ Component, pageProps }: AppProps) {
       <NextIntlProvider messages={pageProps.messages}>
         <ChakraProvider theme={theme}>
           <Header />
-          <Component {...pageProps} />
+
+          <Box display="flex" width="100%" paddingLeft="20%" paddingRight="20%">
+            <Component {...pageProps} />
+          </Box>
         </ChakraProvider>
       </NextIntlProvider>
     </>
