@@ -12,21 +12,19 @@ const Home: NextPage = function Home() {
   const t = useTranslations('home');
 
   return (
-    <Box
-      position="absolute"
-      display="flex"
-      top="0"
-      zIndex={-1}
-      justifyContent="center"
-      alignItems="center"
-      height="100vh"
-      width="100vw"
-    >
+    <>
       <Head>
         <title>Fernando Silva</title>
       </Head>
 
-      <Box display="flex" justifyContent="center" alignItems="center" flexDirection="column">
+      <Box
+        display="flex"
+        justifyContent="center"
+        alignItems="center"
+        flexDirection="column"
+        width="100%"
+        marginTop="20"
+      >
         <Heading as="h1" size="4xl">
           Fernando Silva
         </Heading>
@@ -88,7 +86,7 @@ const Home: NextPage = function Home() {
           </Tooltip>
         </Box>
       </Box>
-    </Box>
+    </>
   );
 };
 
