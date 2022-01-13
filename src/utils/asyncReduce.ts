@@ -1,4 +1,4 @@
-export default async function asyncReduce<T, U>(
+export async function asyncReduce<T, U>(
   array: T[],
   iteratee: (previousValue: U, currentValue: T, currentIndex: number, array: T[]) => Promise<U>,
   initialValue: U
