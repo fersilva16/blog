@@ -15,7 +15,7 @@ export const Header: React.FC = function Header() {
   return (
     <Box
       as="header"
-      position="absolute"
+      position="sticky"
       width="100vw"
       display="flex"
       alignItems="center"
