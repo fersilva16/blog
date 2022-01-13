@@ -7,7 +7,16 @@ import { getIntlMessagesProps } from '../utils/getIntlMessagesProps';
 
 const NotFound: NextPage = function NotFound() {
   return (
-    <Box display="flex" justifyContent="center" alignItems="center" height="100vh" width="100vw">
+    <Box
+      position="absolute"
+      top="0"
+      zIndex={-1}
+      display="flex"
+      justifyContent="center"
+      alignItems="center"
+      height="100vh"
+      width="100vw"
+    >
       <Head>
         <title>Not Found</title>
       </Head>
