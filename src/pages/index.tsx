@@ -12,7 +12,16 @@ const Home: NextPage = function Home() {
   const t = useTranslations('home');
 
   return (
-    <Box display="flex" justifyContent="center" alignItems="center" height="100vh" width="100vw">
+    <Box
+      position="absolute"
+      display="flex"
+      top="0"
+      zIndex={-1}
+      justifyContent="center"
+      alignItems="center"
+      height="100vh"
+      width="100vw"
+    >
       <Head>
         <title>Fernando Silva</title>
       </Head>
