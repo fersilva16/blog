@@ -46,6 +46,29 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@babel/core@npm:7.16.5":
+  version: 7.16.5
+  resolution: "@babel/core@npm:7.16.5"
+  dependencies:
+    "@babel/code-frame": ^7.16.0
+    "@babel/generator": ^7.16.5
+    "@babel/helper-compilation-targets": ^7.16.3
+    "@babel/helper-module-transforms": ^7.16.5
+    "@babel/helpers": ^7.16.5
+    "@babel/parser": ^7.16.5
+    "@babel/template": ^7.16.0
+    "@babel/traverse": ^7.16.5
+    "@babel/types": ^7.16.0
+    convert-source-map: ^1.7.0
+    debug: ^4.1.0
+    gensync: ^1.0.0-beta.2
+    json5: ^2.1.2
+    semver: ^6.3.0
+    source-map: ^0.5.0
+  checksum: e5b76c6be95ab56a441772173463a56f824b39eba5fd3efe4b9784863922a1cb8abde6331d894854ed563b5ffe4be76d52524ecd07963660bb146f49a3cb3556
+  languageName: node
+  linkType: hard
+
 "@babel/core@npm:^7.15.5":
   version: 7.16.7
   resolution: "@babel/core@npm:7.16.7"
@@ -66,29 +89,6 @@ __metadata:
     semver: ^6.3.0
     source-map: ^0.5.0
   checksum: 3206e077e76db189726c4da19a5296eae11c6c1f5abea7013e74f18708bb91616914717ff8d8ca466cc0ba9d2d2147e9a84c3c357b9ad4cba601da14107838ed
-  languageName: node
-  linkType: hard
-
-"@babel/core@npm:^7.16.5":
-  version: 7.16.5
-  resolution: "@babel/core@npm:7.16.5"
-  dependencies:
-    "@babel/code-frame": ^7.16.0
-    "@babel/generator": ^7.16.5
-    "@babel/helper-compilation-targets": ^7.16.3
-    "@babel/helper-module-transforms": ^7.16.5
-    "@babel/helpers": ^7.16.5
-    "@babel/parser": ^7.16.5
-    "@babel/template": ^7.16.0
-    "@babel/traverse": ^7.16.5
-    "@babel/types": ^7.16.0
-    convert-source-map: ^1.7.0
-    debug: ^4.1.0
-    gensync: ^1.0.0-beta.2
-    json5: ^2.1.2
-    semver: ^6.3.0
-    source-map: ^0.5.0
-  checksum: e5b76c6be95ab56a441772173463a56f824b39eba5fd3efe4b9784863922a1cb8abde6331d894854ed563b5ffe4be76d52524ecd07963660bb146f49a3cb3556
   languageName: node
   linkType: hard
 
@@ -2176,7 +2176,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@chakra-ui/react@npm:^1.7.3":
+"@chakra-ui/react@npm:1.7.3":
   version: 1.7.3
   resolution: "@chakra-ui/react@npm:1.7.3"
   dependencies:
@@ -2506,7 +2506,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@emotion/babel-plugin@npm:^11.3.0, @emotion/babel-plugin@npm:^11.7.1":
+"@emotion/babel-plugin@npm:11.7.1, @emotion/babel-plugin@npm:^11.3.0":
   version: 11.7.1
   resolution: "@emotion/babel-plugin@npm:11.7.1"
   dependencies:
@@ -2580,7 +2580,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@emotion/react@npm:^11":
+"@emotion/react@npm:11.7.1":
   version: 11.7.1
   resolution: "@emotion/react@npm:11.7.1"
   dependencies:
@@ -2623,7 +2623,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@emotion/styled@npm:^11":
+"@emotion/styled@npm:11.6.0":
   version: 11.6.0
   resolution: "@emotion/styled@npm:11.6.0"
   dependencies:
@@ -2797,7 +2797,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@next/eslint-plugin-next@npm:^12.0.7":
+"@next/eslint-plugin-next@npm:12.0.7":
   version: 12.0.7
   resolution: "@next/eslint-plugin-next@npm:12.0.7"
   dependencies:
@@ -3163,7 +3163,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@svgr/webpack@npm:^6.2.0":
+"@svgr/webpack@npm:6.2.0":
   version: 6.2.0
   resolution: "@svgr/webpack@npm:6.2.0"
   dependencies:
@@ -3269,7 +3269,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/eslint-plugin@npm:^5.6.0":
+"@typescript-eslint/eslint-plugin@npm:5.6.0":
   version: 5.6.0
   resolution: "@typescript-eslint/eslint-plugin@npm:5.6.0"
   dependencies:
@@ -3307,7 +3307,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/parser@npm:^5.6.0":
+"@typescript-eslint/parser@npm:5.6.0":
   version: 5.6.0
   resolution: "@typescript-eslint/parser@npm:5.6.0"
   dependencies:
@@ -4758,7 +4758,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-airbnb-typescript@npm:^16.1.0":
+"eslint-config-airbnb-typescript@npm:16.1.0":
   version: 16.1.0
   resolution: "eslint-config-airbnb-typescript@npm:16.1.0"
   dependencies:
@@ -4770,7 +4770,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-airbnb@npm:^19.0.2":
+"eslint-config-airbnb@npm:19.0.2":
   version: 19.0.2
   resolution: "eslint-config-airbnb@npm:19.0.2"
   dependencies:
@@ -4787,7 +4787,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-prettier@npm:^8.3.0":
+"eslint-config-prettier@npm:8.3.0":
   version: 8.3.0
   resolution: "eslint-config-prettier@npm:8.3.0"
   peerDependencies:
@@ -4798,7 +4798,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-import-resolver-node@npm:^0.3.6":
+"eslint-import-resolver-node@npm:0.3.6, eslint-import-resolver-node@npm:^0.3.6":
   version: 0.3.6
   resolution: "eslint-import-resolver-node@npm:0.3.6"
   dependencies:
@@ -4808,7 +4808,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-import-resolver-typescript@npm:^2.5.0":
+"eslint-import-resolver-typescript@npm:2.5.0":
   version: 2.5.0
   resolution: "eslint-import-resolver-typescript@npm:2.5.0"
   dependencies:
@@ -4835,7 +4835,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-import@npm:^2.25.3":
+"eslint-plugin-import@npm:2.25.3":
   version: 2.25.3
   resolution: "eslint-plugin-import@npm:2.25.3"
   dependencies:
@@ -4858,7 +4858,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-jsx-a11y@npm:^6.5.1":
+"eslint-plugin-jsx-a11y@npm:6.5.1":
   version: 6.5.1
   resolution: "eslint-plugin-jsx-a11y@npm:6.5.1"
   dependencies:
@@ -4880,7 +4880,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-react-hooks@npm:^4.3.0":
+"eslint-plugin-react-hooks@npm:4.3.0":
   version: 4.3.0
   resolution: "eslint-plugin-react-hooks@npm:4.3.0"
   peerDependencies:
@@ -4889,7 +4889,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-react@npm:^7.27.1":
+"eslint-plugin-react@npm:7.27.1":
   version: 7.27.1
   resolution: "eslint-plugin-react@npm:7.27.1"
   dependencies:
@@ -4964,7 +4964,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:<8.0.0":
+"eslint@npm:7.32.0":
   version: 7.32.0
   resolution: "eslint@npm:7.32.0"
   dependencies:
@@ -5146,36 +5146,36 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "fersilva.dev@workspace:."
   dependencies:
-    "@babel/core": ^7.16.5
-    "@chakra-ui/react": ^1.7.3
-    "@emotion/babel-plugin": ^11.7.1
-    "@emotion/react": ^11
-    "@emotion/styled": ^11
-    "@next/eslint-plugin-next": ^12.0.7
-    "@svgr/webpack": ^6.2.0
+    "@babel/core": 7.16.5
+    "@chakra-ui/react": 1.7.3
+    "@emotion/babel-plugin": 11.7.1
+    "@emotion/react": 11.7.1
+    "@emotion/styled": 11.6.0
+    "@next/eslint-plugin-next": 12.0.7
+    "@svgr/webpack": 6.2.0
     "@types/node": 16.11.12
     "@types/react": 17.0.37
-    "@typescript-eslint/eslint-plugin": ^5.6.0
-    "@typescript-eslint/parser": ^5.6.0
-    eslint: <8.0.0
-    eslint-config-airbnb: ^19.0.2
-    eslint-config-airbnb-typescript: ^16.1.0
-    eslint-config-prettier: ^8.3.0
-    eslint-import-resolver-node: ^0.3.6
-    eslint-import-resolver-typescript: ^2.5.0
-    eslint-plugin-import: ^2.25.3
-    eslint-plugin-jsx-a11y: ^6.5.1
-    eslint-plugin-react: ^7.27.1
-    eslint-plugin-react-hooks: ^4.3.0
-    framer-motion: ^5
-    nano-staged: ^0.5.0
+    "@typescript-eslint/eslint-plugin": 5.6.0
+    "@typescript-eslint/parser": 5.6.0
+    eslint: 7.32.0
+    eslint-config-airbnb: 19.0.2
+    eslint-config-airbnb-typescript: 16.1.0
+    eslint-config-prettier: 8.3.0
+    eslint-import-resolver-node: 0.3.6
+    eslint-import-resolver-typescript: 2.5.0
+    eslint-plugin-import: 2.25.3
+    eslint-plugin-jsx-a11y: 6.5.1
+    eslint-plugin-react: 7.27.1
+    eslint-plugin-react-hooks: 4.3.0
+    framer-motion: 5.5.5
+    nano-staged: 0.5.0
     next: 12.0.7
-    next-intl: ^2.3.4
-    prettier: ^2.5.1
+    next-intl: 2.3.4
+    prettier: 2.5.1
     react: 17.0.2
     react-dom: 17.0.2
-    react-icons: ^4.3.1
-    simple-git-hooks: ^2.7.0
+    react-icons: 4.3.1
+    simple-git-hooks: 2.7.0
     typescript: 4.5.3
   dependenciesMeta:
     react-dom@17.0.2:
@@ -5273,7 +5273,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"framer-motion@npm:^5":
+"framer-motion@npm:5.5.5":
   version: 5.5.5
   resolution: "framer-motion@npm:5.5.5"
   dependencies:
@@ -6464,7 +6464,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nano-staged@npm:^0.5.0":
+"nano-staged@npm:0.5.0":
   version: 0.5.0
   resolution: "nano-staged@npm:0.5.0"
   dependencies:
@@ -6498,7 +6498,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"next-intl@npm:^2.3.4":
+"next-intl@npm:2.3.4":
   version: 2.3.4
   resolution: "next-intl@npm:2.3.4"
   dependencies:
@@ -7061,7 +7061,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier@npm:^2.5.1":
+"prettier@npm:2.5.1":
   version: 2.5.1
   resolution: "prettier@npm:2.5.1"
   bin:
@@ -7245,7 +7245,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-icons@npm:^4.3.1":
+"react-icons@npm:4.3.1":
   version: 4.3.1
   resolution: "react-icons@npm:4.3.1"
   peerDependencies:
@@ -7722,7 +7722,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"simple-git-hooks@npm:^2.7.0":
+"simple-git-hooks@npm:2.7.0":
   version: 2.7.0
   resolution: "simple-git-hooks@npm:2.7.0"
   bin:
