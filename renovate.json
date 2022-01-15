@@ -5,6 +5,6 @@
   "automergeType": "pr",
   "prCreation": "immediate",
   "prHourlyLimit": 0,
-  "prConcurrentLimit": 0,
+  "prConcurrentLimit": 1,
   "dependencyDashboard": false
 }
