@@ -3062,10 +3062,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:16.11.12":
+"@types/node@npm:*":
   version: 16.11.12
   resolution: "@types/node@npm:16.11.12"
   checksum: a3feb346d61a56f5a137c29bb8c63cfa3cc02e184b9dffdc18ef1528dcce55596e570575215a2e39e6ce69343eeb2a5ba71c271938f1dc8db4cc393902855412
+  languageName: node
+  linkType: hard
+
+"@types/node@npm:16.11.19":
+  version: 16.11.19
+  resolution: "@types/node@npm:16.11.19"
+  checksum: a9ba0cd1e61c8ad50f3fc9c2b37b795bf0286dacb39dcc985da90328abf0c5151dffe9932d20bc9a6a52c3ce7bfc1e5a7c2dc1416480fb84f1c2d70e25caeba0
   languageName: node
   linkType: hard
 
@@ -4992,7 +4999,7 @@ __metadata:
     "@emotion/styled": 11.6.0
     "@next/eslint-plugin-next": 12.0.7
     "@svgr/webpack": 6.2.0
-    "@types/node": 16.11.12
+    "@types/node": 16.11.19
     "@types/react": 17.0.37
     "@typescript-eslint/eslint-plugin": 5.6.0
     "@typescript-eslint/parser": 5.6.0
