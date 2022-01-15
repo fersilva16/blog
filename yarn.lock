@@ -2323,7 +2323,29 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@emotion/babel-plugin@npm:11.7.1, @emotion/babel-plugin@npm:^11.3.0":
+"@emotion/babel-plugin@npm:11.7.2":
+  version: 11.7.2
+  resolution: "@emotion/babel-plugin@npm:11.7.2"
+  dependencies:
+    "@babel/helper-module-imports": ^7.12.13
+    "@babel/plugin-syntax-jsx": ^7.12.13
+    "@babel/runtime": ^7.13.10
+    "@emotion/hash": ^0.8.0
+    "@emotion/memoize": ^0.7.5
+    "@emotion/serialize": ^1.0.2
+    babel-plugin-macros: ^2.6.1
+    convert-source-map: ^1.5.0
+    escape-string-regexp: ^4.0.0
+    find-root: ^1.1.0
+    source-map: ^0.5.7
+    stylis: 4.0.13
+  peerDependencies:
+    "@babel/core": ^7.0.0
+  checksum: eb9607356663c3e158b91ae7b8fde7335c74e6302d1671da1ca0b34142f762e1354bac8cb0bdf5baedf1278912eeea01e103b8f5c59ee107746d1b03f56aa664
+  languageName: node
+  linkType: hard
+
+"@emotion/babel-plugin@npm:^11.3.0":
   version: 11.7.1
   resolution: "@emotion/babel-plugin@npm:11.7.1"
   dependencies:
@@ -4965,7 +4987,7 @@ __metadata:
   dependencies:
     "@babel/core": 7.16.7
     "@chakra-ui/react": 1.7.3
-    "@emotion/babel-plugin": 11.7.1
+    "@emotion/babel-plugin": 11.7.2
     "@emotion/react": 11.7.1
     "@emotion/styled": 11.6.0
     "@next/eslint-plugin-next": 12.0.7
