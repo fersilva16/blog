@@ -4258,7 +4258,7 @@ __metadata:
     eslint-plugin-jsx-a11y: 6.5.1
     eslint-plugin-react: 7.28.0
     eslint-plugin-react-hooks: 4.3.0
-    framer-motion: 5.5.5
+    framer-motion: 5.6.0
     nano-staged: 0.5.0
     next: 12.0.8
     next-intl: 2.3.4
@@ -4336,9 +4336,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"framer-motion@npm:5.5.5":
-  version: 5.5.5
-  resolution: "framer-motion@npm:5.5.5"
+"framer-motion@npm:5.6.0":
+  version: 5.6.0
+  resolution: "framer-motion@npm:5.6.0"
   dependencies:
     "@emotion/is-prop-valid": ^0.8.2
     framesync: 6.0.1
@@ -4361,7 +4361,7 @@ __metadata:
       optional: true
     three:
       optional: true
-  checksum: 95329fd69c721768bd6e5ecb72a7a822f389e73121981b1344b67af60c63cff29baca4235537ee558d54c415438702e40b153be4449d7fa970ddb118dddb783c
+  checksum: 384374bebda443ea2a149951337c4f82b9c3611e138e8dd8db6439bbccc4523968deb72dde83d5686223ec78be58f8ae1f51b9e34b585e4c50df15266e586a60
   languageName: node
   linkType: hard
 
