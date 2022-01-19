@@ -59,7 +59,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["framer-motion", "virtual:583a5b48657e81e8c3705d41da68854bced8141dc15f354effa8a8599734170ee01b8c31e79c76fe06aac09043a8233b1afa18b5a6eff21e5a32bda7bf30a753#npm:5.6.0"],
             ["nano-staged", "npm:0.5.0"],
             ["next", "virtual:583a5b48657e81e8c3705d41da68854bced8141dc15f354effa8a8599734170ee01b8c31e79c76fe06aac09043a8233b1afa18b5a6eff21e5a32bda7bf30a753#npm:12.0.8"],
-            ["next-intl", "virtual:583a5b48657e81e8c3705d41da68854bced8141dc15f354effa8a8599734170ee01b8c31e79c76fe06aac09043a8233b1afa18b5a6eff21e5a32bda7bf30a753#npm:2.3.4"],
+            ["next-intl", "virtual:583a5b48657e81e8c3705d41da68854bced8141dc15f354effa8a8599734170ee01b8c31e79c76fe06aac09043a8233b1afa18b5a6eff21e5a32bda7bf30a753#npm:2.3.5"],
             ["prettier", "npm:2.5.1"],
             ["react", "npm:17.0.2"],
             ["react-dom", "virtual:583a5b48657e81e8c3705d41da68854bced8141dc15f354effa8a8599734170ee01b8c31e79c76fe06aac09043a8233b1afa18b5a6eff21e5a32bda7bf30a753#npm:17.0.2"],
@@ -7005,7 +7005,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["framer-motion", "virtual:583a5b48657e81e8c3705d41da68854bced8141dc15f354effa8a8599734170ee01b8c31e79c76fe06aac09043a8233b1afa18b5a6eff21e5a32bda7bf30a753#npm:5.6.0"],
             ["nano-staged", "npm:0.5.0"],
             ["next", "virtual:583a5b48657e81e8c3705d41da68854bced8141dc15f354effa8a8599734170ee01b8c31e79c76fe06aac09043a8233b1afa18b5a6eff21e5a32bda7bf30a753#npm:12.0.8"],
-            ["next-intl", "virtual:583a5b48657e81e8c3705d41da68854bced8141dc15f354effa8a8599734170ee01b8c31e79c76fe06aac09043a8233b1afa18b5a6eff21e5a32bda7bf30a753#npm:2.3.4"],
+            ["next-intl", "virtual:583a5b48657e81e8c3705d41da68854bced8141dc15f354effa8a8599734170ee01b8c31e79c76fe06aac09043a8233b1afa18b5a6eff21e5a32bda7bf30a753#npm:2.3.5"],
             ["prettier", "npm:2.5.1"],
             ["react", "npm:17.0.2"],
             ["react-dom", "virtual:583a5b48657e81e8c3705d41da68854bced8141dc15f354effa8a8599734170ee01b8c31e79c76fe06aac09043a8233b1afa18b5a6eff21e5a32bda7bf30a753#npm:17.0.2"],
@@ -8008,22 +8008,22 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["next-intl", [
-        ["npm:2.3.4", {
-          "packageLocation": "./.yarn/cache/next-intl-npm-2.3.4-7db40e90ab-2194d29fb9.zip/node_modules/next-intl/",
+        ["npm:2.3.5", {
+          "packageLocation": "./.yarn/cache/next-intl-npm-2.3.5-c0496daac7-102e792544.zip/node_modules/next-intl/",
           "packageDependencies": [
-            ["next-intl", "npm:2.3.4"]
+            ["next-intl", "npm:2.3.5"]
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:583a5b48657e81e8c3705d41da68854bced8141dc15f354effa8a8599734170ee01b8c31e79c76fe06aac09043a8233b1afa18b5a6eff21e5a32bda7bf30a753#npm:2.3.4", {
-          "packageLocation": "./.yarn/__virtual__/next-intl-virtual-4422188850/0/cache/next-intl-npm-2.3.4-7db40e90ab-2194d29fb9.zip/node_modules/next-intl/",
+        ["virtual:583a5b48657e81e8c3705d41da68854bced8141dc15f354effa8a8599734170ee01b8c31e79c76fe06aac09043a8233b1afa18b5a6eff21e5a32bda7bf30a753#npm:2.3.5", {
+          "packageLocation": "./.yarn/__virtual__/next-intl-virtual-83659c4421/0/cache/next-intl-npm-2.3.5-c0496daac7-102e792544.zip/node_modules/next-intl/",
           "packageDependencies": [
-            ["next-intl", "virtual:583a5b48657e81e8c3705d41da68854bced8141dc15f354effa8a8599734170ee01b8c31e79c76fe06aac09043a8233b1afa18b5a6eff21e5a32bda7bf30a753#npm:2.3.4"],
+            ["next-intl", "virtual:583a5b48657e81e8c3705d41da68854bced8141dc15f354effa8a8599734170ee01b8c31e79c76fe06aac09043a8233b1afa18b5a6eff21e5a32bda7bf30a753#npm:2.3.5"],
             ["@types/next", null],
             ["@types/react", "npm:17.0.38"],
             ["next", "virtual:583a5b48657e81e8c3705d41da68854bced8141dc15f354effa8a8599734170ee01b8c31e79c76fe06aac09043a8233b1afa18b5a6eff21e5a32bda7bf30a753#npm:12.0.8"],
             ["react", "npm:17.0.2"],
-            ["use-intl", "virtual:442218885023817fb628161c93595ec756a6cbfa65de95557049fa0f1c252803177b1cb27224c5afd2f3fdc8256412c6ee7e5792ce78825d0e72e09e76dc632c#npm:2.3.4"]
+            ["use-intl", "virtual:83659c442195d6920908923d37acf35dc3c4320722e560ab1e1d82ef626711495f627e32e5eba2d0e84c8f4ca86c676eecc7cd6df6c941967889105dd1347419#npm:2.3.5"]
           ],
           "packagePeers": [
             "@types/next",
@@ -9395,17 +9395,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["use-intl", [
-        ["npm:2.3.4", {
-          "packageLocation": "./.yarn/cache/use-intl-npm-2.3.4-641c9291c8-4878660413.zip/node_modules/use-intl/",
+        ["npm:2.3.5", {
+          "packageLocation": "./.yarn/cache/use-intl-npm-2.3.5-f2e71fe01f-4daf695f24.zip/node_modules/use-intl/",
           "packageDependencies": [
-            ["use-intl", "npm:2.3.4"]
+            ["use-intl", "npm:2.3.5"]
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:442218885023817fb628161c93595ec756a6cbfa65de95557049fa0f1c252803177b1cb27224c5afd2f3fdc8256412c6ee7e5792ce78825d0e72e09e76dc632c#npm:2.3.4", {
-          "packageLocation": "./.yarn/__virtual__/use-intl-virtual-4a76045e0a/0/cache/use-intl-npm-2.3.4-641c9291c8-4878660413.zip/node_modules/use-intl/",
+        ["virtual:83659c442195d6920908923d37acf35dc3c4320722e560ab1e1d82ef626711495f627e32e5eba2d0e84c8f4ca86c676eecc7cd6df6c941967889105dd1347419#npm:2.3.5", {
+          "packageLocation": "./.yarn/__virtual__/use-intl-virtual-e1d52bbc6e/0/cache/use-intl-npm-2.3.5-f2e71fe01f-4daf695f24.zip/node_modules/use-intl/",
           "packageDependencies": [
-            ["use-intl", "virtual:442218885023817fb628161c93595ec756a6cbfa65de95557049fa0f1c252803177b1cb27224c5afd2f3fdc8256412c6ee7e5792ce78825d0e72e09e76dc632c#npm:2.3.4"],
+            ["use-intl", "virtual:83659c442195d6920908923d37acf35dc3c4320722e560ab1e1d82ef626711495f627e32e5eba2d0e84c8f4ca86c676eecc7cd6df6c941967889105dd1347419#npm:2.3.5"],
             ["@types/react", "npm:17.0.38"],
             ["intl-messageformat", "npm:9.11.1"],
             ["react", "npm:17.0.2"]
