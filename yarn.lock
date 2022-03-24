@@ -4371,7 +4371,7 @@ __metadata:
     framer-motion: 6.2.8
     nano-staged: 0.6.0
     next: 12.1.0
-    next-intl: 2.4.0
+    next-intl: 2.4.1
     prettier: 2.6.0
     react: 17.0.2
     react-dom: 17.0.2
@@ -5185,15 +5185,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"next-intl@npm:2.4.0":
-  version: 2.4.0
-  resolution: "next-intl@npm:2.4.0"
+"next-intl@npm:2.4.1":
+  version: 2.4.1
+  resolution: "next-intl@npm:2.4.1"
   dependencies:
-    use-intl: ^2.4.0
+    use-intl: ^2.4.1
   peerDependencies:
     next: ^10.0.0 || ^11.0.0 || ^12.0.0
     react: ^16.8.0 || ^17.0.0
-  checksum: 6d0b3d968bbb9ad662c35bfca868c8d60664a5b67a93385fe14b92eaa3820f5ab999cccd871017d19783d000169bb1bd52b96688277d482b85836e41fbea78df
+  checksum: 0a223e923cb1412958c712a94caf39939d1c0791d978e6144c3c55dde688ce801f0766d9923eae6693138aadb95ddb6fd6025c47622889f1d25ff088cf5c7af2
   languageName: node
   linkType: hard
 
@@ -6330,14 +6330,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"use-intl@npm:^2.4.0":
-  version: 2.4.0
-  resolution: "use-intl@npm:2.4.0"
+"use-intl@npm:^2.4.1":
+  version: 2.4.1
+  resolution: "use-intl@npm:2.4.1"
   dependencies:
     intl-messageformat: ^9.3.18
   peerDependencies:
     react: ^16.8.0 || ^17.0.0
-  checksum: d19c63fab8f6c17b7eccabf6cf0571eaab5d20a063f8f51e8c5c9b99ec484c714b0da4f6b1d0e5824d79960879c68a9754107235452b4ca2b09edc098cb3538f
+  checksum: cd7eb477798b9b2bded131d6267681cd0dc09a2052e6a7661563a15b47e1a84c13bc97639dfcad4bd8236dd8e899b3eb597a3f1ef9b9626ffbd3fdd1bc84127f
   languageName: node
   linkType: hard
 
