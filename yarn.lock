@@ -2643,6 +2643,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@formatjs/ecma402-abstract@npm:^1.11.4":
+  version: 1.11.4
+  resolution: "@formatjs/ecma402-abstract@npm:1.11.4"
+  dependencies:
+    "@formatjs/intl-localematcher": 0.2.25
+    tslib: ^2.1.0
+  checksum: 05dbe1c6457acfe9cdc0fc770940260e19fa588be6c655b1ff1697506348dac1eee9b249b64e6544531174d07a5a74a9e75f68430947cfdc074ebe8e3c86f86f
+  languageName: node
+  linkType: hard
+
 "@formatjs/fast-memoize@npm:1.2.1":
   version: 1.2.1
   resolution: "@formatjs/fast-memoize@npm:1.2.1"
@@ -2679,6 +2689,15 @@ __metadata:
   dependencies:
     tslib: ^2.1.0
   checksum: 2bc06280be07b58dc3b825ab0a1ff6337f4bee2187f382a5fb1cc41f2ea27b7b711eab578fceaf482128d963ae7e56d646aeb624b3246e3b476bf81d20c07c23
+  languageName: node
+  linkType: hard
+
+"@formatjs/intl-localematcher@npm:0.2.25":
+  version: 0.2.25
+  resolution: "@formatjs/intl-localematcher@npm:0.2.25"
+  dependencies:
+    tslib: ^2.1.0
+  checksum: ee00ddc23317dc47a58831aaca5112e101d8bb1f38adc0ecfe1a9d7e008d0bb1091519f07e1d7d805b0c1e28f2c3e75f697ae479e22423445814412c7669284c
   languageName: node
   linkType: hard
 
@@ -4385,7 +4404,7 @@ __metadata:
     framer-motion: 6.2.8
     nano-staged: 0.6.0
     next: 12.1.4
-    next-intl: 2.4.1
+    next-intl: 2.6.0
     prettier: 2.6.1
     react: 18.0.0
     react-dom: 18.0.0
@@ -5199,15 +5218,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"next-intl@npm:2.4.1":
-  version: 2.4.1
-  resolution: "next-intl@npm:2.4.1"
+"next-intl@npm:2.6.0":
+  version: 2.6.0
+  resolution: "next-intl@npm:2.6.0"
   dependencies:
-    use-intl: ^2.4.1
+    use-intl: ^2.6.0
   peerDependencies:
     next: ^10.0.0 || ^11.0.0 || ^12.0.0
-    react: ^16.8.0 || ^17.0.0
-  checksum: 0a223e923cb1412958c712a94caf39939d1c0791d978e6144c3c55dde688ce801f0766d9923eae6693138aadb95ddb6fd6025c47622889f1d25ff088cf5c7af2
+    react: ^16.8.0 || ^17.0.0 || ^18.0.0
+  checksum: abd009cb6deb474b014124f73435a136f1a3910d18a6f8145cf6ca58138e9a58d5c1612adf316f0b744e84813c7e064eb583bdd0946af2933c81f13a4c7240d0
   languageName: node
   linkType: hard
 
@@ -6343,14 +6362,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"use-intl@npm:^2.4.1":
-  version: 2.4.1
-  resolution: "use-intl@npm:2.4.1"
+"use-intl@npm:^2.6.0":
+  version: 2.6.0
+  resolution: "use-intl@npm:2.6.0"
   dependencies:
+    "@formatjs/ecma402-abstract": ^1.11.4
     intl-messageformat: ^9.3.18
   peerDependencies:
-    react: ^16.8.0 || ^17.0.0
-  checksum: cd7eb477798b9b2bded131d6267681cd0dc09a2052e6a7661563a15b47e1a84c13bc97639dfcad4bd8236dd8e899b3eb597a3f1ef9b9626ffbd3fdd1bc84127f
+    react: ^16.8.0 || ^17.0.0 || ^18.0.0
+  checksum: f16a4aeab2a06c2362d1f63a467ca8df6566fa8114c3b7cc5482e18418eb15b6172e1293e8e12a3313a24b281b145f13e12922c79675ae69bfcd4215710f951c
   languageName: node
   linkType: hard
 
