@@ -21,7 +21,7 @@ const InternalError: NextPage = function InternalError() {
         marginTop="20"
       >
         <Heading as="h1" size="4xl">
-          404
+          500
         </Heading>
         <Heading as="h2" size="lg" marginTop="6">
           Ooppss!!
