@@ -17,7 +17,7 @@
         devShell = with pkgs; mkShell {
           buildInputs = [
             nodejs
-            yarn
+            nodePackages.pnpm
           ];
         };
       }

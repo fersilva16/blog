@@ -17,7 +17,7 @@
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "lint": "eslint .",
-    "lint:fix": "yarn lint --fix",
+    "lint:fix": "lint --fix",
     "postinstall": "simple-git-hooks",
     "start": "next start",
     "type-check": "tsc --project tsconfig.json --pretty --noEmit"
@@ -59,19 +59,10 @@
   },
   "nano-staged": {
     "*": "prettier --ignore-unknown --write",
-    "*.{ts,tsx}": "bash -c yarn type-check",
+    "*.{ts,tsx}": "bash -c pnpm type-check",
     "*.{js,ts,tsx}": "eslint --fix"
   },
   "simple-git-hooks": {
-    "pre-commit": "yarn nano-staged"
-  },
-  "packageManager": "yarn@3.2.0",
-  "dependenciesMeta": {
-    "react-dom@17.0.2": {
-      "unplugged": true
-    },
-    "react-icons@4.3.1": {
-      "unplugged": true
-    }
+    "pre-commit": "pnpm nano-staged"
   }
 }

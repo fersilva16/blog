@@ -20,8 +20,6 @@ build/
 
 # debug
 npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
 
 # local env files
 .env.local
@@ -31,14 +29,5 @@ yarn-error.log*
 
 # vercel
 .vercel
-
-# Yarn
-.yarn/*
-!.yarn/cache
-!.yarn/patches
-!.yarn/plugins
-!.yarn/releases
-!.yarn/sdks
-!.yarn/versions
 
 .direnv
