@@ -35,7 +35,7 @@
   },
   "devDependencies": {
     "@babel/core": "7.17.9",
-    "@emotion/babel-plugin": "11.7.2",
+    "@emotion/babel-plugin": "11.9.2",
     "@next/eslint-plugin-next": "12.1.5",
     "@svgr/webpack": "6.2.1",
     "@types/node": "16.11.31",
