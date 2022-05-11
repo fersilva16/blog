@@ -46,4 +46,4 @@ jobs:
       - name: Auto merge
         uses: mansagroup/renovate-merge-action@v0
         with:
-          githubToken: ${{ secrets.AUTOMERGE_TOKEN }}
+          github-token: ${{ secrets.AUTOMERGE_TOKEN }}
