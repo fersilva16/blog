@@ -38,7 +38,7 @@
     "@emotion/babel-plugin": "11.7.2",
     "@next/eslint-plugin-next": "12.1.5",
     "@svgr/webpack": "6.2.1",
-    "@types/node": "16.11.31",
+    "@types/node": "16.11.34",
     "@types/react": "17.0.44",
     "@typescript-eslint/eslint-plugin": "5.17.0",
     "@typescript-eslint/parser": "5.17.0",
