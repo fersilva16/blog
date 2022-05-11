@@ -42,3 +42,8 @@ jobs:
 
       - name: Check types
         run: pnpm type-check
+
+      - name: Auto merge
+        uses: mansagroup/renovate-merge-action@v2
+        with:
+          githubToken: ${{ secrets.AUTOMERGE_TOKEN }}
