@@ -25,7 +25,7 @@ specifiers:
   framer-motion: 6.2.8
   nano-staged: 0.8.0
   next: 12.1.6
-  next-intl: 2.4.1
+  next-intl: 2.7.2
   prettier: 2.6.1
   react: 18.0.0
   react-dom: 18.0.0
@@ -39,7 +39,7 @@ dependencies:
   '@emotion/styled': 11.8.1_b75d60e3c53bc8610ba6e485b64e6d02
   framer-motion: 6.2.8_react-dom@18.0.0+react@18.0.0
   next: 12.1.6_7bb114ccff659650dd04e0a8d09b7bbd
-  next-intl: 2.4.1_next@12.1.6+react@18.0.0
+  next-intl: 2.7.2_next@12.1.6+react@18.0.0
   react: 18.0.0
   react-dom: 18.0.0_react@18.0.0
   react-icons: 4.3.1_react@18.0.0
@@ -4262,16 +4262,16 @@ packages:
     resolution: {integrity: sha1-Sr6/7tdUHywnrPspvbvRXI1bpPc=}
     dev: true
 
-  /next-intl/2.4.1_next@12.1.6+react@18.0.0:
-    resolution: {integrity: sha512-jqFPWZ0U2ENncsEx1PhvPt0U+gHv4kjjCqqrCvfPd3ZIRX8m+sTZAXtO4i1Cr9ud5qK2jJNwT8d+j/Em0zzOKQ==}
+  /next-intl/2.7.2_next@12.1.6+react@18.0.0:
+    resolution: {integrity: sha512-80CXKAUzRCsDOhRvxRvGtFWcVtCMvwCUEH9IRLIHBZ3b6kuVSgEDkBbHQ7ii/HFAe01c0XI45Pzs6R6tI/v+BA==}
     engines: {node: '>=10'}
     peerDependencies:
       next: ^10.0.0 || ^11.0.0 || ^12.0.0
-      react: ^16.8.0 || ^17.0.0
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
     dependencies:
       next: 12.1.6_7bb114ccff659650dd04e0a8d09b7bbd
       react: 18.0.0
-      use-intl: 2.6.0_react@18.0.0
+      use-intl: 2.7.2_react@18.0.0
     dev: false
 
   /next/12.1.6_7bb114ccff659650dd04e0a8d09b7bbd:
@@ -5015,8 +5015,8 @@ packages:
       tslib: 2.4.0
     dev: false
 
-  /use-intl/2.6.0_react@18.0.0:
-    resolution: {integrity: sha512-c9UyAo0isJ7Lg7QPp3z8RBmUuUqRk6SQpOF5WsspSc6zs7ERbcwFcoG+WVLhk1hkpD+fVX5WaI+hd3A+5ezbjg==}
+  /use-intl/2.7.2_react@18.0.0:
+    resolution: {integrity: sha512-Mq7qaxPImhzmTmjJUP2kux2ykvcwaP5iEQWyKTP/9PlseRS5MnDH+4MNwQXNatBwKXFOjGRDjXKdOGVPSgC6NQ==}
     engines: {node: '>=10'}
     peerDependencies:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0
