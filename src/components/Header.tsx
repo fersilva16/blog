@@ -14,14 +14,14 @@ export const HeaderContainer = styled.header`
 
 export const Header = () => {
   const router = useRouter();
-  const t = useTranslations('header');
+  const t = useTranslations();
 
   return (
     <HeaderContainer>
       <div>
-        <NextLink href="/">{t('home')}</NextLink>
-        <NextLink href="/blog">{t('blog')}</NextLink>
-        <NextLink href="/about">{t('about')}</NextLink>
+        <NextLink href="/">{t('Home')}</NextLink>
+        <NextLink href="/blog">{t('Blog')}</NextLink>
+        <NextLink href="/about">{t('About')}</NextLink>
       </div>
 
       <NextLink href={router.pathname} locale={router.locale === 'en' ? 'pt' : 'en'}>

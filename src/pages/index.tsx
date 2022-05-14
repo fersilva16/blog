@@ -4,10 +4,10 @@ import NextLink from 'next/link';
 import { FaGithub, FaTwitter, FaLinkedin, FaDiscord, FaDev, FaEnvelope } from 'react-icons/fa';
 
 import { metadata } from '~/data/metadata';
-import { getIntlMessagesProps } from '~/utils/getIntlMessagesProps';
+import { getIntlMessagesProps } from '~/intl/getIntlMessagesProps';
 
 const Home = () => {
-  const t = useTranslations('home');
+  const t = useTranslations();
 
   return (
     <>
@@ -17,7 +17,7 @@ const Home = () => {
 
       <div>
         <h1>Fernando Silva</h1>
-        <h2>{t('title')}</h2>
+        <h2>{t('Self-taught Full Stack Developer from Brazil')}</h2>
 
         <div>
           <NextLink href={metadata.githubUrl} passHref>
@@ -46,4 +46,4 @@ const Home = () => {
 
 export default Home;
 
-export const getStaticProps = getIntlMessagesProps(['home']);
+export const getStaticProps = getIntlMessagesProps();
