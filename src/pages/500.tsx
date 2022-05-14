@@ -1,4 +1,3 @@
-import type { NextPage } from 'next';
 import Head from 'next/head';
 import NextLink from 'next/link';
 
@@ -6,7 +5,7 @@ import { Container } from '~/components/Container';
 
 import { getIntlMessagesProps } from '../utils/getIntlMessagesProps';
 
-const InternalError: NextPage = function InternalError() {
+const InternalError = () => {
   return (
     <>
       <Head>

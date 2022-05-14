@@ -1,11 +1,15 @@
 {
-  "extends": ["airbnb", "airbnb-typescript", "plugin:@next/next/recommended", "prettier"],
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint", "import", "react", "react-hooks", "jsx-a11y"],
+  "extends": [
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:jsx-a11y/recommended",
+    "plugin:@next/next/recommended",
+    "prettier"
+  ],
   "rules": {
-    "react/react-in-jsx-scope": "off",
-
-    "jsx-a11y/anchor-is-valid": "off",
-
-    "import/prefer-default-export": "off",
     "import/order": [
       "error",
       {
@@ -28,16 +32,26 @@
 
         "pathGroupsExcludedImportTypes": []
       }
-    ]
+    ],
+
+    "react/react-in-jsx-scope": "off"
   },
   "parserOptions": {
     "project": "./tsconfig.eslint.json"
   },
   "settings": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+
     "import/resolver": {
       "typescript": {
         "project": "tsconfig.json"
       }
+    },
+
+    "react": {
+      "version": "detect"
     }
   }
 }
