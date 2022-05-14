@@ -1,4 +1,3 @@
-import { Box, Heading, Link, Tooltip } from '@chakra-ui/react';
 import type { NextPage } from 'next';
 import { useTranslations } from 'next-intl';
 import Head from 'next/head';
@@ -17,75 +16,31 @@ const Home: NextPage = function Home() {
         <title>Fernando Silva</title>
       </Head>
 
-      <Box
-        display="flex"
-        justifyContent="center"
-        alignItems="center"
-        flexDirection="column"
-        width="100%"
-        marginTop="20"
-      >
-        <Heading as="h1" size="4xl">
-          Fernando Silva
-        </Heading>
-        <Heading as="h2" size="lg" marginTop="8">
-          {t('title')}
-        </Heading>
+      <div>
+        <h1>Fernando Silva</h1>
+        <h2>{t('title')}</h2>
 
-        <Box
-          display="flex"
-          justifyContent="space-between"
-          alignItems="center"
-          width="100%"
-          paddingRight="28"
-          paddingLeft="28"
-          fontSize="32"
-          marginTop="8"
-        >
-          <Tooltip label="Github">
-            <NextLink href={metadata.githubUrl} passHref>
-              <Link>
-                <FaGithub />
-              </Link>
-            </NextLink>
-          </Tooltip>
-          <Tooltip label="Twitter">
-            <NextLink href={metadata.twitterUrl} passHref>
-              <Link>
-                <FaTwitter />
-              </Link>
-            </NextLink>
-          </Tooltip>
-          <Tooltip label="Discord">
-            <NextLink href={metadata.discordUrl} passHref>
-              <Link>
-                <FaDiscord />
-              </Link>
-            </NextLink>
-          </Tooltip>
-          <Tooltip label="Dev.to">
-            <NextLink href={metadata.devtoUrl} passHref>
-              <Link>
-                <FaDev />
-              </Link>
-            </NextLink>
-          </Tooltip>
-          <Tooltip label="Linkedin">
-            <NextLink href={metadata.linkedinUrl} passHref>
-              <Link>
-                <FaLinkedin />
-              </Link>
-            </NextLink>
-          </Tooltip>
-          <Tooltip label="Email">
-            <NextLink href={metadata.emailLink} passHref>
-              <Link>
-                <FaEnvelope />
-              </Link>
-            </NextLink>
-          </Tooltip>
-        </Box>
-      </Box>
+        <div>
+          <NextLink href={metadata.githubUrl} passHref>
+            <FaGithub />
+          </NextLink>
+          <NextLink href={metadata.twitterUrl} passHref>
+            <FaTwitter />
+          </NextLink>
+          <NextLink href={metadata.discordUrl} passHref>
+            <FaDiscord />
+          </NextLink>
+          <NextLink href={metadata.devtoUrl} passHref>
+            <FaDev />
+          </NextLink>
+          <NextLink href={metadata.linkedinUrl} passHref>
+            <FaLinkedin />
+          </NextLink>
+          <NextLink href={metadata.emailLink} passHref>
+            <FaEnvelope />
+          </NextLink>
+        </div>
+      </div>
     </>
   );
 };

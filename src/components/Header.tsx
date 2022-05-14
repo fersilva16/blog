@@ -1,45 +1,32 @@
-import { Box, Button, useColorMode } from '@chakra-ui/react';
+import styled from '@emotion/styled';
 import { useTranslations } from 'next-intl';
 import NextLink from 'next/link';
 import { useRouter } from 'next/router';
-import { FaSun, FaMoon } from 'react-icons/fa';
+
+export const HeaderContainer = styled.header`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 16px;
+  position: sticky;
+  padding: 0 20%;
+`;
 
 export const Header: React.FC = function Header() {
-  const { colorMode, toggleColorMode } = useColorMode();
   const router = useRouter();
   const t = useTranslations('header');
 
   return (
-    <Box
-      as="header"
-      position="sticky"
-      width="100vw"
-      display="flex"
-      alignItems="center"
-      height="16"
-      justifyContent="space-between"
-      paddingLeft="20%"
-      paddingRight="20%"
-    >
-      <Box>
-        <NextLink href="/">
-          <Button variant="ghost">{t('home')}</Button>
-        </NextLink>
-        <NextLink href="/blog">
-          <Button variant="ghost">{t('blog')}</Button>
-        </NextLink>
-        <NextLink href="/about">
-          <Button variant="ghost">{t('about')}</Button>
-        </NextLink>
-      </Box>
-      <Box>
-        <NextLink href={router.pathname} locale={router.locale === 'en' ? 'pt' : 'en'}>
-          <Button variant="ghost">{router.locale === 'en' ? 'pt' : 'en'}</Button>
-        </NextLink>
-        <Button onClick={() => toggleColorMode()} variant="ghost">
-          {colorMode === 'dark' ? <FaSun /> : <FaMoon />}
-        </Button>
-      </Box>
-    </Box>
+    <HeaderContainer>
+      <div>
+        <NextLink href="/">{t('home')}</NextLink>
+        <NextLink href="/blog">{t('blog')}</NextLink>
+        <NextLink href="/about">{t('about')}</NextLink>
+      </div>
+
+      <NextLink href={router.pathname} locale={router.locale === 'en' ? 'pt' : 'en'}>
+        {router.locale === 'en' ? 'pt' : 'en'}
+      </NextLink>
+    </HeaderContainer>
   );
 };

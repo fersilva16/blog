@@ -1,7 +1,8 @@
-import { Box, Button, Heading } from '@chakra-ui/react';
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import NextLink from 'next/link';
+
+import { Container } from '~/components/Container';
 
 import { getIntlMessagesProps } from '../utils/getIntlMessagesProps';
 
@@ -12,24 +13,11 @@ const InternalError: NextPage = function InternalError() {
         <title>Not Found</title>
       </Head>
 
-      <Box
-        display="flex"
-        justifyContent="center"
-        alignItems="center"
-        flexDirection="column"
-        width="100%"
-        marginTop="20"
-      >
-        <Heading as="h1" size="4xl">
-          500
-        </Heading>
-        <Heading as="h2" size="lg" marginTop="6">
-          Ooppss!!
-        </Heading>
-        <NextLink href="/">
-          <Button marginTop="12">Back to Home!</Button>
-        </NextLink>
-      </Box>
+      <Container>
+        <h1>500</h1>
+        <h2>Ooppss!!</h2>
+        <NextLink href="/">Back to Home!</NextLink>
+      </Container>
     </>
   );
 };
