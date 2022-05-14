@@ -12,7 +12,7 @@ export const HeaderContainer = styled.header`
   padding: 0 20%;
 `;
 
-export const Header: React.FC = function Header() {
+export const Header = () => {
   const router = useRouter();
   const t = useTranslations('header');
 
