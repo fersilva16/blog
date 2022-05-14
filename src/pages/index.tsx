@@ -1,4 +1,3 @@
-import type { NextPage } from 'next';
 import { useTranslations } from 'next-intl';
 import Head from 'next/head';
 import NextLink from 'next/link';
@@ -7,7 +6,7 @@ import { FaGithub, FaTwitter, FaLinkedin, FaDiscord, FaDev, FaEnvelope } from 'r
 import { metadata } from '~/data/metadata';
 import { getIntlMessagesProps } from '~/utils/getIntlMessagesProps';
 
-const Home: NextPage = function Home() {
+const Home = () => {
   const t = useTranslations('home');
 
   return (

@@ -1,5 +1,3 @@
-/* eslint-disable react/jsx-props-no-spreading */
-
 import { NextIntlProvider } from 'next-intl';
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
@@ -7,7 +5,7 @@ import Head from 'next/head';
 import { Container } from '~/components/Container';
 import { Header } from '~/components/Header';
 
-const App = function App({ Component, pageProps }: AppProps) {
+const App = ({ Component, pageProps }: AppProps) => {
   return (
     <>
       <Head>
