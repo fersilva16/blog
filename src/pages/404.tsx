@@ -2,8 +2,7 @@ import Head from 'next/head';
 import NextLink from 'next/link';
 
 import { Container } from '~/components/Container';
-
-import { getIntlMessagesProps } from '../utils/getIntlMessagesProps';
+import { getIntlMessagesProps } from '~/intl/getIntlMessagesProps';
 
 const NotFound = () => {
   return (
@@ -23,4 +22,4 @@ const NotFound = () => {
 
 export default NotFound;
 
-export const getStaticProps = getIntlMessagesProps([]);
+export const getStaticProps = getIntlMessagesProps();

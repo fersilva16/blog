@@ -2,9 +2,9 @@ import { GetStaticProps } from 'next';
 
 import { getIntlMessages } from './getIntlMessages';
 
-export function getIntlMessagesProps(namespaces: string[]): GetStaticProps {
+export const getIntlMessagesProps = (): GetStaticProps => {
   return async ({ locale }) => {
-    const messages = await getIntlMessages(locale, namespaces);
+    const messages = await getIntlMessages(locale);
 
     return {
       props: {
@@ -12,4 +12,4 @@ export function getIntlMessagesProps(namespaces: string[]): GetStaticProps {
       },
     };
   };
-}
+};
