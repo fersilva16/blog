@@ -4,9 +4,6 @@ import NextLink from 'next/link';
 import { useRouter } from 'next/router';
 import { FaSun, FaMoon } from 'react-icons/fa';
 
-import FlagBR from '~/icons/flagBR.svg';
-import FlagUS from '~/icons/flagUS.svg';
-
 export const Header: React.FC = function Header() {
   const { colorMode, toggleColorMode } = useColorMode();
   const router = useRouter();
@@ -37,9 +34,7 @@ export const Header: React.FC = function Header() {
       </Box>
       <Box>
         <NextLink href={router.pathname} locale={router.locale === 'en' ? 'pt' : 'en'}>
-          <Button variant="ghost">
-            {router.locale === 'en' ? <FlagBR height="20px" /> : <FlagUS height="20px" />}
-          </Button>
+          <Button variant="ghost">{router.locale === 'en' ? 'pt' : 'en'}</Button>
         </NextLink>
         <Button onClick={() => toggleColorMode()} variant="ghost">
           {colorMode === 'dark' ? <FaSun /> : <FaMoon />}
