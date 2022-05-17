@@ -3,6 +3,8 @@
   "include": [
     "next-env.d.ts",
     "next.config.js",
+    "jest.config.js",
+    "jest.setup.js",
     "i18next-scanner.config.js",
     "**/*.ts",
     "**/*.tsx"
