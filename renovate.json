@@ -3,6 +3,7 @@
   "extends": ["config:base"],
   "automerge": true,
   "automergeType": "pr",
+  "ignoreTests": true,
   "prCreation": "immediate",
   "prHourlyLimit": 0,
   "prConcurrentLimit": 1,
