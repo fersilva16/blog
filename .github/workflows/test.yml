@@ -41,7 +41,7 @@ jobs:
         run: pnpm format:check
 
       - name: Test
-        run: pnpm test --ci
+        run: pnpm test
 
       - name: Check types
         run: pnpm type-check
