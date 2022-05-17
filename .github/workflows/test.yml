@@ -40,5 +40,8 @@ jobs:
       - name: Check formatting
         run: pnpm format:check
 
+      - name: Test
+        run: pnpm test --ci
+
       - name: Check types
         run: pnpm type-check
