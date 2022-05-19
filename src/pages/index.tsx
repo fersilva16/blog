@@ -21,22 +21,22 @@ const Home = () => {
 
         <div>
           <NextLink href={metadata.githubUrl} passHref>
-            <FaGithub />
+            <FaGithub role="img" aria-label="github" />
           </NextLink>
           <NextLink href={metadata.twitterUrl} passHref>
-            <FaTwitter />
+            <FaTwitter role="img" aria-label="twitter" />
           </NextLink>
           <NextLink href={metadata.discordUrl} passHref>
-            <FaDiscord />
+            <FaDiscord role="img" aria-label="discord" />
           </NextLink>
           <NextLink href={metadata.devtoUrl} passHref>
-            <FaDev />
+            <FaDev role="img" aria-label="dev.to" />
           </NextLink>
           <NextLink href={metadata.linkedinUrl} passHref>
-            <FaLinkedin />
+            <FaLinkedin role="img" aria-label="linkedin" />
           </NextLink>
           <NextLink href={metadata.emailLink} passHref>
-            <FaEnvelope />
+            <FaEnvelope role="img" aria-label="email" />
           </NextLink>
         </div>
       </div>
