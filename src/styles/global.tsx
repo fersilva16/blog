@@ -1,7 +1,9 @@
 import { css } from '@emotion/react';
 
-export const globalStyles = css`
+export const globalCSS = css`
   body {
     font-family: monospace;
   }
 `;
+
+export const globalStyles = globalCSS.styles;
