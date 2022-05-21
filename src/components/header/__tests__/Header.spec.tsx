@@ -8,15 +8,15 @@ it('renders Header', async () => {
 
   render();
 
+  const nameLink = screen.getByText('Fernando');
+
+  expect(nameLink).toBeVisible();
+  expect(nameLink).toHaveAttribute('href', '/');
+
   const homeLink = screen.getByText('Home');
 
   expect(homeLink).toBeVisible();
   expect(homeLink).toHaveAttribute('href', '/');
-
-  const blogLink = screen.getByText('Blog');
-
-  expect(blogLink).toBeVisible();
-  expect(blogLink).toHaveAttribute('href', '/blog');
 
   const aboutLink = screen.getByText('About');
 
