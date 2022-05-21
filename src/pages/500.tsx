@@ -1,7 +1,6 @@
 import Head from 'next/head';
 import NextLink from 'next/link';
 
-import { Container } from '~/components/ui/Container';
 import { getIntlMessagesProps } from '~/intl/getIntlMessagesProps';
 
 const InternalError = () => {
