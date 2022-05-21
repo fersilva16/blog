@@ -2,8 +2,8 @@ import { NextIntlProvider } from 'next-intl';
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
 
-import { Container } from '~/components/Container';
 import { Header } from '~/components/header/Header';
+import { Container } from '~/components/ui/Container';
 
 const App = ({ Component, pageProps }: AppProps) => {
   return (
