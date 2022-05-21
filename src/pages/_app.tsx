@@ -4,6 +4,7 @@ import Head from 'next/head';
 
 import { Header } from '~/components/header/Header';
 import { Container } from '~/components/ui/Container';
+import { ContentContainer } from '~/components/ui/ContentContainer';
 
 const App = ({ Component, pageProps }: AppProps) => {
   return (
@@ -14,10 +15,11 @@ const App = ({ Component, pageProps }: AppProps) => {
       </Head>
 
       <NextIntlProvider messages={pageProps.messages}>
-        <Header />
-
         <Container>
-          <Component {...pageProps} />
+          <ContentContainer>
+            <Header />
+            <Component {...pageProps} />
+          </ContentContainer>
         </Container>
       </NextIntlProvider>
     </>
