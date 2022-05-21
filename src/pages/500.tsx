@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import NextLink from 'next/link';
 
-import { Container } from '~/components/Container';
+import { Container } from '~/components/ui/Container';
 import { getIntlMessagesProps } from '~/intl/getIntlMessagesProps';
 
 const InternalError = () => {
@@ -11,11 +11,9 @@ const InternalError = () => {
         <title>Not Found</title>
       </Head>
 
-      <Container>
-        <h1>500</h1>
-        <h2>Ooppss!!</h2>
-        <NextLink href="/">Back to Home!</NextLink>
-      </Container>
+      <h1>500</h1>
+      <h2>Ooppss!!</h2>
+      <NextLink href="/">Back to Home!</NextLink>
     </>
   );
 };
