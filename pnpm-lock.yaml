@@ -30,7 +30,7 @@ specifiers:
   react: 18.1.0
   react-dom: 18.1.0
   react-icons: 4.3.1
-  simple-git-hooks: 2.7.0
+  simple-git-hooks: 2.8.0
   typescript: 4.7.2
 
 dependencies:
@@ -65,7 +65,7 @@ devDependencies:
   nano-staged: 0.8.0
   next-page-tester: 0.32.0_d30c2367b03c877b70a67c330200ac54
   prettier: 2.6.1
-  simple-git-hooks: 2.7.0
+  simple-git-hooks: 2.8.0
   typescript: 4.7.2
 
 packages:
@@ -4651,8 +4651,8 @@ packages:
     resolution: {integrity: sha512-wnD2ZE+l+SPC/uoS0vXeE9L1+0wuaMqKlfz9AMUo38JsyLSBWSFcHR1Rri62LZc12vLr1gb3jl7iwQhgwpAbGQ==}
     dev: true
 
-  /simple-git-hooks/2.7.0:
-    resolution: {integrity: sha512-nQe6ASMO9zn5/htIrU37xEIHGr9E6wikXelLbOeTcfsX2O++DHaVug7RSQoq+kO7DvZTH37WA5gW49hN9HTDmQ==}
+  /simple-git-hooks/2.8.0:
+    resolution: {integrity: sha512-ocmZQORwa6x9mxg+gVIAp5o4wXiWOHGXyrDBA0+UxGKIEKOyFtL4LWNKkP/2ornQPdlnlDGDteVeYP5FjhIoWA==}
     hasBin: true
     requiresBuild: true
     dev: true
