@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import NextLink from 'next/link';
 
-import { getIntlMessagesProps } from '~/intl/getIntlMessagesProps';
+import { getIntlMessagesProps } from '~/lib/intl/getIntlMessagesProps';
 
 const InternalError = () => {
   return (
