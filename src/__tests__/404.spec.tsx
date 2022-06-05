@@ -11,8 +11,5 @@ it('renders 404 page', async () => {
 
   expect(screen.getByText('404')).toBeVisible();
 
-  const backToHomeLink = screen.getByText('Back to Home!');
-
-  expect(backToHomeLink).toBeVisible();
-  expect(backToHomeLink).toHaveAttribute('href', '/');
+  expect(screen.getByText('Ooppss!! Page Not Found!')).toBeVisible();
 });

@@ -1,6 +1,6 @@
 import Head from 'next/head';
-import NextLink from 'next/link';
 
+import { Center } from '~/components/ui/Center';
 import { getIntlMessagesProps } from '~/lib/intl/getIntlMessagesProps';
 
 const InternalError = () => {
@@ -10,9 +10,10 @@ const InternalError = () => {
         <title>Not Found</title>
       </Head>
 
-      <h1>500</h1>
-      <h2>Ooppss!!</h2>
-      <NextLink href="/">Back to Home!</NextLink>
+      <Center>
+        <h1>500</h1>
+        <h2>Ooppss!!</h2>
+      </Center>
     </>
   );
 };

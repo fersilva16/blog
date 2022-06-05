@@ -10,8 +10,5 @@ it('renders 500 page', async () => {
 
   expect(screen.getByText('500')).toBeVisible();
 
-  const backToHomeLink = screen.getByText('Back to Home!');
-
-  expect(backToHomeLink).toBeVisible();
-  expect(backToHomeLink).toHaveAttribute('href', '/');
+  expect(screen.getByText('Ooppss!!')).toBeVisible();
 });
