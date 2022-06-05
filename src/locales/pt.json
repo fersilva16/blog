@@ -1,6 +1,9 @@
 {
   "About": "Sobre",
-  "Blog": "Blog",
   "Home": "Início",
+  "Internal Server Error": "Erro Interno do Servidor",
+  "Not Found": "Não encontrada",
+  "Ooppss!!": "Uueeepaa!!",
+  "Ooppss!! Page Not Found!": "Oppaa!! Página não encontrada!",
   "Self-taught Full Stack Developer from Brazil": "Programador Full Stack Autodidata"
 }
