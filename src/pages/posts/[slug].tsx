@@ -57,10 +57,21 @@ export const getStaticProps: GetStaticProps<PostProps, PostParams> = async ({ lo
   };
 };
 
-export const getStaticPaths: GetStaticPaths<PostParams> = async () => {
+export const getStaticPaths: GetStaticPaths<PostParams> = async ({ locales }) => {
+  if (!locales) throw new Error('No locales');
+
   const posts = await getSlugs();
 
-  const paths = posts.map((slug) => ({ params: { slug } }));
+  const paths = posts
+    .map((slug) =>
+      locales.map((locale) => ({
+        params: {
+          slug,
+        },
+        locale,
+      }))
+    )
+    .flat();
 
   return {
     paths,
