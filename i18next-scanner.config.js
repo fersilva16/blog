@@ -1,9 +1,9 @@
+/***/
 module.exports = {
   input: ['src/**/*.{ts,tsx}', '!node_modules/**'],
-  output: 'src/locales',
   options: {
     debug: false,
-    removeUnusedKeys: false,
+    removeUnusedKeys: true,
     sort: true,
     func: {
       list: ['t'],
@@ -20,8 +20,8 @@ module.exports = {
       return '__STRING_NOT_TRANSLATED__';
     },
     resource: {
-      loadPath: '{{lng}}.json',
-      savePath: '{{lng}}.json',
+      loadPath: 'src/locales/{{lng}}.json',
+      savePath: 'src/locales/{{lng}}.json',
       jsonIndent: 2,
       lineEnding: '\n',
     },
