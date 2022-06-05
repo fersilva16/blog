@@ -9,6 +9,7 @@ specifiers:
   '@types/jest': 28.1.1
   '@types/node': 16.11.38
   '@types/react': 18.0.11
+  '@types/testing-library__jest-dom': ^5.14.3
   '@typescript-eslint/eslint-plugin': 5.27.0
   '@typescript-eslint/parser': 5.27.0
   eslint: 8.17.0
@@ -50,6 +51,7 @@ devDependencies:
   '@types/jest': 28.1.1
   '@types/node': 16.11.38
   '@types/react': 18.0.11
+  '@types/testing-library__jest-dom': 5.14.3
   '@typescript-eslint/eslint-plugin': 5.27.0_kor2e3kwnnzugzo3aovmfcq2la
   '@typescript-eslint/parser': 5.27.0_ud6rd4xtew5bv4yhvkvu24pzm4
   eslint: 8.17.0
