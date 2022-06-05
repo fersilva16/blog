@@ -4,7 +4,7 @@ import NextLink from 'next/link';
 import { FaGithub, FaTwitter, FaLinkedin, FaDiscord, FaDev, FaEnvelope } from 'react-icons/fa';
 
 import { metadata } from '~/data/metadata';
-import { getIntlMessagesProps } from '~/intl/getIntlMessagesProps';
+import { getIntlMessagesProps } from '~/lib/intl/getIntlMessagesProps';
 
 const Home = () => {
   const t = useTranslations();

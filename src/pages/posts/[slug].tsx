@@ -4,7 +4,7 @@ import { getMDXComponent } from 'mdx-bundler/client';
 import { GetStaticPaths, GetStaticProps } from 'next';
 import { useMemo } from 'react';
 
-import { getIntlMessages } from '../../intl/getIntlMessages';
+import { getIntlMessages } from '../../lib/intl/getIntlMessages';
 import { Frontmatter, getFilename, getPost, getSlugs } from '../../lib/mdx/getPosts';
 
 export type PostParams = {
