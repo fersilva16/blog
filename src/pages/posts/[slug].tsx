@@ -2,8 +2,12 @@ import styled from '@emotion/styled';
 import { DateTime } from 'luxon';
 import { getMDXComponent } from 'mdx-bundler/client';
 import { GetStaticPaths, GetStaticProps } from 'next';
+import { useTranslations } from 'next-intl';
+import Link from 'next/link';
+import { useRouter } from 'next/router';
 import { useMemo } from 'react';
 
+import { Center } from '../../components/ui/Center';
 import { getIntlMessages } from '../../lib/intl/getIntlMessages';
 import { Frontmatter, getFilename, getPost, getSlugs } from '../../lib/mdx/getPosts';
 
@@ -13,8 +17,8 @@ export type PostParams = {
 
 export type PostProps = {
   slug: string;
-  code: string;
-  frontmatter: Frontmatter;
+  code: string | null;
+  frontmatter: Frontmatter | null;
 };
 
 const PostHeader = styled.div`
@@ -24,7 +28,23 @@ const PostHeader = styled.div`
 `;
 
 const Post = ({ frontmatter, code }: PostProps) => {
-  const Content = useMemo(() => getMDXComponent(code), [code]);
+  const t = useTranslations();
+  const router = useRouter();
+  const Content = useMemo(() => code && getMDXComponent(code), [code]);
+
+  if (!code || !frontmatter || !Content) {
+    return (
+      <Center>
+        <h1>
+          {t('This post is not available in')}{' '}
+          {router.locale === 'en' ? t('english') : t('portuguese')}
+        </h1>
+        <Link href={router.asPath} locale={'en'}>
+          {t('View in English')}
+        </Link>
+      </Center>
+    );
+  }
 
   return (
     <>
@@ -45,7 +65,8 @@ export const getStaticProps: GetStaticProps<PostProps, PostParams> = async ({ lo
   }
 
   const messages = await getIntlMessages(locale);
-  const { code, frontmatter } = await getPost(getFilename(params.slug));
+
+  const { code, frontmatter } = await getPost(getFilename(params.slug), locale);
 
   return {
     props: {
