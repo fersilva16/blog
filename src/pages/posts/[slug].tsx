@@ -9,7 +9,10 @@ import { useMemo } from 'react';
 
 import { Center } from '../../components/ui/Center';
 import { getIntlMessages } from '../../lib/intl/getIntlMessages';
-import { Frontmatter, getFilename, getPost, getSlugs } from '../../lib/mdx/getPosts';
+import { Frontmatter } from '../../lib/mdx/Frontmatter';
+import { getFilename } from '../../lib/mdx/getFilename';
+import { getPost } from '../../lib/mdx/getPost';
+import { getSlugs } from '../../lib/mdx/getSlugs';
 
 export type PostParams = {
   slug: string;
