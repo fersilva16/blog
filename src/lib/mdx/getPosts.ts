@@ -1,4 +1,5 @@
 import { Message } from 'esbuild';
+import { existsSync } from 'fs';
 import fs from 'fs/promises';
 import { bundleMDX } from 'mdx-bundler';
 import path from 'path';
@@ -27,13 +28,23 @@ export const getFilename = (slug: string) => {
 };
 
 export const getSlugs = async () => {
-  const postFilenames = await fs.readdir(postsPath);
+  const enPostsPath = path.join(postsPath, 'en');
+  const postFilenames = await fs.readdir(enPostsPath);
 
   return postFilenames.map((filename) => getSlug(filename));
 };
 
-export const getPost = async (filename: string) => {
-  const source = await fs.readFile(path.join(postsPath, filename), 'utf-8');
+export const getPost = async (filename: string, locale = 'en') => {
+  const postPath = path.join(postsPath, locale, filename);
+
+  if (!existsSync(postPath)) {
+    return {
+      code: null,
+      frontmatter: null,
+    };
+  }
+
+  const source = await fs.readFile(postPath, 'utf-8');
 
   const { code, errors, frontmatter } = await bundleMDX<Frontmatter>({
     source,
@@ -43,7 +54,6 @@ export const getPost = async (filename: string) => {
 
   return {
     code,
-    errors,
     frontmatter,
   };
 };
