@@ -1,7 +1,12 @@
 import styled from '@emotion/styled';
 import { DateTime } from 'luxon';
 import { getMDXComponent } from 'mdx-bundler/client';
-import { GetStaticPaths, GetStaticProps } from 'next';
+import {
+  GetStaticPathsContext,
+  GetStaticPathsResult,
+  GetStaticPropsContext,
+  GetStaticPropsResult,
+} from 'next';
 import { useTranslations } from 'next-intl';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
@@ -60,10 +65,12 @@ const Post = ({ frontmatter, code }: PostProps) => {
   );
 };
 
-export const getStaticProps: GetStaticProps<PostProps, PostParams> = async ({
+export const getStaticProps = async ({
   locale,
   params,
-}) => {
+}: GetStaticPropsContext<PostParams>): Promise<
+  GetStaticPropsResult<PostProps & { messages: unknown }>
+> => {
   if (!params?.slug) {
     return {
       notFound: true,
@@ -84,9 +91,9 @@ export const getStaticProps: GetStaticProps<PostProps, PostParams> = async ({
   };
 };
 
-export const getStaticPaths: GetStaticPaths<PostParams> = async ({
+export const getStaticPaths = async ({
   locales,
-}) => {
+}: GetStaticPathsContext): Promise<GetStaticPathsResult<PostParams>> => {
   if (!locales) throw new Error('No locales');
 
   const posts = await getSlugs();
