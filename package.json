@@ -65,7 +65,10 @@
   },
   "nano-staged": {
     "*": "prettier --ignore-unknown --write",
-    "*.{ts,tsx}": "bash -c 'pnpm type-check'",
+    "*.{ts,tsx}": [
+      "bash -c 'i18next-scanner'",
+      "bash -c 'pnpm type-check'"
+    ],
     "*.{js,ts,tsx}": "eslint --fix"
   },
   "simple-git-hooks": {
