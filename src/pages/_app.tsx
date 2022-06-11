@@ -2,10 +2,10 @@ import { NextIntlProvider } from 'next-intl';
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
 
-import { Header } from '~/components/header/Header';
-import { Container } from '~/components/ui/Container';
-import { ContentContainer } from '~/components/ui/ContentContainer';
-import { globalStyles } from '~/styles/global';
+import { Header } from '../components/header/Header';
+import { Container } from '../components/ui/Container';
+import { ContentContainer } from '../components/ui/ContentContainer';
+import { globalStyles } from '../styles/global';
 
 const App = ({ Component, pageProps }: AppProps) => {
   return (
