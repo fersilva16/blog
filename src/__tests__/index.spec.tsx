@@ -11,7 +11,9 @@ it('renders home page', async () => {
   render();
 
   expect(screen.getByText('Fernando Silva')).toBeVisible();
-  expect(screen.getByText('Self-taught Full Stack Developer from Brazil')).toBeVisible();
+  expect(
+    screen.getByText('Self-taught Full Stack Developer from Brazil')
+  ).toBeVisible();
 
   const githubLink = screen.getByLabelText('github');
 

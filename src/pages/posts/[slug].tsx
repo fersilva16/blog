@@ -60,7 +60,10 @@ const Post = ({ frontmatter, code }: PostProps) => {
   );
 };
 
-export const getStaticProps: GetStaticProps<PostProps, PostParams> = async ({ locale, params }) => {
+export const getStaticProps: GetStaticProps<PostProps, PostParams> = async ({
+  locale,
+  params,
+}) => {
   if (!params?.slug) {
     return {
       notFound: true,
@@ -81,7 +84,9 @@ export const getStaticProps: GetStaticProps<PostProps, PostParams> = async ({ lo
   };
 };
 
-export const getStaticPaths: GetStaticPaths<PostParams> = async ({ locales }) => {
+export const getStaticPaths: GetStaticPaths<PostParams> = async ({
+  locales,
+}) => {
   if (!locales) throw new Error('No locales');
 
   const posts = await getSlugs();
