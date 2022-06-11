@@ -1,8 +1,8 @@
 import { useTranslations } from 'next-intl';
 import Head from 'next/head';
 
-import { Center } from '~/components/ui/Center';
-import { getIntlMessagesProps } from '~/lib/intl/getIntlMessagesProps';
+import { Center } from '../components/ui/Center';
+import { getIntlMessagesProps } from '../lib/intl/getIntlMessagesProps';
 
 const NotFound = () => {
   const t = useTranslations();

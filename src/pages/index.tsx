@@ -2,10 +2,9 @@ import { useTranslations } from 'next-intl';
 import Head from 'next/head';
 import Link from 'next/link';
 
-import { metadata } from '~/data/metadata';
-import { getIntlMessagesProps } from '~/lib/intl/getIntlMessagesProps';
-
 import { Separator } from '../components/ui/Separator';
+import { metadata } from '../data/metadata';
+import { getIntlMessagesProps } from '../lib/intl/getIntlMessagesProps';
 
 const Home = () => {
   const t = useTranslations();
