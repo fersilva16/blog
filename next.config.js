@@ -4,6 +4,7 @@ module.exports = {
     locales: ['en', 'pt'],
     defaultLocale: 'en',
   },
+  pageExtensions: ['page.tsx'],
   reactStrictMode: true,
   swcMinify: true,
   experimental: {

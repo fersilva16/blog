@@ -1,7 +1,7 @@
 import { screen } from '@testing-library/react';
 import { getPage } from 'next-page-tester';
 
-import { metadata } from '../data/metadata';
+import { metadata } from '../../data/metadata';
 
 it('renders home page', async () => {
   const { render } = await getPage({
