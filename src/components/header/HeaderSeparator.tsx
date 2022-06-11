@@ -5,4 +5,6 @@ export const HeaderSeparatorSpan = styled.span`
   margin-right: 5px;
 `;
 
-export const HeaderSeparator = () => <HeaderSeparatorSpan>/</HeaderSeparatorSpan>;
+export const HeaderSeparator = () => (
+  <HeaderSeparatorSpan>/</HeaderSeparatorSpan>
+);

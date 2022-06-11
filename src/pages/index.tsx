@@ -1,7 +1,14 @@
 import { useTranslations } from 'next-intl';
 import Head from 'next/head';
 import NextLink from 'next/link';
-import { FaGithub, FaTwitter, FaLinkedin, FaDiscord, FaDev, FaEnvelope } from 'react-icons/fa';
+import {
+  FaGithub,
+  FaTwitter,
+  FaLinkedin,
+  FaDiscord,
+  FaDev,
+  FaEnvelope,
+} from 'react-icons/fa';
 
 import { metadata } from '~/data/metadata';
 import { getIntlMessagesProps } from '~/lib/intl/getIntlMessagesProps';
