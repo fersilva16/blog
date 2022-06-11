@@ -2,9 +2,9 @@ import { useTranslations } from 'next-intl';
 import NextLink from 'next/link';
 import { useRouter } from 'next/router';
 
+import { Separator } from '../ui/Separator';
 import { HeaderContainer } from './HeaderContainer';
 import { HeaderLeftContainer } from './HeaderLeftContainer';
-import { HeaderSeparator } from './HeaderSeparator';
 
 export const Header = () => {
   const router = useRouter();
@@ -16,9 +16,9 @@ export const Header = () => {
 
       <HeaderLeftContainer>
         <NextLink href="/">{t('Home')}</NextLink>
-        <HeaderSeparator />
+        <Separator />
         <NextLink href="/about">{t('About')}</NextLink>
-        <HeaderSeparator />
+        <Separator />
         <NextLink
           href={router.asPath}
           locale={router.locale === 'en' ? 'pt' : 'en'}

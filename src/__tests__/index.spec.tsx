@@ -15,32 +15,32 @@ it('renders home page', async () => {
     screen.getByText('Self-taught Full Stack Developer from Brazil')
   ).toBeVisible();
 
-  const githubLink = screen.getByLabelText('github');
+  const githubLink = screen.getByText('GitHub');
 
   expect(githubLink).toBeVisible();
   expect(githubLink).toHaveAttribute('href', metadata.githubUrl);
 
-  const twitterLink = screen.getByLabelText('twitter');
+  const twitterLink = screen.getByText('Twitter');
 
   expect(twitterLink).toBeVisible();
   expect(twitterLink).toHaveAttribute('href', metadata.twitterUrl);
 
-  const discordLink = screen.getByLabelText('discord');
+  const discordLink = screen.getByText('Discord');
 
   expect(discordLink).toBeVisible();
   expect(discordLink).toHaveAttribute('href', metadata.discordUrl);
 
-  const devtoLink = screen.getByLabelText('dev.to');
+  const devtoLink = screen.getByText('Dev.to');
 
   expect(devtoLink).toBeVisible();
   expect(devtoLink).toHaveAttribute('href', metadata.devtoUrl);
 
-  const linkedinLink = screen.getByLabelText('linkedin');
+  const linkedinLink = screen.getByText('LinkedIn');
 
   expect(linkedinLink).toBeVisible();
   expect(linkedinLink).toHaveAttribute('href', metadata.linkedinUrl);
 
-  const emailLink = screen.getByLabelText('email');
+  const emailLink = screen.getByText('Email');
 
   expect(emailLink).toBeVisible();
   expect(emailLink).toHaveAttribute('href', metadata.emailLink);
