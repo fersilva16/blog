@@ -11,6 +11,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import ReactMarkdown from 'react-markdown';
 
+import Code from '../../components/code/Code';
 import { Center } from '../../components/ui/Center';
 import { getIntlMessages } from '../../lib/intl/getIntlMessages';
 import { Frontmatter } from '../../lib/posts/Frontmatter';
@@ -33,7 +34,6 @@ const PostHeader = styled.div`
   display: flex;
   justify-content: space-between;
 `;
-
 const Post = ({ frontmatter, content }: PostProps) => {
   const t = useTranslations();
   const router = useRouter();
@@ -58,7 +58,13 @@ const Post = ({ frontmatter, content }: PostProps) => {
         {DateTime.fromISO(frontmatter.date).toFormat('DDDD')}
         <div>{frontmatter.tags.map((tag) => `#${tag}`).join(', ')}</div>
       </PostHeader>
-      <ReactMarkdown>{content}</ReactMarkdown>
+      <ReactMarkdown
+        components={{
+          code: Code,
+        }}
+      >
+        {content}
+      </ReactMarkdown>
     </>
   );
 };
