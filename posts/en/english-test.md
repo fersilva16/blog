@@ -1,6 +1,6 @@
 ---
 title: English test
-date: '2022-06-05'
+date: 2022-06-05
 tags: [english]
 draft: false
 ---

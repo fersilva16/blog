@@ -1,6 +1,6 @@
 ---
 title: Hello World
-date: '2022-06-05'
+date: 2022-06-05
 tags: [lorem, ipsum, dolor, sit, amet]
 draft: false
 ---
