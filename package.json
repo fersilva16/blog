@@ -25,8 +25,8 @@
     "type-check": "tsc --project tsconfig.json --pretty --noEmit"
   },
   "dependencies": {
-    "@emotion/react": "11.9.0",
-    "@emotion/styled": "11.8.1",
+    "@emotion/react": "11.9.3",
+    "@emotion/styled": "11.9.3",
     "gray-matter": "^4.0.3",
     "i18next-scanner": "3.1.0",
     "luxon": "^2.4.0",
