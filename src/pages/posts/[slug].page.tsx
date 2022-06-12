@@ -1,6 +1,5 @@
 import styled from '@emotion/styled';
 import { DateTime } from 'luxon';
-import { getMDXComponent } from 'mdx-bundler/client';
 import {
   GetStaticPathsContext,
   GetStaticPathsResult,
@@ -10,14 +9,14 @@ import {
 import { useTranslations } from 'next-intl';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import { useMemo } from 'react';
+import ReactMarkdown from 'react-markdown';
 
 import { Center } from '../../components/ui/Center';
 import { getIntlMessages } from '../../lib/intl/getIntlMessages';
-import { Frontmatter } from '../../lib/mdx/Frontmatter';
-import { getFilename } from '../../lib/mdx/getFilename';
-import { getPost } from '../../lib/mdx/getPost';
-import { getSlugs } from '../../lib/mdx/getSlugs';
+import { Frontmatter } from '../../lib/posts/Frontmatter';
+import { getFilename } from '../../lib/posts/getFilename';
+import { getPost } from '../../lib/posts/getPost';
+import { getSlugs } from '../../lib/posts/getSlugs';
 
 export type PostParams = {
   slug: string;
@@ -25,8 +24,8 @@ export type PostParams = {
 
 export type PostProps = {
   slug: string;
-  code: string | null;
   frontmatter: Frontmatter | null;
+  content: string | null;
 };
 
 const PostHeader = styled.div`
@@ -35,12 +34,11 @@ const PostHeader = styled.div`
   justify-content: space-between;
 `;
 
-const Post = ({ frontmatter, code }: PostProps) => {
+const Post = ({ frontmatter, content }: PostProps) => {
   const t = useTranslations();
   const router = useRouter();
-  const Content = useMemo(() => code && getMDXComponent(code), [code]);
 
-  if (!code || !frontmatter || !Content) {
+  if (!frontmatter || !content) {
     return (
       <Center>
         <h1>
@@ -57,10 +55,10 @@ const Post = ({ frontmatter, code }: PostProps) => {
   return (
     <>
       <PostHeader>
-        {DateTime.fromFormat(frontmatter.date, 'yyyy-MM-dd').toFormat('DDDD')}
+        {DateTime.fromISO(frontmatter.date).toFormat('DDDD')}
         <div>{frontmatter.tags.map((tag) => `#${tag}`).join(', ')}</div>
       </PostHeader>
-      <Content />
+      <ReactMarkdown>{content}</ReactMarkdown>
     </>
   );
 };
@@ -79,13 +77,16 @@ export const getStaticProps = async ({
 
   const messages = await getIntlMessages(locale);
 
-  const { code, frontmatter } = await getPost(getFilename(params.slug), locale);
+  const { frontmatter, content } = await getPost(
+    getFilename(params.slug),
+    locale
+  );
 
   return {
     props: {
       slug: params.slug,
-      code,
       frontmatter,
+      content,
       messages,
     },
   };

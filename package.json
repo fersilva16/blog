@@ -27,12 +27,15 @@
   "dependencies": {
     "@emotion/react": "11.9.0",
     "@emotion/styled": "11.8.1",
+    "gray-matter": "^4.0.3",
     "i18next-scanner": "3.1.0",
     "luxon": "^2.4.0",
     "next": "12.1.6",
     "next-intl": "2.7.4",
     "react": "18.1.0",
-    "react-dom": "18.1.0"
+    "react-dom": "18.1.0",
+    "react-markdown": "^8.0.3",
+    "zod": "^3.17.3"
   },
   "devDependencies": {
     "@next/eslint-plugin-next": "12.1.6",
@@ -56,7 +59,6 @@
     "eslint-plugin-react-hooks": "4.5.0",
     "jest": "^28.1.0",
     "jest-environment-jsdom": "^28.1.0",
-    "mdx-bundler": "^9.0.1",
     "nano-staged": "0.8.0",
     "next-page-tester": "^0.32.0",
     "prettier": "2.6.1",
