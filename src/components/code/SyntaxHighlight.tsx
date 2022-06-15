@@ -1,4 +1,4 @@
-import { SyntaxHighlighterProps } from 'react-syntax-highlighter';
+import type { SyntaxHighlighterProps } from 'react-syntax-highlighter';
 import Prism from 'react-syntax-highlighter/dist/cjs/prism-async';
 import draculaStyle from 'react-syntax-highlighter/dist/cjs/styles/prism/dracula';
 
