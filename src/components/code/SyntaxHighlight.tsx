@@ -1,9 +1,6 @@
 import { SyntaxHighlighterProps } from 'react-syntax-highlighter';
-import typescript from 'react-syntax-highlighter/dist/cjs/languages/prism/typescript';
-import Prism from 'react-syntax-highlighter/dist/cjs/prism-async-light';
+import Prism from 'react-syntax-highlighter/dist/cjs/prism-async';
 import draculaStyle from 'react-syntax-highlighter/dist/cjs/styles/prism/dracula';
-
-Prism.registerLanguage('ts', typescript);
 
 const SyntaxHighlight = ({ children, ...props }: SyntaxHighlighterProps) => {
   return (
