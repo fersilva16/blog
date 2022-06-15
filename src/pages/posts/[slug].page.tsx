@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 import { DateTime } from 'luxon';
-import {
+import type {
   GetStaticPathsContext,
   GetStaticPathsResult,
   GetStaticPropsContext,
@@ -14,7 +14,7 @@ import ReactMarkdown from 'react-markdown';
 import Code from '../../components/code/Code';
 import { Center } from '../../components/ui/Center';
 import { getIntlMessages } from '../../lib/intl/getIntlMessages';
-import { Frontmatter } from '../../lib/posts/Frontmatter';
+import type { Frontmatter } from '../../lib/posts/Frontmatter';
 import { getFilename } from '../../lib/posts/getFilename';
 import { getPost } from '../../lib/posts/getPost';
 import { getSlugs } from '../../lib/posts/getSlugs';

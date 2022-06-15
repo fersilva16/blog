@@ -3,7 +3,8 @@ import fs from 'fs/promises';
 import matter from 'gray-matter';
 import path from 'path';
 
-import { Frontmatter, frontmatterSchema } from './Frontmatter';
+import type { Frontmatter } from './Frontmatter';
+import { frontmatterSchema } from './Frontmatter';
 import { postsPath } from './postsPath';
 
 export type GetPostResponse = {

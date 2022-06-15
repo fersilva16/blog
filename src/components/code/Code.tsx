@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 import dynamic from 'next/dynamic';
-import { CodeProps } from 'react-markdown/lib/ast-to-react';
+import type { CodeProps } from 'react-markdown/lib/ast-to-react';
 
 export const InlineCode = styled.code`
   background-color: #e0e0e0;
