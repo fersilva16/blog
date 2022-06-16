@@ -28,7 +28,7 @@
     "@emotion/react": "11.9.3",
     "@emotion/styled": "11.9.3",
     "gray-matter": "^4.0.3",
-    "i18next-scanner": "3.1.0",
+    "i18next-scanner": "3.2.0",
     "luxon": "^2.4.0",
     "next": "12.1.6",
     "next-intl": "2.7.4",
