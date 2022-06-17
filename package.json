@@ -45,7 +45,7 @@
     "@types/jest": "28.1.1",
     "@types/luxon": "^2.3.2",
     "@types/node": "16.11.41",
-    "@types/react": "18.0.13",
+    "@types/react": "18.0.14",
     "@types/react-syntax-highlighter": "^15.5.2",
     "@types/testing-library__jest-dom": "^5.14.3",
     "@typescript-eslint/eslint-plugin": "5.28.0",
