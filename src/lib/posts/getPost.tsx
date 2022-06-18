@@ -5,9 +5,11 @@ import path from 'path';
 
 import type { Frontmatter } from './Frontmatter';
 import { frontmatterSchema } from './Frontmatter';
+import { getSlug } from './getSlug';
 import { postsPath } from './postsPath';
 
 export type GetPostResponse = {
+  slug: string | null;
   content: string | null;
   frontmatter: Frontmatter | null;
 };
@@ -20,6 +22,7 @@ export const getPost = async (
 
   if (!existsSync(postPath)) {
     return {
+      slug: null,
       content: null,
       frontmatter: null,
     };
@@ -32,6 +35,7 @@ export const getPost = async (
   const frontmatter = frontmatterSchema.parse(data);
 
   return {
+    slug: getSlug(filename),
     content,
     frontmatter,
   };
