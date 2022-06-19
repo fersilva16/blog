@@ -38,12 +38,12 @@ const PostHeader = styled.div`
 const DraftAlert = styled.div`
   display: flex;
   justify-content: space-between;
-  border: 2px solid #ff9800;
+  background-color: #ff9800;
   border-radius: 4px;
   padding: 10px 20px;
   margin-top: 20px;
   font-weight: bold;
-  color: #ff9800;
+  color: white;
 `;
 
 const DraftAlertText = styled.div`
