@@ -15,9 +15,8 @@ import Code from '../../components/code/Code';
 import { Center } from '../../components/ui/Center';
 import { getIntlMessages } from '../../lib/intl/getIntlMessages';
 import type { Frontmatter } from '../../lib/posts/Frontmatter';
-import { getFilename } from '../../lib/posts/getFilename';
-import { getPost } from '../../lib/posts/getPost';
-import { getSlugs } from '../../lib/posts/getSlugs';
+import type { IntlPost } from '../../lib/posts/Post';
+import { getPosts } from '../../lib/posts/posts';
 
 export type PostParams = {
   slug: string;
@@ -34,17 +33,14 @@ const PostHeader = styled.div`
   display: flex;
   justify-content: space-between;
 `;
-const Post = ({ frontmatter, content }: PostProps) => {
+const PostPage = ({ frontmatter, content }: PostProps) => {
   const t = useTranslations();
   const router = useRouter();
 
   if (!frontmatter || !content) {
     return (
       <Center>
-        <h1>
-          {t('This post is not available in')}{' '}
-          {router.locale === 'en' ? t('english') : t('portuguese')}
-        </h1>
+        <h1>{t('This post is not available in portuguese')}</h1>
         <Link href={router.asPath} locale={'en'}>
           {t('View in English')}
         </Link>
@@ -75,24 +71,24 @@ export const getStaticProps = async ({
 }: GetStaticPropsContext<PostParams>): Promise<
   GetStaticPropsResult<PostProps & { messages: unknown }>
 > => {
-  if (!params?.slug) {
+  if (!params?.slug || !locale) {
     return {
       notFound: true,
     };
   }
 
   const messages = await getIntlMessages(locale);
+  const posts = await getPosts();
 
-  const { frontmatter, content } = await getPost(
-    getFilename(params.slug),
-    locale
-  );
+  const post = posts.get(params.slug) as IntlPost;
+
+  const { frontmatter, content } = post[locale as keyof IntlPost];
 
   return {
     props: {
       slug: params.slug,
-      frontmatter,
-      content,
+      frontmatter: frontmatter,
+      content: content,
       messages,
     },
   };
@@ -103,13 +99,13 @@ export const getStaticPaths = async ({
 }: GetStaticPathsContext): Promise<GetStaticPathsResult<PostParams>> => {
   if (!locales) throw new Error('No locales');
 
-  const posts = await getSlugs();
+  const posts = await getPosts();
 
-  const paths = posts
-    .map((slug) =>
+  const paths = Array.from(posts.values())
+    .map((post) =>
       locales.map((locale) => ({
         params: {
-          slug,
+          slug: post.en.slug,
         },
         locale,
       }))
@@ -122,4 +118,4 @@ export const getStaticPaths = async ({
   };
 };
 
-export default Post;
+export default PostPage;
