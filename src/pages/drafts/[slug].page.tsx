@@ -110,17 +110,6 @@ export const getStaticProps = async ({
 
   const { frontmatter, content } = post[locale as keyof IntlPost];
 
-  if (frontmatter && !frontmatter.draft) {
-    const basePath = locale === 'en' ? '/posts' : `/${locale}/posts`;
-
-    return {
-      redirect: {
-        destination: `${basePath}/${params.slug}`,
-        permanent: false,
-      },
-    };
-  }
-
   return {
     props: {
       slug: params.slug,
@@ -139,6 +128,7 @@ export const getStaticPaths = async ({
   const posts = await getPosts();
 
   const paths = Array.from(posts.values())
+    .filter((post) => post.en.frontmatter.draft)
     .map((post) =>
       locales.map((locale) => ({
         params: {
