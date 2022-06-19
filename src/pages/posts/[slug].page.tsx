@@ -12,6 +12,7 @@ import { useRouter } from 'next/router';
 import ReactMarkdown from 'react-markdown';
 
 import Code from '../../components/code/Code';
+import { Paragraph } from '../../components/post/markdown/Paragraph';
 import { Center } from '../../components/ui/Center';
 import { getIntlMessages } from '../../lib/intl/getIntlMessages';
 import type { Frontmatter } from '../../lib/posts/Frontmatter';
@@ -57,6 +58,7 @@ const PostPage = ({ frontmatter, content }: PostProps) => {
       <ReactMarkdown
         components={{
           code: Code,
+          p: (props) => <Paragraph {...props} />,
         }}
       >
         {content}
