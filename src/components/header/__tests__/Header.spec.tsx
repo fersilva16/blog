@@ -17,9 +17,4 @@ it('renders Header', async () => {
 
   expect(homeLink).toBeVisible();
   expect(homeLink).toHaveAttribute('href', '/');
-
-  const aboutLink = screen.getByText('About');
-
-  expect(aboutLink).toBeVisible();
-  expect(aboutLink).toHaveAttribute('href', '/about');
 });

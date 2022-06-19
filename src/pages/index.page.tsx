@@ -39,6 +39,10 @@ const PostPreviewTags = styled.p`
   margin: 0;
 `;
 
+const LinksContainer = styled.div`
+  margin-top: 20px;
+`;
+
 const Home = ({ posts }: HomeProps) => {
   const t = useTranslations();
 
@@ -49,10 +53,7 @@ const Home = ({ posts }: HomeProps) => {
       </Head>
 
       <div>
-        <h1>Fernando Silva</h1>
-        <h2>{t('Self-taught Full Stack Developer from Brazil')}</h2>
-
-        <div>
+        <LinksContainer>
           <Link href={metadata.githubUrl}>GitHub</Link>
           <Separator />
           <Link href={metadata.twitterUrl}>Twitter</Link>
@@ -64,7 +65,7 @@ const Home = ({ posts }: HomeProps) => {
           <Link href={metadata.linkedinUrl}>LinkedIn</Link>
           <Separator />
           <Link href={metadata.emailLink}>{t('Email')}</Link>
-        </div>
+        </LinksContainer>
 
         <div>
           <h1>Posts</h1>
