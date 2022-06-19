@@ -8,11 +8,11 @@ import Link from 'next/link';
 import { Separator } from '../components/ui/Separator';
 import { metadata } from '../data/metadata';
 import { getIntlMessages } from '../lib/intl/getIntlMessages';
-import type { GetPostResponse } from '../lib/posts/getPost';
-import { getPosts } from '../lib/posts/getPosts';
+import type { IntlPost, Post } from '../lib/posts/Post';
+import { getPosts } from '../lib/posts/posts';
 
 export type HomeProps = {
-  posts: Required<GetPostResponse>[];
+  posts: Post[];
 };
 
 const PostSeparator = styled.div`
@@ -74,15 +74,13 @@ const Home = ({ posts }: HomeProps) => {
               <Link key={slug} href={`posts/${slug}`}>
                 <PostPreviewContainer>
                   <PostPreviewHeader>
-                    <h2>{frontmatter!.title}</h2>
+                    <h2>{frontmatter.title}</h2>
 
-                    <p>
-                      {DateTime.fromISO(frontmatter!.date).toFormat('DDDD')}
-                    </p>
+                    <p>{DateTime.fromISO(frontmatter.date).toFormat('DDDD')}</p>
                   </PostPreviewHeader>
 
                   <PostPreviewTags>
-                    {frontmatter!.tags.map((tag) => `#${tag}`).join(', ')}
+                    {frontmatter.tags.map((tag) => `#${tag}`).join(', ')}
                   </PostPreviewTags>
                 </PostPreviewContainer>
               </Link>
@@ -101,15 +99,17 @@ export const getStaticProps = async ({
 > => {
   const messages = await getIntlMessages(locale);
 
-  const allPosts = await getPosts();
+  const posts = await getPosts();
 
-  const posts = allPosts.filter(
-    ({ frontmatter }) => frontmatter && !frontmatter.draft
-  );
+  const localePost = Array.from(posts.values())
+    .map((post) => post[locale as keyof IntlPost])
+    .filter((post): post is Post => !!post.slug);
 
-  const sortedPosts = posts.sort((postA, postB) => {
-    const dateA = DateTime.fromISO(postA.frontmatter!.date);
-    const dateB = DateTime.fromISO(postB.frontmatter!.date);
+  const publishedPosts = localePost.filter((post) => !post.frontmatter.draft);
+
+  const sortedPosts = publishedPosts.sort((postA, postB) => {
+    const dateA = DateTime.fromISO(postA.frontmatter.date);
+    const dateB = DateTime.fromISO(postB.frontmatter.date);
 
     return dateB.toMillis() - dateA.toMillis();
   });
