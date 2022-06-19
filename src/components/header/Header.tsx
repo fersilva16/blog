@@ -17,8 +17,6 @@ export const Header = () => {
       <HeaderLeftContainer>
         <NextLink href="/">{t('Home')}</NextLink>
         <Separator />
-        <NextLink href="/about">{t('About')}</NextLink>
-        <Separator />
         <NextLink
           href={router.asPath}
           locale={router.locale === 'en' ? 'pt' : 'en'}
