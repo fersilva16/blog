@@ -9,6 +9,7 @@ import type {
 import { useTranslations } from 'next-intl';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
+import { FaExclamationTriangle } from 'react-icons/fa';
 import ReactMarkdown from 'react-markdown';
 
 import Code from '../../components/code/Code';
@@ -33,6 +34,24 @@ const PostHeader = styled.div`
   display: flex;
   justify-content: space-between;
 `;
+
+const DraftAlert = styled.div`
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid #ff9800;
+  border-radius: 4px;
+  padding: 10px 20px;
+  margin-top: 20px;
+  font-weight: bold;
+  color: #ff9800;
+`;
+
+const DraftAlertText = styled.div`
+  display: flex;
+  justify-content: center;
+  flex: 1;
+`;
+
 const PostPage = ({ frontmatter, content }: PostProps) => {
   const t = useTranslations();
   const router = useRouter();
@@ -50,6 +69,13 @@ const PostPage = ({ frontmatter, content }: PostProps) => {
 
   return (
     <>
+      <DraftAlert>
+        <FaExclamationTriangle size={14} />
+
+        <DraftAlertText>
+          {t('This is a draft')}. {t('It will be published when it is ready')}.
+        </DraftAlertText>
+      </DraftAlert>
       <PostHeader>
         {DateTime.fromISO(frontmatter.date).toFormat('DDDD')}
         <div>{frontmatter.tags.map((tag) => `#${tag}`).join(', ')}</div>
@@ -84,6 +110,17 @@ export const getStaticProps = async ({
 
   const { frontmatter, content } = post[locale as keyof IntlPost];
 
+  if (frontmatter && !frontmatter.draft) {
+    const basePath = locale === 'en' ? '/posts' : `/${locale}/posts`;
+
+    return {
+      redirect: {
+        destination: `${basePath}/${params.slug}`,
+        permanent: false,
+      },
+    };
+  }
+
   return {
     props: {
       slug: params.slug,
@@ -102,7 +139,6 @@ export const getStaticPaths = async ({
   const posts = await getPosts();
 
   const paths = Array.from(posts.values())
-    .filter((post) => !post.en.frontmatter.draft)
     .map((post) =>
       locales.map((locale) => ({
         params: {
