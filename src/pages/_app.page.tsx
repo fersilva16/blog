@@ -3,8 +3,6 @@ import type { AppProps } from 'next/app';
 import Head from 'next/head';
 
 import { Header } from '../components/header/Header';
-import { Container } from '../components/ui/Container';
-import { ContentContainer } from '../components/ui/ContentContainer';
 import { globalStyles } from '../styles/global';
 
 const App = ({ Component, pageProps }: AppProps) => {
@@ -19,12 +17,8 @@ const App = ({ Component, pageProps }: AppProps) => {
       </style>
 
       <NextIntlProvider messages={pageProps.messages}>
-        <Container>
-          <ContentContainer>
-            <Header />
-            <Component {...pageProps} />
-          </ContentContainer>
-        </Container>
+        <Header />
+        <Component {...pageProps} />
       </NextIntlProvider>
     </>
   );

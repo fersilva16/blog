@@ -5,6 +5,7 @@ import { useTranslations } from 'next-intl';
 import Head from 'next/head';
 import Link from 'next/link';
 
+import { ContentContainer } from '../components/ui/ContentContainer';
 import { Separator } from '../components/ui/Separator';
 import { metadata } from '../data/metadata';
 import { getIntlMessages } from '../lib/intl/getIntlMessages';
@@ -47,7 +48,7 @@ const Home = ({ posts }: HomeProps) => {
   const t = useTranslations();
 
   return (
-    <>
+    <ContentContainer>
       <Head>
         <title>Fernando Silva</title>
       </Head>
@@ -89,7 +90,7 @@ const Home = ({ posts }: HomeProps) => {
           ))}
         </div>
       </div>
-    </>
+    </ContentContainer>
   );
 };
 
