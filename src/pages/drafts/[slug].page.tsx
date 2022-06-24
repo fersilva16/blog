@@ -15,6 +15,7 @@ import ReactMarkdown from 'react-markdown';
 import Code from '../../components/code/Code';
 import { Paragraph } from '../../components/post/markdown/Paragraph';
 import { Center } from '../../components/ui/Center';
+import { ContentContainer } from '../../components/ui/ContentContainer';
 import { getIntlMessages } from '../../lib/intl/getIntlMessages';
 import type { Frontmatter } from '../../lib/posts/Frontmatter';
 import type { IntlPost } from '../../lib/posts/Post';
@@ -69,7 +70,7 @@ const PostPage = ({ frontmatter, content }: PostProps) => {
   }
 
   return (
-    <>
+    <ContentContainer>
       <DraftAlert>
         <FaExclamationTriangle size={14} />
 
@@ -89,7 +90,7 @@ const PostPage = ({ frontmatter, content }: PostProps) => {
       >
         {content}
       </ReactMarkdown>
-    </>
+    </ContentContainer>
   );
 };
 

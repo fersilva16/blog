@@ -5,5 +5,5 @@ export const HeaderContainer = styled.header`
   align-items: center;
   justify-content: space-between;
   height: 16px;
-  position: sticky;
+  margin: 8px 0;
 `;
