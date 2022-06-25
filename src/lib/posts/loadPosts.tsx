@@ -2,8 +2,11 @@ import { existsSync } from 'fs';
 import fs from 'fs/promises';
 import matter from 'gray-matter';
 import path from 'path';
+import remarkParse from 'remark-parse';
+import { unified } from 'unified';
 
 import { frontmatterSchema } from './Frontmatter';
+import { getHeadings } from './getHeadings';
 import type { IntlPost, NullPartial, Post } from './Post';
 
 export const postsPath = path.resolve(process.cwd(), 'posts');
@@ -22,6 +25,7 @@ export const loadPost = async (
       slug: null,
       content: null,
       frontmatter: null,
+      headings: null,
     };
   }
 
@@ -30,11 +34,14 @@ export const loadPost = async (
   const { data, content } = matter(post);
 
   const frontmatter = frontmatterSchema.parse(data);
+  const ast = unified().use(remarkParse).parse(content);
+  const headings = getHeadings(ast);
 
   return {
     slug: getSlug(filename),
     content,
     frontmatter,
+    headings,
   };
 };
 

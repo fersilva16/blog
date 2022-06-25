@@ -13,11 +13,13 @@ import { FaExclamationTriangle } from 'react-icons/fa';
 import ReactMarkdown from 'react-markdown';
 
 import Code from '../../components/code/Code';
+import HeadingList from '../../components/post/HeadingList';
 import { Paragraph } from '../../components/post/markdown/Paragraph';
 import { Center } from '../../components/ui/Center';
 import { ContentContainer } from '../../components/ui/ContentContainer';
 import { getIntlMessages } from '../../lib/intl/getIntlMessages';
 import type { Frontmatter } from '../../lib/posts/Frontmatter';
+import type { Heading } from '../../lib/posts/getHeadings';
 import type { IntlPost } from '../../lib/posts/Post';
 import { getPosts } from '../../lib/posts/posts';
 
@@ -29,6 +31,7 @@ export type PostProps = {
   slug: string;
   frontmatter: Frontmatter | null;
   content: string | null;
+  headings: Heading[] | null;
 };
 
 const PostHeader = styled.div`
@@ -54,11 +57,11 @@ const DraftAlertText = styled.div`
   flex: 1;
 `;
 
-const PostPage = ({ frontmatter, content }: PostProps) => {
+const PostPage = ({ frontmatter, content, headings }: PostProps) => {
   const t = useTranslations();
   const router = useRouter();
 
-  if (!frontmatter || !content) {
+  if (!frontmatter || !content || !headings) {
     return (
       <Center>
         <h1>{t('This post is not available in portuguese')}</h1>
@@ -70,7 +73,7 @@ const PostPage = ({ frontmatter, content }: PostProps) => {
   }
 
   return (
-    <ContentContainer>
+    <ContentContainer rightContent={<HeadingList headings={headings} />}>
       <DraftAlert>
         <FaExclamationTriangle size={14} />
 
@@ -111,13 +114,14 @@ export const getStaticProps = async ({
 
   const post = posts.get(params.slug) as IntlPost;
 
-  const { frontmatter, content } = post[locale as keyof IntlPost];
+  const { frontmatter, content, headings } = post[locale as keyof IntlPost];
 
   return {
     props: {
       slug: params.slug,
-      frontmatter: frontmatter,
-      content: content,
+      frontmatter,
+      content,
+      headings,
       messages,
     },
   };
