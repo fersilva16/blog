@@ -17,6 +17,7 @@ import HeadingList from '../../components/post/HeadingList';
 import { Paragraph } from '../../components/post/markdown/Paragraph';
 import { Center } from '../../components/ui/Center';
 import { ContentContainer } from '../../components/ui/ContentContainer';
+import { isDevelopment } from '../../lib/env/isDevelopment';
 import { getIntlMessages } from '../../lib/intl/getIntlMessages';
 import type { Frontmatter } from '../../lib/posts/Frontmatter';
 import type { Heading } from '../../lib/posts/getHeadings';
@@ -73,7 +74,9 @@ const PostPage = ({ frontmatter, content, headings }: PostProps) => {
   }
 
   return (
-    <ContentContainer rightContent={<HeadingList headings={headings} />}>
+    <ContentContainer
+      rightContent={isDevelopment() && <HeadingList headings={headings} />}
+    >
       <DraftAlert>
         <FaExclamationTriangle size={14} />
 
