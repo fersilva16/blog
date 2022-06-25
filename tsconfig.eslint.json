@@ -6,6 +6,7 @@
     "jest.config.js",
     "jest.setup.js",
     "i18next-scanner.config.js",
+    "_templates/**/*.js",
     "**/*.ts",
     "**/*.tsx"
   ],
