@@ -35,7 +35,7 @@ specifiers:
   nano-staged: 0.8.0
   next: 12.2.0
   next-intl: 2.7.4
-  next-page-tester: ^0.32.0
+  next-page-tester: 0.33.0
   next-remote-watch: ^1.0.0
   prettier: 2.7.1
   react: 18.2.0
@@ -97,7 +97,7 @@ devDependencies:
   jest: 28.1.0_@types+node@16.11.42
   jest-environment-jsdom: 28.1.0
   nano-staged: 0.8.0
-  next-page-tester: 0.32.0_24lkarzjpo3wcmj2o6qyrkug4y
+  next-page-tester: 0.33.0_24lkarzjpo3wcmj2o6qyrkug4y
   prettier: 2.7.1
   simple-git-hooks: 2.8.0
   typescript: 4.7.4
@@ -2344,7 +2344,7 @@ packages:
     dev: true
 
   /depd/1.1.2:
-    resolution: {integrity: sha1-m81S4UwJd2PnSbJ0xDRu0uVgtak=}
+    resolution: {integrity: sha512-7emPTl6Dpo6JRXOXjLRxck+FlLRX5847cLKEn00PLAgc3g2hTZZgr+e4c2v6QpSmLeFP3n5yUo7ft6avBK/5jQ==}
     engines: {node: '>= 0.6'}
     dev: true
 
@@ -5162,8 +5162,8 @@ packages:
       use-intl: 2.7.4_react@18.2.0
     dev: false
 
-  /next-page-tester/0.32.0_24lkarzjpo3wcmj2o6qyrkug4y:
-    resolution: {integrity: sha512-fBqHrI8SVZpO2TYPSv+a3NTrGF7kOJCzDQwpx2RtOnOlrvlllDBzEnDmJ6Dl+M7ujPUw2RDxvfM5fjWotgRNXA==}
+  /next-page-tester/0.33.0_24lkarzjpo3wcmj2o6qyrkug4y:
+    resolution: {integrity: sha512-9YgSskZtr742KR8p5xhSIOp6nkaIpOCsahVTPG2690RFuO1x0pxcnNli6ZlkapS+YIWDpSV/7gJX3SvWK4Qi5g==}
     engines: {node: '>=v12.22.8'}
     peerDependencies:
       next: ^12.1.1
@@ -6173,7 +6173,7 @@ packages:
     dev: false
 
   /stealthy-require/1.1.1:
-    resolution: {integrity: sha1-NbCYdbT/SfJqd35QmzCQoyJr8ks=}
+    resolution: {integrity: sha512-ZnWpYnYugiOVEY5GkcuJK1io5V8QmNYChG62gSit9pQVGErXtrKuPC55ITaVSukmMta5qpMU7vqLt2Lnni4f/g==}
     engines: {node: '>=0.10.0'}
     dev: true
 
