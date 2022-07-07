@@ -31,7 +31,7 @@
     "i18next-scanner": "3.3.0",
     "luxon": "^2.4.0",
     "mdast": "^3.0.0",
-    "next": "12.2.0",
+    "next": "12.2.1",
     "next-intl": "2.7.4",
     "next-remote-watch": "^1.0.0",
     "react": "18.2.0",
