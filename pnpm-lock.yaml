@@ -30,7 +30,7 @@ specifiers:
   i18next-scanner: 4.0.0
   jest: ^28.1.0
   jest-environment-jsdom: ^28.1.0
-  luxon: ^2.4.0
+  luxon: 3.0.0
   mdast: ^3.0.0
   nano-staged: 0.8.0
   next: 12.2.2
@@ -55,7 +55,7 @@ dependencies:
   '@emotion/styled': 11.9.3_u524mxijp7lz6rsx2wzd6cumae
   gray-matter: 4.0.3
   i18next-scanner: 4.0.0
-  luxon: 2.4.0
+  luxon: 3.0.0
   mdast: 3.0.0
   next: 12.2.2_4cc5zw5azim2bix77d63le72su
   next-intl: 2.7.4_next@12.2.2+react@18.2.0
@@ -4791,8 +4791,8 @@ packages:
       yallist: 4.0.0
     dev: true
 
-  /luxon/2.4.0:
-    resolution: {integrity: sha512-w+NAwWOUL5hO0SgwOHsMBAmZ15SoknmQXhSO0hIbJCAmPKSsGeK8MlmhYh2w6Iib38IxN2M+/ooXWLbeis7GuA==}
+  /luxon/3.0.0:
+    resolution: {integrity: sha512-6N4zsi2WTot29/ZWNIX9ad1W3NZyTZHMTf3b+bhKDy67/e9YyMM3tB9S8yuJliOG78wXUKOkX2oNTSWRG09ggg==}
     engines: {node: '>=12'}
     dev: false
 
