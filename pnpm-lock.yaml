@@ -20,7 +20,7 @@ specifiers:
   eslint: 8.20.0
   eslint-config-prettier: 8.5.0
   eslint-import-resolver-node: 0.3.6
-  eslint-import-resolver-typescript: 3.2.6
+  eslint-import-resolver-typescript: 3.2.7
   eslint-plugin-import: 2.26.0
   eslint-plugin-jsx-a11y: 6.6.0
   eslint-plugin-react: 7.30.1
@@ -88,8 +88,8 @@ devDependencies:
   eslint: 8.20.0
   eslint-config-prettier: 8.5.0_eslint@8.20.0
   eslint-import-resolver-node: 0.3.6
-  eslint-import-resolver-typescript: 3.2.6_afl3vkhn63baibzal45igheroq
-  eslint-plugin-import: 2.26.0_hoqbpgrvuflxt2b2m3wysm6xr4
+  eslint-import-resolver-typescript: 3.2.7_afl3vkhn63baibzal45igheroq
+  eslint-plugin-import: 2.26.0_3qg32nwux7jppjlumnyephfuiu
   eslint-plugin-jsx-a11y: 6.6.0_eslint@8.20.0
   eslint-plugin-react: 7.30.1_eslint@8.20.0
   eslint-plugin-react-hooks: 4.6.0_eslint@8.20.0
@@ -1025,9 +1025,9 @@ packages:
       fastq: 1.13.0
     dev: true
 
-  /@pkgr/utils/2.2.0:
-    resolution: {integrity: sha512-/+EeY/T/NLCfF4rvgUetl7ERNwoPz5q/p+8CYeAIFblsKSQbVJjmMccs/Y7CsOPv47hXcBrhk5IqOf9AqRNfhg==}
-    engines: {node: '>=12'}
+  /@pkgr/utils/2.3.0:
+    resolution: {integrity: sha512-7dIJ9CRVzBnqyEl7diUHPUFJf/oty2SeoVzcMocc5PeOUDK9KGzvgIBjGRRzzlRDaOjh3ADwH0WeibQvi3ls2Q==}
+    engines: {node: ^12.20.0 || ^14.18.0 || >=16.0.0}
     dependencies:
       cross-spawn: 7.0.3
       is-glob: 4.0.3
@@ -2801,8 +2801,8 @@ packages:
       - supports-color
     dev: true
 
-  /eslint-import-resolver-typescript/3.2.6_afl3vkhn63baibzal45igheroq:
-    resolution: {integrity: sha512-Gk7+viMP9Ho5Q36gmXw3UJrnSCbMTStLS+TuF49SdsOUQGNvhg7ZVsnaieuN0FNNWPB+Xf5tBwADgEuoRPeDDw==}
+  /eslint-import-resolver-typescript/3.2.7_afl3vkhn63baibzal45igheroq:
+    resolution: {integrity: sha512-WvcsRy3aPmwVsuS/XVliAJWpIdTlaFXXZPZk3TCbvvF8RtaAkjAhcLL5bl5VEoTmE+XnTHjIbWMzNZcOQpK/DA==}
     engines: {node: ^12.20.0 || ^14.18.0 || >=16.0.0}
     peerDependencies:
       eslint: '*'
@@ -2811,17 +2811,17 @@ packages:
       debug: 4.3.4
       enhanced-resolve: 5.10.0
       eslint: 8.20.0
-      eslint-plugin-import: 2.26.0_hoqbpgrvuflxt2b2m3wysm6xr4
+      eslint-plugin-import: 2.26.0_3qg32nwux7jppjlumnyephfuiu
       get-tsconfig: 4.2.0
       globby: 13.1.2
       is-core-module: 2.9.0
       is-glob: 4.0.3
-      synckit: 0.7.2
+      synckit: 0.8.1
     transitivePeerDependencies:
       - supports-color
     dev: true
 
-  /eslint-module-utils/2.7.3_gbq35rswntmobezplljb5hm5fq:
+  /eslint-module-utils/2.7.3_2q2z6tayalivbsvwghbmod3pby:
     resolution: {integrity: sha512-088JEC7O3lDZM9xGe0RerkOMd0EjFl+Yvd1jPWIkMT5u3H9+HC34mWWPnqPrN13gieT9pBOO+Qt07Nb/6TresQ==}
     engines: {node: '>=4'}
     peerDependencies:
@@ -2842,13 +2842,13 @@ packages:
       '@typescript-eslint/parser': 5.30.6_he2ccbldppg44uulnyq4rwocfa
       debug: 3.2.7
       eslint-import-resolver-node: 0.3.6
-      eslint-import-resolver-typescript: 3.2.6_afl3vkhn63baibzal45igheroq
+      eslint-import-resolver-typescript: 3.2.7_afl3vkhn63baibzal45igheroq
       find-up: 2.1.0
     transitivePeerDependencies:
       - supports-color
     dev: true
 
-  /eslint-plugin-import/2.26.0_hoqbpgrvuflxt2b2m3wysm6xr4:
+  /eslint-plugin-import/2.26.0_3qg32nwux7jppjlumnyephfuiu:
     resolution: {integrity: sha512-hYfi3FXaM8WPLf4S1cikh/r4IxnO6zrhZbEGz2b660EJRbuxgpDS5gkCuYgGWg2xxh2rBuIr4Pvhve/7c31koA==}
     engines: {node: '>=4'}
     peerDependencies:
@@ -2865,7 +2865,7 @@ packages:
       doctrine: 2.1.0
       eslint: 8.20.0
       eslint-import-resolver-node: 0.3.6
-      eslint-module-utils: 2.7.3_gbq35rswntmobezplljb5hm5fq
+      eslint-module-utils: 2.7.3_2q2z6tayalivbsvwghbmod3pby
       has: 1.0.3
       is-core-module: 2.9.0
       is-glob: 4.0.3
@@ -6342,11 +6342,11 @@ packages:
     resolution: {integrity: sha512-9QNk5KwDF+Bvz+PyObkmSYjI5ksVUYtjW7AU22r2NKcfLJcXp96hkDWU3+XndOsUb+AQ9QhfzfCT2O+CNWT5Tw==}
     dev: true
 
-  /synckit/0.7.2:
-    resolution: {integrity: sha512-CSZRtSRZ8RhJGMtWyLRqlarmWPPlsgZJHtV6cz0VTHNOg+R7UBoE2eNPQmB5Qrhtk3RX2AAcJmVwMXFULVQSwg==}
-    engines: {node: ^12.20.0 || ^14.18.0 || >=16.0.0}
+  /synckit/0.8.1:
+    resolution: {integrity: sha512-rJEeygO5PNmcZICmrgnbOd2usi5zWE1ESc0Gn5tTmJlongoU8zCTwMFQtar2UgMSiR68vK9afPQ+uVs2lURSIA==}
+    engines: {node: ^14.18.0 || >=16.0.0}
     dependencies:
-      '@pkgr/utils': 2.2.0
+      '@pkgr/utils': 2.3.0
       tslib: 2.4.0
     dev: true
 
