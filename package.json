@@ -50,7 +50,7 @@
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.2.0",
     "@types/jest": "28.1.6",
-    "@types/luxon": "^2.3.2",
+    "@types/luxon": "3.0.0",
     "@types/mdast": "^3.0.10",
     "@types/node": "16.11.45",
     "@types/react": "18.0.15",
