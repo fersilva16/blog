@@ -7,7 +7,7 @@ specifiers:
   '@next/eslint-plugin-next': 12.2.5
   '@testing-library/jest-dom': 5.16.5
   '@testing-library/react': 13.3.0
-  '@types/jest': 28.1.6
+  '@types/jest': 28.1.7
   '@types/luxon': 3.0.0
   '@types/mdast': 3.0.10
   '@types/node': 16.11.48
@@ -75,7 +75,7 @@ devDependencies:
   '@next/eslint-plugin-next': 12.2.5
   '@testing-library/jest-dom': 5.16.5
   '@testing-library/react': 13.3.0_biqbaboplfbrettd7655fr4n2y
-  '@types/jest': 28.1.6
+  '@types/jest': 28.1.7
   '@types/luxon': 3.0.0
   '@types/mdast': 3.0.10
   '@types/node': 16.11.48
@@ -1216,11 +1216,11 @@ packages:
       '@types/istanbul-lib-report': 3.0.0
     dev: true
 
-  /@types/jest/28.1.6:
-    resolution: {integrity: sha512-0RbGAFMfcBJKOmqRazM8L98uokwuwD5F8rHrv/ZMbrZBwVOWZUyPG6VFNscjYr/vjM3Vu4fRrCPbOs42AfemaQ==}
+  /@types/jest/28.1.7:
+    resolution: {integrity: sha512-acDN4VHD40V24tgu0iC44jchXavRNVFXQ/E6Z5XNsswgoSO/4NgsXoEYmPUGookKldlZQyIpmrEXsHI9cA3ZTA==}
     dependencies:
-      jest-matcher-utils: 28.1.0
-      pretty-format: 28.1.0
+      expect: 28.1.3
+      pretty-format: 28.1.3
     dev: true
 
   /@types/jsdom/16.2.14:
@@ -1327,7 +1327,7 @@ packages:
   /@types/testing-library__jest-dom/5.14.5:
     resolution: {integrity: sha512-SBwbxYoyPIvxHbeHxTZX2Pe/74F/tX2/D3mMvzabdeJ25bBojfW0TyB8BHrbq/9zaaKICJZjLP+8r6AeZMFCuQ==}
     dependencies:
-      '@types/jest': 28.1.6
+      '@types/jest': 28.1.7
     dev: true
 
   /@types/tough-cookie/4.0.2:
@@ -4331,16 +4331,6 @@ packages:
       pretty-format: 28.1.3
     dev: true
 
-  /jest-matcher-utils/28.1.0:
-    resolution: {integrity: sha512-onnax0n2uTLRQFKAjC7TuaxibrPSvZgKTcSCnNUz/tOjJ9UhxNm7ZmPpoQavmTDUjXvUQ8KesWk2/VdrxIFzTQ==}
-    engines: {node: ^12.13.0 || ^14.15.0 || ^16.10.0 || >=17.0.0}
-    dependencies:
-      chalk: 4.1.2
-      jest-diff: 28.1.3
-      jest-get-type: 28.0.2
-      pretty-format: 28.1.3
-    dev: true
-
   /jest-matcher-utils/28.1.3:
     resolution: {integrity: sha512-kQeJ7qHemKfbzKoGjHHrRKH6atgxMk8Enkk2iPQ3XwO6oE/KYD8lMYOziCkeSB9G4adPM4nR1DE8Tf5JeWH6Bw==}
     engines: {node: ^12.13.0 || ^14.15.0 || ^16.10.0 || >=17.0.0}
@@ -5635,16 +5625,6 @@ packages:
       ansi-regex: 5.0.1
       ansi-styles: 5.2.0
       react-is: 17.0.2
-    dev: true
-
-  /pretty-format/28.1.0:
-    resolution: {integrity: sha512-79Z4wWOYCdvQkEoEuSlBhHJqWeZ8D8YRPiPctJFCtvuaClGpiwiQYSCUOE6IEKUbbFukKOTFIUAXE8N4EQTo1Q==}
-    engines: {node: ^12.13.0 || ^14.15.0 || ^16.10.0 || >=17.0.0}
-    dependencies:
-      '@jest/schemas': 28.1.3
-      ansi-regex: 5.0.1
-      ansi-styles: 5.2.0
-      react-is: 18.1.0
     dev: true
 
   /pretty-format/28.1.3:
