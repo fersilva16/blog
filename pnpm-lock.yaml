@@ -12,7 +12,7 @@ specifiers:
   '@types/mdast': 3.0.10
   '@types/node': 16.11.56
   '@types/react': 18.0.17
-  '@types/react-syntax-highlighter': 15.5.4
+  '@types/react-syntax-highlighter': 15.5.5
   '@types/testing-library__jest-dom': 5.14.5
   '@typescript-eslint/eslint-plugin': 5.34.0
   '@typescript-eslint/parser': 5.34.0
@@ -80,7 +80,7 @@ devDependencies:
   '@types/mdast': 3.0.10
   '@types/node': 16.11.56
   '@types/react': 18.0.17
-  '@types/react-syntax-highlighter': 15.5.4
+  '@types/react-syntax-highlighter': 15.5.5
   '@types/testing-library__jest-dom': 5.14.5
   '@typescript-eslint/eslint-plugin': 5.34.0_euudt5oqhhodkyae5tf6wjmsda
   '@typescript-eslint/parser': 5.34.0_4rv7y5c6xz3vfxwhbrcxxi73bq
@@ -1297,8 +1297,8 @@ packages:
       '@types/react': 18.0.17
     dev: true
 
-  /@types/react-syntax-highlighter/15.5.4:
-    resolution: {integrity: sha512-GYXA4nRBG4jTGFfYMLO2/yuqyOyaQ415oeJWw6akE5gipOEsGhvXFvWhsctGVMHzAfRI7e/J0B9cpqrfMOwZhA==}
+  /@types/react-syntax-highlighter/15.5.5:
+    resolution: {integrity: sha512-QH3JZQXa2usAvJvSsdSUJ4Yu4j8ReuZpgRrEW+XP+Rmosbn425YshW9iGEb/pAARm8496axHhHUPRH3UmTiB6A==}
     dependencies:
       '@types/react': 18.0.17
     dev: true
