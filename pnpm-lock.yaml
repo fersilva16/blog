@@ -23,7 +23,7 @@ specifiers:
   eslint-import-resolver-typescript: 3.5.0
   eslint-plugin-import: 2.26.0
   eslint-plugin-jsx-a11y: 6.6.1
-  eslint-plugin-react: 7.30.1
+  eslint-plugin-react: 7.31.0
   eslint-plugin-react-hooks: 4.6.0
   gray-matter: 4.0.3
   hygen: 6.2.8
@@ -91,7 +91,7 @@ devDependencies:
   eslint-import-resolver-typescript: 3.5.0_2iahngt3u2tkbdlu6s4gkur3pu
   eslint-plugin-import: 2.26.0_w7ehzcacvb3lhivydjh7ca7hf4
   eslint-plugin-jsx-a11y: 6.6.1_eslint@8.22.0
-  eslint-plugin-react: 7.30.1_eslint@8.22.0
+  eslint-plugin-react: 7.31.0_eslint@8.22.0
   eslint-plugin-react-hooks: 4.6.0_eslint@8.22.0
   hygen: 6.2.8
   jest: 28.1.3_@types+node@16.11.56
@@ -2923,8 +2923,8 @@ packages:
       eslint: 8.22.0
     dev: true
 
-  /eslint-plugin-react/7.30.1_eslint@8.22.0:
-    resolution: {integrity: sha512-NbEvI9jtqO46yJA3wcRF9Mo0lF9T/jhdHqhCHXiXtD+Zcb98812wvokjWpU7Q4QH5edo6dmqrukxVvWWXHlsUg==}
+  /eslint-plugin-react/7.31.0_eslint@8.22.0:
+    resolution: {integrity: sha512-BWriBttYYCnfb4RO9SB91Og8uA9CPcBMl5UlCOCtuYW1UjhN3QypzEcEHky4ZIRZDKjbO2Blh9BjP8E7W/b1SA==}
     engines: {node: '>=4'}
     peerDependencies:
       eslint: ^3 || ^4 || ^5 || ^6 || ^7 || ^8
@@ -2934,7 +2934,7 @@ packages:
       doctrine: 2.1.0
       eslint: 8.22.0
       estraverse: 5.3.0
-      jsx-ast-utils: 3.2.2
+      jsx-ast-utils: 3.3.2
       minimatch: 3.1.2
       object.entries: 1.1.5
       object.fromentries: 2.0.5
@@ -4661,14 +4661,6 @@ packages:
       universalify: 2.0.0
     optionalDependencies:
       graceful-fs: 4.2.10
-    dev: true
-
-  /jsx-ast-utils/3.2.2:
-    resolution: {integrity: sha512-HDAyJ4MNQBboGpUnHAVUNJs6X0lh058s6FuixsFGP7MgJYpD6Vasd6nzSG5iIfXu1zAYlHJ/zsOKNlrenTUBnw==}
-    engines: {node: '>=4.0'}
-    dependencies:
-      array-includes: 3.1.5
-      object.assign: 4.1.2
     dev: true
 
   /jsx-ast-utils/3.3.2:
