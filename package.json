@@ -58,7 +58,7 @@
     "@types/testing-library__jest-dom": "5.14.5",
     "@typescript-eslint/eslint-plugin": "5.35.1",
     "@typescript-eslint/parser": "5.35.1",
-    "esbuild": "0.15.5",
+    "esbuild": "0.15.6",
     "eslint": "8.23.0",
     "eslint-config-prettier": "8.5.0",
     "eslint-import-resolver-node": "0.3.6",
