@@ -23,7 +23,7 @@ specifiers:
   eslint-import-resolver-typescript: 3.5.0
   eslint-plugin-import: 2.26.0
   eslint-plugin-jsx-a11y: 6.6.1
-  eslint-plugin-react: 7.31.3
+  eslint-plugin-react: 7.31.4
   eslint-plugin-react-hooks: 4.6.0
   gray-matter: 4.0.3
   hygen: 6.2.8
@@ -91,7 +91,7 @@ devDependencies:
   eslint-import-resolver-typescript: 3.5.0_faomjyrlgqmwswvqymymzkxcqi
   eslint-plugin-import: 2.26.0_a3i7brydqn6m553iazzl7kmmui
   eslint-plugin-jsx-a11y: 6.6.1_eslint@8.23.0
-  eslint-plugin-react: 7.31.3_eslint@8.23.0
+  eslint-plugin-react: 7.31.4_eslint@8.23.0
   eslint-plugin-react-hooks: 4.6.0_eslint@8.23.0
   hygen: 6.2.8
   jest: 29.0.1_@types+node@16.11.56
@@ -2932,8 +2932,8 @@ packages:
       eslint: 8.23.0
     dev: true
 
-  /eslint-plugin-react/7.31.3_eslint@8.23.0:
-    resolution: {integrity: sha512-IGAWY4Yu0eBe83MzqMTteaLZo/Qjd0YIfgQz7VWq6/28QMFouXaM4ERv/pCDfxgBbWPnGb3l+wkftzHRI1rkVA==}
+  /eslint-plugin-react/7.31.4_eslint@8.23.0:
+    resolution: {integrity: sha512-2ry4HTT+c+hSgpnV2DXj3d5oAmH11KH8HHQwtcfRdq6/+R3nEimvMbwAqK79eb4ZW1/hp8yC5elBusZM6li/Gg==}
     engines: {node: '>=4'}
     peerDependencies:
       eslint: ^3 || ^4 || ^5 || ^6 || ^7 || ^8
