@@ -120,7 +120,7 @@ export const getStaticPaths = async ({
           slug: post.en.slug,
         },
         locale,
-      }))
+      })),
     )
     .flat();
 

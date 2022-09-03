@@ -16,7 +16,7 @@ const getSlug = (filename: string) => filename.replace(/\.md$/, '');
 
 export const loadPost = async (
   filename: string,
-  locale: string
+  locale: string,
 ): Promise<NullPartial<Post>> => {
   const postPath = path.join(postsPath, locale, filename);
 
