@@ -6,7 +6,7 @@ specifiers:
   '@emotion/styled': 11.10.4
   '@next/eslint-plugin-next': 12.2.5
   '@testing-library/jest-dom': 5.16.5
-  '@testing-library/react': 13.3.0
+  '@testing-library/react': 13.4.0
   '@types/jest': 29.0.0
   '@types/luxon': 3.0.1
   '@types/mdast': 3.0.10
@@ -74,7 +74,7 @@ devDependencies:
   '@babel/core': 7.18.13
   '@next/eslint-plugin-next': 12.2.5
   '@testing-library/jest-dom': 5.16.5
-  '@testing-library/react': 13.3.0_biqbaboplfbrettd7655fr4n2y
+  '@testing-library/react': 13.4.0_biqbaboplfbrettd7655fr4n2y
   '@types/jest': 29.0.0
   '@types/luxon': 3.0.1
   '@types/mdast': 3.0.10
@@ -1114,8 +1114,8 @@ packages:
       redent: 3.0.0
     dev: true
 
-  /@testing-library/react/13.3.0_biqbaboplfbrettd7655fr4n2y:
-    resolution: {integrity: sha512-DB79aA426+deFgGSjnf5grczDPiL4taK3hFaa+M5q7q20Kcve9eQottOG5kZ74KEr55v0tU2CQormSSDK87zYQ==}
+  /@testing-library/react/13.4.0_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-sXOGON+WNTh3MLE9rve97ftaZukN3oNf2KjDy7YTx6hcTO2uuLHuCGynMDhFwGw/jYf4OJ2Qk0i4i79qMNNkyw==}
     engines: {node: '>=12'}
     peerDependencies:
       react: ^18.0.0
