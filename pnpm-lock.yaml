@@ -8,7 +8,7 @@ specifiers:
   '@testing-library/jest-dom': 5.16.5
   '@testing-library/react': 13.4.0
   '@types/jest': 29.2.1
-  '@types/luxon': 3.0.2
+  '@types/luxon': 3.0.3
   '@types/mdast': 3.0.10
   '@types/node': 18.11.9
   '@types/react': 18.0.24
@@ -76,7 +76,7 @@ devDependencies:
   '@testing-library/jest-dom': 5.16.5
   '@testing-library/react': 13.4.0_biqbaboplfbrettd7655fr4n2y
   '@types/jest': 29.2.1
-  '@types/luxon': 3.0.2
+  '@types/luxon': 3.0.3
   '@types/mdast': 3.0.10
   '@types/node': 18.11.9
   '@types/react': 18.0.24
@@ -1250,8 +1250,8 @@ packages:
     resolution: {integrity: sha1-7ihweulOEdK4J7y+UnC86n8+ce4=}
     dev: true
 
-  /@types/luxon/3.0.2:
-    resolution: {integrity: sha512-HM2OVWckUMmXbWYZufmWT2XMURGDZ6XbyNyQ+Lx+gCFGFqbZaIjsz7b+AGeGP/AuVYHBiuGY+wXfweP1RremnA==}
+  /@types/luxon/3.0.3:
+    resolution: {integrity: sha512-oHbqYmoYCihi5S09sdtf/sHh27+msnQ6qhrXJDFpUy/M7ohWcSpqNN5Mi22A2WHCsJ4ypD3zyJbCpyxvfC+VVw==}
     dev: true
 
   /@types/mdast/3.0.10:
