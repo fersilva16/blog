@@ -45,7 +45,7 @@
     "zod": "3.19.1"
   },
   "devDependencies": {
-    "@babel/core": "7.19.6",
+    "@babel/core": "7.20.2",
     "@next/eslint-plugin-next": "13.0.2",
     "@testing-library/jest-dom": "5.16.5",
     "@testing-library/react": "13.4.0",
