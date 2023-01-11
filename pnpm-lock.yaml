@@ -19,7 +19,7 @@ specifiers:
   esbuild: 0.16.17
   eslint: 8.31.0
   eslint-config-prettier: 8.6.0
-  eslint-import-resolver-node: 0.3.6
+  eslint-import-resolver-node: 0.3.7
   eslint-import-resolver-typescript: 3.5.3
   eslint-plugin-import: 2.26.0
   eslint-plugin-jsx-a11y: 6.7.0
@@ -87,7 +87,7 @@ devDependencies:
   esbuild: 0.16.17
   eslint: 8.31.0
   eslint-config-prettier: 8.6.0_eslint@8.31.0
-  eslint-import-resolver-node: 0.3.6
+  eslint-import-resolver-node: 0.3.7
   eslint-import-resolver-typescript: 3.5.3_ol7jqilc3wemtdbq3nzhywgxq4
   eslint-plugin-import: 2.26.0_2ac3tknkazjoq5fxmuugu665ny
   eslint-plugin-jsx-a11y: 6.7.0_eslint@8.31.0
@@ -2867,11 +2867,12 @@ packages:
       eslint: 8.31.0
     dev: true
 
-  /eslint-import-resolver-node/0.3.6:
-    resolution: {integrity: sha512-0En0w03NRVMn9Uiyn8YRPDKvWjxCWkslUEhGNTdGx15RvPJYQ+lbOlqrlNI2vEAs4pDYK4f/HN2TbDmk5TP0iw==}
+  /eslint-import-resolver-node/0.3.7:
+    resolution: {integrity: sha512-gozW2blMLJCeFpBwugLTGyvVjNoeo1knonXAcatC6bjPBZitotxdWf7Gimr25N4c0AAOo4eOUfaG82IJPDpqCA==}
     dependencies:
       debug: 3.2.7
-      resolve: 1.22.0
+      is-core-module: 2.11.0
+      resolve: 1.22.1
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -2896,7 +2897,7 @@ packages:
       - supports-color
     dev: true
 
-  /eslint-module-utils/2.7.3_ogdpags2g33ghk75i3kgcibxai:
+  /eslint-module-utils/2.7.3_oqug5ierxezpn52hp42gpcx3gu:
     resolution: {integrity: sha512-088JEC7O3lDZM9xGe0RerkOMd0EjFl+Yvd1jPWIkMT5u3H9+HC34mWWPnqPrN13gieT9pBOO+Qt07Nb/6TresQ==}
     engines: {node: '>=4'}
     peerDependencies:
@@ -2916,7 +2917,7 @@ packages:
     dependencies:
       '@typescript-eslint/parser': 5.48.1_iukboom6ndih5an6iafl45j2fe
       debug: 3.2.7
-      eslint-import-resolver-node: 0.3.6
+      eslint-import-resolver-node: 0.3.7
       eslint-import-resolver-typescript: 3.5.3_ol7jqilc3wemtdbq3nzhywgxq4
       find-up: 2.1.0
     transitivePeerDependencies:
@@ -2939,8 +2940,8 @@ packages:
       debug: 2.6.9
       doctrine: 2.1.0
       eslint: 8.31.0
-      eslint-import-resolver-node: 0.3.6
-      eslint-module-utils: 2.7.3_ogdpags2g33ghk75i3kgcibxai
+      eslint-import-resolver-node: 0.3.7
+      eslint-module-utils: 2.7.3_oqug5ierxezpn52hp42gpcx3gu
       has: 1.0.3
       is-core-module: 2.9.0
       is-glob: 4.0.3
@@ -3943,6 +3944,12 @@ packages:
     dependencies:
       has: 1.0.3
 
+  /is-core-module/2.11.0:
+    resolution: {integrity: sha512-RRjxlvLDkD1YJwDbroBHMb+cukurkDWNyHx7D3oNB5x9rb5ogcksMC5wHCadcXoo67gVr/+3GFySh3134zi6rw==}
+    dependencies:
+      has: 1.0.3
+    dev: true
+
   /is-core-module/2.9.0:
     resolution: {integrity: sha512-+5FPy5PnwmO3lvfMb0AsoPaBG+5KHUI0wYFXOtYPnVVVspTFUuMZNfNaNVRt3FZadstu2c8x23vykRW/NBoU6A==}
     dependencies:
@@ -4512,7 +4519,7 @@ packages:
       jest-pnp-resolver: 1.2.2_jest-resolve@29.3.1
       jest-util: 29.3.1
       jest-validate: 29.3.1
-      resolve: 1.22.0
+      resolve: 1.22.1
       resolve.exports: 1.1.0
       slash: 3.0.0
     dev: true
@@ -6096,11 +6103,20 @@ packages:
       path-parse: 1.0.7
       supports-preserve-symlinks-flag: 1.0.0
 
+  /resolve/1.22.1:
+    resolution: {integrity: sha512-nBpuuYuY5jFsli/JIs1oldw6fOQCBioohqWZg/2hiaOybXOft4lonv85uDOKXdf8rhyK159cxU5cDcK/NKk8zw==}
+    hasBin: true
+    dependencies:
+      is-core-module: 2.11.0
+      path-parse: 1.0.7
+      supports-preserve-symlinks-flag: 1.0.0
+    dev: true
+
   /resolve/2.0.0-next.4:
     resolution: {integrity: sha512-iMDbmAWtfU+MHpxt/I5iWI7cY6YVEZUQ3MBgPQ++XD1PELuJHIl82xBmObyP2KyQmkNB2dsqF7seoQQiAn5yDQ==}
     hasBin: true
     dependencies:
-      is-core-module: 2.10.0
+      is-core-module: 2.11.0
       path-parse: 1.0.7
       supports-preserve-symlinks-flag: 1.0.0
     dev: true
