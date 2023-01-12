@@ -6,9 +6,9 @@ import type {
   GetStaticPropsContext,
   GetStaticPropsResult,
 } from 'next';
-import { useTranslations } from 'next-intl';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
+import { useTranslations } from 'next-intl';
 import { FaExclamationTriangle } from 'react-icons/fa';
 import ReactMarkdown from 'react-markdown';
 

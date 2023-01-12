@@ -1,9 +1,9 @@
 import styled from '@emotion/styled';
 import { DateTime } from 'luxon';
 import type { GetStaticPropsContext, GetStaticPropsResult } from 'next';
-import { useTranslations } from 'next-intl';
 import Head from 'next/head';
 import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 
 import { ContentContainer } from '../components/ui/ContentContainer';
 import { Separator } from '../components/ui/Separator';

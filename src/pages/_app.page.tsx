@@ -1,6 +1,6 @@
-import { NextIntlProvider } from 'next-intl';
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
+import { NextIntlProvider } from 'next-intl';
 
 import { Header } from '../components/header/Header';
 import { globalStyles } from '../styles/global';
