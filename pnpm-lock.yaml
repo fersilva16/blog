@@ -27,7 +27,7 @@ specifiers:
   eslint-plugin-react-hooks: 4.6.0
   gray-matter: 4.0.3
   hygen: 6.2.11
-  i18next-scanner: 4.1.0
+  i18next-scanner: 4.1.1
   jest: 29.3.1
   jest-environment-jsdom: 29.3.1
   luxon: 3.2.1
@@ -54,7 +54,7 @@ dependencies:
   '@emotion/react': 11.10.5_jp5qgyg6plq757v5hojp7ls2oe
   '@emotion/styled': 11.10.5_jp5djshq6aqfasno3mth3hguci
   gray-matter: 4.0.3
-  i18next-scanner: 4.1.0
+  i18next-scanner: 4.1.1
   luxon: 3.2.1
   mdast: 3.0.0
   next: 13.1.2_pjwopsidmaokadturxaafygjp4
@@ -3724,8 +3724,8 @@ packages:
       - supports-color
     dev: true
 
-  /i18next-scanner/4.1.0:
-    resolution: {integrity: sha512-KAZRc6ZBqtn/Qa5fRRTn7D8effB84K9m3g9SQcKD+tocMajEVW2zfFP397qNxROad1VFjUGT8aw1Y6ZcfnIzlg==}
+  /i18next-scanner/4.1.1:
+    resolution: {integrity: sha512-FyaCdEBC8O9zPkAGKfhR8oNQSxQUALnqv++zajBj1aLviDgKyXkhAciHlKS0I8DKqLHMeuNdWODMpRdTuXavqg==}
     engines: {node: '>=12'}
     hasBin: true
     dependencies:
