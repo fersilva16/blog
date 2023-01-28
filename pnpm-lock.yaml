@@ -4,7 +4,7 @@ specifiers:
   '@babel/core': 7.20.12
   '@emotion/react': 11.10.5
   '@emotion/styled': 11.10.5
-  '@next/eslint-plugin-next': 13.1.5
+  '@next/eslint-plugin-next': 13.1.6
   '@testing-library/jest-dom': 5.16.5
   '@testing-library/react': 13.4.0
   '@types/jest': 29.4.0
@@ -72,7 +72,7 @@ dependencies:
 
 devDependencies:
   '@babel/core': 7.20.12
-  '@next/eslint-plugin-next': 13.1.5
+  '@next/eslint-plugin-next': 13.1.6
   '@testing-library/jest-dom': 5.16.5
   '@testing-library/react': 13.4.0_biqbaboplfbrettd7655fr4n2y
   '@types/jest': 29.4.0
@@ -1116,8 +1116,8 @@ packages:
   /@next/env/13.1.5:
     resolution: {integrity: sha512-0Ry4NhJy6qLbXhvxPRUQ1H6RzgtryGdUto7hfgAK0Iw/bScgeVjwLZdfhm2iT7qsOS32apo9cWzLCxjc6iGPsA==}
 
-  /@next/eslint-plugin-next/13.1.5:
-    resolution: {integrity: sha512-3kvLTX35bOWOCKU8KY74Ygczc55Qk/kB2TQy0tH7Rti6hzZ6Aij7WQ8zHdIVjmnlD0n/zXWXrIf5y56RKcLQkQ==}
+  /@next/eslint-plugin-next/13.1.6:
+    resolution: {integrity: sha512-o7cauUYsXjzSJkay8wKjpKJf2uLzlggCsGUkPu3lP09Pv97jYlekTC20KJrjQKmSv5DXV0R/uks2ZXhqjNkqAw==}
     dependencies:
       glob: 7.1.7
     dev: true
