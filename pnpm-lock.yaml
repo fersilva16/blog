@@ -48,7 +48,7 @@ specifiers:
   typescript: 4.9.5
   unified: 10.1.2
   unist-util-visit: 4.1.2
-  zod: 3.20.2
+  zod: 3.20.3
 
 dependencies:
   '@emotion/react': 11.10.5_yxdp3dl3eazy3vwpbmv4fq727a
@@ -68,7 +68,7 @@ dependencies:
   remark-parse: 10.0.1
   unified: 10.1.2
   unist-util-visit: 4.1.2
-  zod: 3.20.2
+  zod: 3.20.3
 
 devDependencies:
   '@babel/core': 7.20.12
@@ -7172,6 +7172,6 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  /zod/3.20.2:
-    resolution: {integrity: sha512-1MzNQdAvO+54H+EaK5YpyEy0T+Ejo/7YLHS93G3RnYWh5gaotGHwGeN/ZO687qEDU2y4CdStQYXVHIgrUl5UVQ==}
+  /zod/3.20.3:
+    resolution: {integrity: sha512-+MLeeUcLTlnzVo5xDn9+LVN9oX4esvgZ7qfZczBN+YVUvZBafIrPPVyG2WdjMWU2Qkb2ZAh2M8lpqf1wIoGqJQ==}
     dev: false
