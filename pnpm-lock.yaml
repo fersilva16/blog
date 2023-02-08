@@ -37,7 +37,7 @@ specifiers:
   next-intl: 2.10.2
   next-page-tester: 0.33.0
   next-remote-watch: 2.0.0
-  prettier: 2.8.3
+  prettier: 2.8.4
   react: 18.2.0
   react-dom: 18.2.0
   react-icons: 4.7.1
@@ -98,7 +98,7 @@ devDependencies:
   jest-environment-jsdom: 29.4.2
   nano-staged: 0.8.0
   next-page-tester: 0.33.0_3vryta7zmbcsw4rrqf4axjqggm
-  prettier: 2.8.3
+  prettier: 2.8.4
   simple-git-hooks: 2.8.1
   typescript: 4.9.5
 
@@ -5802,8 +5802,8 @@ packages:
     engines: {node: '>= 0.8.0'}
     dev: true
 
-  /prettier/2.8.3:
-    resolution: {integrity: sha512-tJ/oJ4amDihPoufT5sM0Z1SKEuKay8LfVAMlbbhnnkvt6BUserZylqo2PN+p9KeljLr0OHa2rXHU1T8reeoTrw==}
+  /prettier/2.8.4:
+    resolution: {integrity: sha512-vIS4Rlc2FNh0BySk3Wkd6xmwxB0FpOndW5fisM5H8hsZSxU2VWVB5CWIkIjWvrHjIhxk2g3bfMKM87zNTrZddw==}
     engines: {node: '>=10.13.0'}
     hasBin: true
     dev: true
