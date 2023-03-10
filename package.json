@@ -31,7 +31,7 @@
     "i18next-scanner": "4.1.1",
     "luxon": "3.3.0",
     "mdast": "3.0.0",
-    "next": "13.2.3",
+    "next": "13.2.4",
     "next-intl": "2.11.0",
     "next-remote-watch": "2.0.0",
     "react": "18.2.0",
@@ -46,7 +46,7 @@
   },
   "devDependencies": {
     "@babel/core": "7.21.0",
-    "@next/eslint-plugin-next": "13.2.3",
+    "@next/eslint-plugin-next": "13.2.4",
     "@testing-library/jest-dom": "5.16.5",
     "@testing-library/react": "14.0.0",
     "@types/jest": "29.4.0",
