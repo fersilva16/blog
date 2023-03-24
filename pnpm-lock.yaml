@@ -11,7 +11,7 @@ specifiers:
   '@types/luxon': 3.2.0
   '@types/mdast': 3.0.11
   '@types/node': 18.15.7
-  '@types/react': 18.0.28
+  '@types/react': 18.0.29
   '@types/react-syntax-highlighter': 15.5.6
   '@types/testing-library__jest-dom': 5.14.5
   '@typescript-eslint/eslint-plugin': 5.56.0
@@ -51,8 +51,8 @@ specifiers:
   zod: 3.21.4
 
 dependencies:
-  '@emotion/react': 11.10.6_pmekkgnqduwlme35zpnqhenc34
-  '@emotion/styled': 11.10.6_oouaibmszuch5k64ms7uxp2aia
+  '@emotion/react': 11.10.6_k4en7uapxoluuejoeg6o3ic2aa
+  '@emotion/styled': 11.10.6_zor2bu4ftuliqy4oeppgoopsea
   gray-matter: 4.0.3
   i18next-scanner: 4.2.0
   luxon: 3.3.0
@@ -63,7 +63,7 @@ dependencies:
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
   react-icons: 4.8.0_react@18.2.0
-  react-markdown: 8.0.6_pmekkgnqduwlme35zpnqhenc34
+  react-markdown: 8.0.6_k4en7uapxoluuejoeg6o3ic2aa
   react-syntax-highlighter: 15.5.0_react@18.2.0
   remark-parse: 10.0.1
   unified: 10.1.2
@@ -79,7 +79,7 @@ devDependencies:
   '@types/luxon': 3.2.0
   '@types/mdast': 3.0.11
   '@types/node': 18.15.7
-  '@types/react': 18.0.28
+  '@types/react': 18.0.29
   '@types/react-syntax-highlighter': 15.5.6
   '@types/testing-library__jest-dom': 5.14.5
   '@typescript-eslint/eslint-plugin': 5.56.0_2hcjazgfnbtq42tcc73br2vup4
@@ -479,7 +479,7 @@ packages:
     resolution: {integrity: sha512-G/YwXTkv7Den9mXDO7AhLWkE3q+I92B+VqAE+dYG4NGPaHZGvt3G8Q0p9vmE+sq7rTGphUbAvmQ9YpbfMQGGlA==}
     dev: false
 
-  /@emotion/react/11.10.6_pmekkgnqduwlme35zpnqhenc34:
+  /@emotion/react/11.10.6_k4en7uapxoluuejoeg6o3ic2aa:
     resolution: {integrity: sha512-6HT8jBmcSkfzO7mc+N1L9uwvOnlcGoix8Zn7srt+9ga0MjREo6lRpuVX0kzo6Jp6oTqDhREOFsygN6Ew4fEQbw==}
     peerDependencies:
       '@types/react': '*'
@@ -495,7 +495,7 @@ packages:
       '@emotion/use-insertion-effect-with-fallbacks': 1.0.0_react@18.2.0
       '@emotion/utils': 1.2.0
       '@emotion/weak-memoize': 0.3.0
-      '@types/react': 18.0.28
+      '@types/react': 18.0.29
       hoist-non-react-statics: 3.3.2
       react: 18.2.0
     dev: false
@@ -514,7 +514,7 @@ packages:
     resolution: {integrity: sha512-zxRBwl93sHMsOj4zs+OslQKg/uhF38MB+OMKoCrVuS0nyTkqnau+BM3WGEoOptg9Oz45T/aIGs1qbVAsEFo3nA==}
     dev: false
 
-  /@emotion/styled/11.10.6_oouaibmszuch5k64ms7uxp2aia:
+  /@emotion/styled/11.10.6_zor2bu4ftuliqy4oeppgoopsea:
     resolution: {integrity: sha512-OXtBzOmDSJo5Q0AFemHCfl+bUueT8BIcPSxu0EGTpGk6DmI5dnhSzQANm1e1ze0YZL7TDyAyy6s/b/zmGOS3Og==}
     peerDependencies:
       '@emotion/react': ^11.0.0-rc.0
@@ -527,11 +527,11 @@ packages:
       '@babel/runtime': 7.20.7
       '@emotion/babel-plugin': 11.10.6
       '@emotion/is-prop-valid': 1.2.0
-      '@emotion/react': 11.10.6_pmekkgnqduwlme35zpnqhenc34
+      '@emotion/react': 11.10.6_k4en7uapxoluuejoeg6o3ic2aa
       '@emotion/serialize': 1.1.1
       '@emotion/use-insertion-effect-with-fallbacks': 1.0.0_react@18.2.0
       '@emotion/utils': 1.2.0
-      '@types/react': 18.0.28
+      '@types/react': 18.0.29
       react: 18.2.0
     dev: false
 
@@ -1491,17 +1491,17 @@ packages:
   /@types/react-dom/18.0.4:
     resolution: {integrity: sha512-FgTtbqPOCI3dzZPZoC2T/sx3L34qxy99ITWn4eoSA95qPyXDMH0ALoAqUp49ITniiJFsXUVBtalh/KffMpg21Q==}
     dependencies:
-      '@types/react': 18.0.28
+      '@types/react': 18.0.29
     dev: true
 
   /@types/react-syntax-highlighter/15.5.6:
     resolution: {integrity: sha512-i7wFuLbIAFlabTeD2I1cLjEOrG/xdMa/rpx2zwzAoGHuXJDhSqp9BSfDlMHSh9JSuNfxHk9eEmMX6D55GiyjGg==}
     dependencies:
-      '@types/react': 18.0.28
+      '@types/react': 18.0.29
     dev: true
 
-  /@types/react/18.0.28:
-    resolution: {integrity: sha512-RD0ivG1kEztNBdoAK7lekI9M+azSnitIn85h4iOiaLjaTrMjzslhaqCGaI4IyCJ1RljWiLCEu4jyrLLgqxBTew==}
+  /@types/react/18.0.29:
+    resolution: {integrity: sha512-wXHktgUABxplw1+UnljseDq4+uztQyp2tlWZRIxHlpchsCFqiYkvaDS8JR7eKOQm8wziTH/el5qL7D6gYNkYcw==}
     dependencies:
       '@types/prop-types': 15.7.5
       '@types/scheduler': 0.16.2
@@ -5858,7 +5858,7 @@ packages:
   /react-is/18.1.0:
     resolution: {integrity: sha512-Fl7FuabXsJnV5Q1qIOQwx/sagGF18kogb4gpfcG4gjLBWO0WDiiz1ko/ExayuxE7InyQkBLkxRFG5oxY6Uu3Kg==}
 
-  /react-markdown/8.0.6_pmekkgnqduwlme35zpnqhenc34:
+  /react-markdown/8.0.6_k4en7uapxoluuejoeg6o3ic2aa:
     resolution: {integrity: sha512-KgPWsYgHuftdx510wwIzpwf+5js/iHqBR+fzxefv8Khk3mFbnioF1bmL2idHN3ler0LMQmICKeDrWnZrX9mtbQ==}
     peerDependencies:
       '@types/react': '>=16'
@@ -5866,7 +5866,7 @@ packages:
     dependencies:
       '@types/hast': 2.3.4
       '@types/prop-types': 15.7.5
-      '@types/react': 18.0.28
+      '@types/react': 18.0.29
       '@types/unist': 2.0.6
       comma-separated-tokens: 2.0.2
       hast-util-whitespace: 2.0.0
