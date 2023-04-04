@@ -73,8 +73,8 @@ devDependencies:
     specifier: 29.5.0
     version: 29.5.0
   '@types/luxon':
-    specifier: 3.2.1
-    version: 3.2.1
+    specifier: 3.2.2
+    version: 3.2.2
   '@types/mdast':
     specifier: 3.0.11
     version: 3.0.11
@@ -1486,8 +1486,8 @@ packages:
     resolution: {integrity: sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==}
     dev: true
 
-  /@types/luxon@3.2.1:
-    resolution: {integrity: sha512-49uU4h0D58OySiSRnZD9NLy9/POKup3I20HIgZsH112D2dz/WwyUf2oxJO3lLxD1ogNpa4LqeYm9z97+jkxROg==}
+  /@types/luxon@3.2.2:
+    resolution: {integrity: sha512-CuF9hIlsxGpJO4EztrW23/q1L9ctQfb5JM9mnLCJhhA8z81K2b4LTVjQYySXWhFV5SMyUsPYH/IcvvXDCKwa2g==}
     dev: true
 
   /@types/mdast@3.0.11:
