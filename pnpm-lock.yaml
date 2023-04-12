@@ -38,8 +38,8 @@ dependencies:
     specifier: 4.8.0
     version: 4.8.0(react@18.2.0)
   react-markdown:
-    specifier: 8.0.6
-    version: 8.0.6(@types/react@18.0.35)(react@18.2.0)
+    specifier: 8.0.7
+    version: 8.0.7(@types/react@18.0.35)(react@18.2.0)
   react-syntax-highlighter:
     specifier: 15.5.0
     version: 15.5.0(react@18.2.0)
@@ -5873,8 +5873,8 @@ packages:
   /react-is@18.1.0:
     resolution: {integrity: sha512-Fl7FuabXsJnV5Q1qIOQwx/sagGF18kogb4gpfcG4gjLBWO0WDiiz1ko/ExayuxE7InyQkBLkxRFG5oxY6Uu3Kg==}
 
-  /react-markdown@8.0.6(@types/react@18.0.35)(react@18.2.0):
-    resolution: {integrity: sha512-KgPWsYgHuftdx510wwIzpwf+5js/iHqBR+fzxefv8Khk3mFbnioF1bmL2idHN3ler0LMQmICKeDrWnZrX9mtbQ==}
+  /react-markdown@8.0.7(@types/react@18.0.35)(react@18.2.0):
+    resolution: {integrity: sha512-bvWbzG4MtOU62XqBx3Xx+zB2raaFFsq4mYiAzfjXJMEz2sixgeAfraA3tvzULF02ZdOMUOKTBFFaZJDDrq+BJQ==}
     peerDependencies:
       '@types/react': '>=16'
       react: '>=16'
