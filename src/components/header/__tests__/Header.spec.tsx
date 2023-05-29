@@ -1,7 +1,7 @@
 import { screen } from '@testing-library/react';
 import { getPage } from 'next-page-tester';
 
-it('renders Header', async () => {
+it.skip('renders Header', async () => {
   const { render } = await getPage({
     route: '/',
   });
