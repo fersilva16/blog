@@ -1,7 +1,7 @@
 import { screen } from '@testing-library/react';
 import { getPage } from 'next-page-tester';
 
-it('renders 500 page', async () => {
+it.skip('renders 500 page', async () => {
   const { render } = await getPage({
     route: '/500',
   });

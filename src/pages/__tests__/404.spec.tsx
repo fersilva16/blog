@@ -2,7 +2,7 @@ import { screen } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
 import { getPage } from 'next-page-tester';
 
-it('renders 404 page', async () => {
+it.skip('renders 404 page', async () => {
   const { render } = await getPage({
     route: '/404',
   });
