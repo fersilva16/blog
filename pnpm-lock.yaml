@@ -2,7 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@babel/core': 7.22.1
-  '@emotion/react': 11.11.0
+  '@emotion/react': 11.11.1
   '@emotion/styled': 11.11.0
   '@next/eslint-plugin-next': 13.4.4
   '@testing-library/jest-dom': 5.16.5
@@ -51,8 +51,8 @@ specifiers:
   zod: 3.21.4
 
 dependencies:
-  '@emotion/react': 11.11.0_i2bxsyfskhzbpjanbovidbfj7u
-  '@emotion/styled': 11.11.0_efnsujvwehy5in7hodous2swsa
+  '@emotion/react': 11.11.1_i2bxsyfskhzbpjanbovidbfj7u
+  '@emotion/styled': 11.11.0_jbtpw7in4hmikdigt3vmqaalfq
   gray-matter: 4.0.3
   i18next-scanner: 4.2.0
   luxon: 3.3.0
@@ -479,8 +479,8 @@ packages:
     resolution: {integrity: sha512-W2P2c/VRW1/1tLox0mVUalvnWXxavmv/Oum2aPsRcoDJuob75FC3Y8FbpfLwUegRcxINtGUMPq0tFCvYNTBXNA==}
     dev: false
 
-  /@emotion/react/11.11.0_i2bxsyfskhzbpjanbovidbfj7u:
-    resolution: {integrity: sha512-ZSK3ZJsNkwfjT3JpDAWJZlrGD81Z3ytNDsxw1LKq1o+xkmO5pnWfr6gmCC8gHEFf3nSSX/09YrG67jybNPxSUw==}
+  /@emotion/react/11.11.1_i2bxsyfskhzbpjanbovidbfj7u:
+    resolution: {integrity: sha512-5mlW1DquU5HaxjLkfkGN1GA/fvVGdyHURRiX/0FHl2cfIfRxSOfmxEH5YS43edp0OldZrZ+dkBKbngxcNCdZvA==}
     peerDependencies:
       '@types/react': '*'
       react: '>=16.8.0'
@@ -514,7 +514,7 @@ packages:
     resolution: {integrity: sha512-0QBtGvaqtWi+nx6doRwDdBIzhNdZrXUppvTM4dtZZWEGTXL/XE/yJxLMGlDT1Gt+UHH5IX1n+jkXyytE/av7OA==}
     dev: false
 
-  /@emotion/styled/11.11.0_efnsujvwehy5in7hodous2swsa:
+  /@emotion/styled/11.11.0_jbtpw7in4hmikdigt3vmqaalfq:
     resolution: {integrity: sha512-hM5Nnvu9P3midq5aaXj4I+lnSfNi7Pmd4EWk1fOZ3pxookaQTNew6bp4JaCBYM4HVFZF9g7UjJmsUmC2JlxOng==}
     peerDependencies:
       '@emotion/react': ^11.0.0-rc.0
@@ -527,7 +527,7 @@ packages:
       '@babel/runtime': 7.20.7
       '@emotion/babel-plugin': 11.11.0
       '@emotion/is-prop-valid': 1.2.1
-      '@emotion/react': 11.11.0_i2bxsyfskhzbpjanbovidbfj7u
+      '@emotion/react': 11.11.1_i2bxsyfskhzbpjanbovidbfj7u
       '@emotion/serialize': 1.1.2
       '@emotion/use-insertion-effect-with-fallbacks': 1.0.1_react@18.2.0
       '@emotion/utils': 1.2.1
