@@ -40,7 +40,7 @@ specifiers:
   prettier: 2.8.8
   react: 18.2.0
   react-dom: 18.2.0
-  react-icons: 4.9.0
+  react-icons: 4.10.1
   react-markdown: 8.0.7
   react-syntax-highlighter: 15.5.0
   remark-parse: 10.0.2
@@ -62,7 +62,7 @@ dependencies:
   next-remote-watch: 2.0.0_next@13.4.7
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
-  react-icons: 4.9.0_react@18.2.0
+  react-icons: 4.10.1_react@18.2.0
   react-markdown: 8.0.7_kipdvjt52frzxcrtuwg5whlwdi
   react-syntax-highlighter: 15.5.0_react@18.2.0
   remark-parse: 10.0.2
@@ -5834,8 +5834,8 @@ packages:
       react: 18.2.0
       scheduler: 0.23.0
 
-  /react-icons/4.9.0_react@18.2.0:
-    resolution: {integrity: sha512-ijUnFr//ycebOqujtqtV9PFS7JjhWg0QU6ykURVHuL4cbofvRCf3f6GMn9+fBktEFQOIVZnuAYLZdiyadRQRFg==}
+  /react-icons/4.10.1_react@18.2.0:
+    resolution: {integrity: sha512-/ngzDP/77tlCfqthiiGNZeYFACw85fUjZtLbedmJ5DTlNDIwETxhwBzdOJ21zj4iJdvc0J3y7yOsX3PpxAJzrw==}
     peerDependencies:
       react: '*'
     dependencies:
