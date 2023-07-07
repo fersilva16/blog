@@ -34,7 +34,7 @@ specifiers:
   mdast: 3.0.0
   nano-staged: 0.8.0
   next: 13.4.9
-  next-intl: 2.17.4
+  next-intl: 2.17.5
   next-page-tester: 0.33.0
   next-remote-watch: 2.0.0
   prettier: 3.0.0
@@ -58,7 +58,7 @@ dependencies:
   luxon: 3.3.0
   mdast: 3.0.0
   next: 13.4.9_pf3h3nshjd7r4drbfuutbs4kxa
-  next-intl: 2.17.4_next@13.4.9+react@18.2.0
+  next-intl: 2.17.5_next@13.4.9+react@18.2.0
   next-remote-watch: 2.0.0_next@13.4.9
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
@@ -5372,8 +5372,8 @@ packages:
     resolution: {integrity: sha512-+EUsqGPLsM+j/zdChZjsnX51g4XrHFOIXwfnCVPGlQk/k5giakcKsuxCObBRu6DSm9opw/O6slWbJdghQM4bBg==}
     engines: {node: '>= 0.6'}
 
-  /next-intl/2.17.4_next@13.4.9+react@18.2.0:
-    resolution: {integrity: sha512-GlB7mBC/+wsuvEuRqyMxmQi8PBGMSfHUz/RDdqazl8BOFuaNXijJ6btpZ4FAlonJcXMOroONmP/L0/c6zqYZOQ==}
+  /next-intl/2.17.5_next@13.4.9+react@18.2.0:
+    resolution: {integrity: sha512-p/tit4/FN0eHLw6Mjwsx4ktiFZWq9VMcuY9hhkAlYWXCQgKq09PB0lZcMNw5xLvV9eor818BzXxdA+3bSvFMmw==}
     engines: {node: '>=10'}
     peerDependencies:
       next: ^10.0.0 || ^11.0.0 || ^12.0.0 || ^13.0.0
@@ -5383,7 +5383,7 @@ packages:
       negotiator: 0.6.3
       next: 13.4.9_pf3h3nshjd7r4drbfuutbs4kxa
       react: 18.2.0
-      use-intl: 2.17.4_react@18.2.0
+      use-intl: 2.17.5_react@18.2.0
     dev: false
 
   /next-page-tester/0.33.0_hyjx7svporfhadhuakm5xolhha:
@@ -6899,8 +6899,8 @@ packages:
       punycode: 2.1.1
     dev: true
 
-  /use-intl/2.17.4_react@18.2.0:
-    resolution: {integrity: sha512-iaMdznvvagqo6ubBSKRgaLdHKjXBv7979pQMotOic63kNXEQECwyBqECeuKqEUtM40WdROxpAnbxw/ctWmVxGw==}
+  /use-intl/2.17.5_react@18.2.0:
+    resolution: {integrity: sha512-pkTRoGZsOyHImBFgV23z7g/Hzt1auap+cWvsiWzHpc70NK7Rm9R3LNI3wm3FnYEWNF8N3+CZKV+SCTrHwcNK1w==}
     engines: {node: '>=10'}
     peerDependencies:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0
