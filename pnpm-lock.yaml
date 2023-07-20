@@ -23,7 +23,7 @@ specifiers:
   eslint-import-resolver-typescript: 3.5.5
   eslint-plugin-import: 2.27.5
   eslint-plugin-jsx-a11y: 6.7.1
-  eslint-plugin-react: 7.32.2
+  eslint-plugin-react: 7.33.0
   eslint-plugin-react-hooks: 4.6.0
   gray-matter: 4.0.3
   hygen: 6.2.11
@@ -91,7 +91,7 @@ devDependencies:
   eslint-import-resolver-typescript: 3.5.5_tupkduqkqkyz4nt5wpmzbd74tm
   eslint-plugin-import: 2.27.5_uquat7zxf7j5wbc4wdfrkt76n4
   eslint-plugin-jsx-a11y: 6.7.1_eslint@8.45.0
-  eslint-plugin-react: 7.32.2_eslint@8.45.0
+  eslint-plugin-react: 7.33.0_eslint@8.45.0
   eslint-plugin-react-hooks: 4.6.0_eslint@8.45.0
   hygen: 6.2.11
   jest: 29.6.1_@types+node@18.16.19
@@ -3010,8 +3010,8 @@ packages:
       eslint: 8.45.0
     dev: true
 
-  /eslint-plugin-react/7.32.2_eslint@8.45.0:
-    resolution: {integrity: sha512-t2fBMa+XzonrrNkyVirzKlvn5RXzzPwRHtMvLAtVZrt8oxgnTQaYbU6SXTOO1mwQgp1y5+toMSKInnzGr0Knqg==}
+  /eslint-plugin-react/7.33.0_eslint@8.45.0:
+    resolution: {integrity: sha512-qewL/8P34WkY8jAqdQxsiL82pDUeT7nhs8IsuXgfgnsEloKCT4miAV9N9kGtx7/KM9NH/NCGUE7Edt9iGxLXFw==}
     engines: {node: '>=4'}
     peerDependencies:
       eslint: ^3 || ^4 || ^5 || ^6 || ^7 || ^8
@@ -3030,7 +3030,7 @@ packages:
       object.values: 1.1.6
       prop-types: 15.8.1
       resolve: 2.0.0-next.4
-      semver: 6.3.0
+      semver: 6.3.1
       string.prototype.matchall: 4.0.8
     dev: true
 
@@ -4536,7 +4536,7 @@ packages:
       jest-util: 29.6.1
       natural-compare: 1.4.0
       pretty-format: 29.6.1
-      semver: 7.5.3
+      semver: 7.5.4
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -6025,14 +6025,6 @@ packages:
   /semver/6.3.1:
     resolution: {integrity: sha512-BR7VvDCVHO+q2xBEWskxS6DJE1qRnb7DxzUrogb71CWoSficBxYsiAGd+Kl0mmq/MprG9yArRkyrQxTO6XjMzA==}
     hasBin: true
-
-  /semver/7.5.3:
-    resolution: {integrity: sha512-QBlUtyVk/5EeHbi7X0fw6liDZc7BBmEaSYn01fMU1OUYbf6GPsbTtd8WmnqbI20SeycoHSeiybkE/q1Q+qlThQ==}
-    engines: {node: '>=10'}
-    hasBin: true
-    dependencies:
-      lru-cache: 6.0.0
-    dev: true
 
   /semver/7.5.4:
     resolution: {integrity: sha512-1bCSESV6Pv+i21Hvpxp3Dx+pSD8lIPt8uVjRrxAUt/nbswYc+tK6Y2btiULjd4+fnq15PX+nqQDC7Oft7WkwcA==}
