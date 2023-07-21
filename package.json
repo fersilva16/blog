@@ -84,6 +84,11 @@
     ],
     "*.{js,ts,tsx}": "eslint --fix"
   },
+  "pnpm": {
+    "overrides": {
+      "@types/mdast": "$@types/mdast"
+    }
+  },
   "simple-git-hooks": {
     "pre-commit": "pnpm nano-staged"
   }
