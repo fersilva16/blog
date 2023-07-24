@@ -16,7 +16,7 @@ specifiers:
   '@types/node': 18.17.0
   '@types/react': 18.2.16
   '@types/react-syntax-highlighter': 15.5.7
-  '@types/testing-library__jest-dom': 5.14.8
+  '@types/testing-library__jest-dom': 5.14.9
   '@typescript-eslint/eslint-plugin': 6.2.0
   '@typescript-eslint/parser': 6.2.0
   esbuild: 0.18.16
@@ -84,7 +84,7 @@ devDependencies:
   '@types/node': 18.17.0
   '@types/react': 18.2.16
   '@types/react-syntax-highlighter': 15.5.7
-  '@types/testing-library__jest-dom': 5.14.8
+  '@types/testing-library__jest-dom': 5.14.9
   '@typescript-eslint/eslint-plugin': 6.2.0_w3tbsvtiyibnil5vzurrrrj72m
   '@typescript-eslint/parser': 6.2.0_ko3fmmbeyij36muomfgt2u76xu
   esbuild: 0.18.16
@@ -1298,7 +1298,7 @@ packages:
     dependencies:
       '@adobe/css-tools': 4.0.1
       '@babel/runtime': 7.20.7
-      '@types/testing-library__jest-dom': 5.14.8
+      '@types/testing-library__jest-dom': 5.14.9
       aria-query: 5.1.3
       chalk: 3.0.0
       css.escape: 1.5.1
@@ -1543,8 +1543,8 @@ packages:
     resolution: {integrity: sha512-Hl219/BT5fLAaz6NDkSuhzasy49dwQS/DSdu4MdggFB8zcXv7vflBI3xp7FEmkmdDkBUI2bPUNeMttp2knYdxw==}
     dev: true
 
-  /@types/testing-library__jest-dom/5.14.8:
-    resolution: {integrity: sha512-NRfJE9Cgpmu4fx716q9SYmU4jxxhYRU1BQo239Txt/9N3EC745XZX1Yl7h/SBIDlo1ANVOCRB4YDXjaQdoKCHQ==}
+  /@types/testing-library__jest-dom/5.14.9:
+    resolution: {integrity: sha512-FSYhIjFlfOpGSRyVoMBMuS3ws5ehFQODymf3vlI7U1K8c7PHwWwFY7VREfmsuzHSOnoKs/9/Y983ayOs7eRzqw==}
     dependencies:
       '@types/jest': 29.5.3
     dev: true
