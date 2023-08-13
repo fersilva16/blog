@@ -1,5 +1,4 @@
 import { screen } from '@testing-library/react';
-import '@testing-library/jest-dom/extend-expect';
 import { getPage } from 'next-page-tester';
 
 it.skip('renders 404 page', async () => {
