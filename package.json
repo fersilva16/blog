@@ -42,7 +42,7 @@
     "remark-parse": "10.0.2",
     "unified": "10.1.2",
     "unist-util-visit": "5.0.0",
-    "zod": "3.21.4"
+    "zod": "3.22.0"
   },
   "devDependencies": {
     "@babel/core": "7.22.10",
