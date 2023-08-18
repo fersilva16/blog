@@ -54,8 +54,8 @@ dependencies:
     specifier: 10.0.2
     version: 10.0.2
   unified:
-    specifier: 11.0.0
-    version: 11.0.0
+    specifier: 11.0.1
+    version: 11.0.1
   unist-util-visit:
     specifier: 5.0.0
     version: 5.0.0
@@ -6887,8 +6887,8 @@ packages:
       vfile: 5.3.3
     dev: false
 
-  /unified@11.0.0:
-    resolution: {integrity: sha512-65zgPyv0vyXnJpw4fbGmoXjP0/6cBmnnesl4lSPGU2tYuzLWtuicRBFcaV6kgzitGrBHj6pgXYomMw1VQe/cQg==}
+  /unified@11.0.1:
+    resolution: {integrity: sha512-v4p/Tcbn44UjLtASIyrKi29qqSbWY+u3awY5M6fTMVuT3KQ9DfWd4q/JaFGoNEDtQt8+e4yg150oHx34ABwrsg==}
     dependencies:
       '@types/unist': 3.0.0
       '@ungap/structured-clone': 1.2.0
