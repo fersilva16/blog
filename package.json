@@ -47,7 +47,7 @@
   "devDependencies": {
     "@babel/core": "7.22.10",
     "@next/eslint-plugin-next": "13.4.19",
-    "@testing-library/jest-dom": "6.0.1",
+    "@testing-library/jest-dom": "6.1.1",
     "@testing-library/react": "14.0.0",
     "@types/jest": "29.5.3",
     "@types/luxon": "3.3.1",
