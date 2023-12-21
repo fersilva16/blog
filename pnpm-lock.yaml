@@ -30,8 +30,8 @@ dependencies:
     specifier: 13.4.19
     version: 13.4.19(@babel/core@7.22.10)(react-dom@18.2.0)(react@18.2.0)
   next-intl:
-    specifier: 2.19.1
-    version: 2.19.1(next@13.4.19)(react@18.2.0)
+    specifier: 3.3.3
+    version: 3.3.3(next@13.4.19)(react@18.2.0)
   next-remote-watch:
     specifier: 2.0.0
     version: 2.0.0(next@13.4.19)
@@ -5443,18 +5443,17 @@ packages:
     resolution: {integrity: sha512-+EUsqGPLsM+j/zdChZjsnX51g4XrHFOIXwfnCVPGlQk/k5giakcKsuxCObBRu6DSm9opw/O6slWbJdghQM4bBg==}
     engines: {node: '>= 0.6'}
 
-  /next-intl@2.19.1(next@13.4.19)(react@18.2.0):
-    resolution: {integrity: sha512-fk+IGWXxA+UOk+3rIhQqSPYxka+Hk9qKaIpbeF3nNlf8dp1td0oT6srVrPw/uZl5Qoj8El3qQ2mVd3RTLA25cg==}
-    engines: {node: '>=10'}
+  /next-intl@3.3.3(next@13.4.19)(react@18.2.0):
+    resolution: {integrity: sha512-FEiJngR37rpCHxsKJw0glEVwXq9QEXzwGDz2HrrO6CaOgYvxwEPRt6Of+tNhHhmBmV9nwFI8IVl0ZcbK+IrPvg==}
     peerDependencies:
-      next: ^10.0.0 || ^11.0.0 || ^12.0.0 || ^13.0.0
+      next: ^10.0.0 || ^11.0.0 || ^12.0.0 || ^13.0.0 || ^14.0.0
       react: ^16.8.0 || ^17.0.0 || ^18.0.0
     dependencies:
       '@formatjs/intl-localematcher': 0.2.32
       negotiator: 0.6.3
       next: 13.4.19(@babel/core@7.22.10)(react-dom@18.2.0)(react@18.2.0)
       react: 18.2.0
-      use-intl: 2.19.1(react@18.2.0)
+      use-intl: 3.3.3(react@18.2.0)
     dev: false
 
   /next-page-tester@0.33.0(next@13.4.19)(react-dom@18.2.0)(react@18.2.0):
@@ -7014,9 +7013,8 @@ packages:
       requires-port: 1.0.0
     dev: true
 
-  /use-intl@2.19.1(react@18.2.0):
-    resolution: {integrity: sha512-nPsXwwJeH+RuKe2ucN+xmRI7DdfjA7WezXYTJD0JZSPvyIyaledIBlVBbnkxanr+3fpIec3cVG6wvouGp9/lJQ==}
-    engines: {node: '>=10'}
+  /use-intl@3.3.3(react@18.2.0):
+    resolution: {integrity: sha512-gnTkFGqjfdaVRJyzmnV3gSYBVVu2DS6ZcRgY2/2oT5g0yPT5GjvzPSb+p27//vS/17jcDomV0uozgsGug64Nmw==}
     peerDependencies:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0
     dependencies:
