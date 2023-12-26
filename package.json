@@ -23,5 +23,9 @@
     "@astrojs/rss": "^4.0.1",
     "@astrojs/sitemap": "^3.0.3",
     "astro": "^4.0.7"
+  },
+  "devDependencies": {
+    "prettier": "^3.1.1",
+    "prettier-plugin-astro": "^0.12.2"
   }
 }
