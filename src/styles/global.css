@@ -1,0 +1,72 @@
+@font-face {
+  font-family: 'CascadiaCode';
+  src: url('/fonts/CascadiaCode.woff2') format('woff2');
+}
+
+:root {
+  --color-primary: rgba(0, 0, 0, 0);
+
+  --font-size-2sm: 0.625rem;
+  --font-size-sm: 0.75rem;
+  --font-size-md: 1rem;
+  --font-size-xl: 1.5rem;
+  --font-size-2xl: 1.75rem;
+
+  --spacing: 8px;
+  --spacing-2x: 16px;
+  --spacing-4x: 32px;
+  --spacing-8x: 64px;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: 'CascadiaCode', monospace;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 900;
+}
+
+html,
+body {
+  font-weight: 300;
+  min-height: 100vh;
+  font-size: 100%;
+  line-height: 1;
+  list-style-type: none;
+}
+
+h1 {
+  font-size: var(--font-size-2xl);
+  line-height: 1.6;
+  letter-spacing: 2px;
+}
+
+h2 {
+  font-size: var(--font-size-xl);
+  line-height: 1.6;
+  letter-spacing: 2px;
+}
+
+p,
+li {
+  font-size: var(--font-size-md);
+  line-height: 1.25;
+  text-align: justify;
+  text-justify: inter-word;
+  letter-spacing: 0.8px;
+}
+
+li {
+  list-style-type: none;
+}

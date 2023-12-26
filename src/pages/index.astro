@@ -1,4 +1,75 @@
-<!doctype html>
-<html lang="en">
-  <body><h1>Hello World</h1></body>
-</html>
+---
+import { getCollection } from 'astro:content';
+import { DateTime } from 'luxon';
+
+import Layout from '../layouts/Layout.astro';
+import Link from '../components/Link.astro';
+import { config } from '../config';
+
+const posts = await getCollection('blog', ({ data }) => !data.draft);
+
+const postsSorted = posts.sort((a, b) => b.data.pubDate - a.data.pubDate);
+---
+
+<Layout>
+  <section class="description">
+    <h1>Fernando Silva</h1>
+    <p>Software Engineer</p>
+    <p>
+      <Link href={config.GITHUB_URL}>GitHub</Link> / <Link
+        href={config.TWITTER_URL}
+      >
+        Twitter
+      </Link>
+    </p>
+  </section>
+
+  <section class="posts">
+    <h2>Posts</h2>
+    <ul>
+      {
+        postsSorted.map((post) => (
+          <li>
+            <p>
+              {DateTime.fromJSDate(post.data.pubDate).toFormat('yyyy-MM-dd')}
+            </p>
+            <Link href={post.slug}>
+              <p>{post.data.title}</p>
+            </Link>
+          </li>
+        ))
+      }
+    </ul>
+  </section>
+</Layout>
+
+<style>
+  .description {
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--spacing-2x);
+  }
+
+  .posts ul {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing);
+  }
+
+  .posts ul li {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    column-gap: var(--spacing-8x);
+  }
+
+  @media screen and (max-width: 425px) {
+    .posts ul {
+      gap: var(--spacing-2x);
+    }
+
+    .posts ul li {
+      flex-direction: column;
+    }
+  }
+</style>

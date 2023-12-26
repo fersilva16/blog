@@ -1,0 +1,76 @@
+---
+import { getCollection } from 'astro:content';
+import type { CollectionEntry } from 'astro:content';
+
+import Layout from '../../layouts/Layout.astro';
+import Link from '../../components/Link.astro';
+import { config } from '../../config';
+
+export type Props = {
+  post: CollectionEntry<'blog'>;
+};
+
+export const prerender = true;
+
+export const getStaticPaths = async () => {
+  const posts = await getCollection('blog');
+
+  return posts.map((post) => ({
+    params: {
+      slug: post.slug,
+    },
+    props: {
+      post,
+    },
+  }));
+};
+
+const { post } = Astro.props;
+const { Content } = await post.render();
+---
+
+<Layout title={`${post.data.title} | ${config.TITLE}`}>
+  <article>
+    <Link href="/">Home</Link>
+    <h1>
+      {post.data.title}
+    </h1>
+    <Content />
+  </article>
+</Layout>
+
+<style>
+  article {
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--spacing-2x);
+  }
+
+  article ul {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing);
+    padding-right: var(--spacing-2x);
+  }
+
+  article li {
+    list-style-type: disc;
+    margin-left: var(--spacing-2x);
+  }
+
+  article code {
+    background-color: #24292e;
+    color: white;
+    padding: var(--spacing);
+  }
+
+  .tags {
+    display: flex;
+    column-gap: var(--spacing);
+  }
+
+  article .astro-code {
+    padding: var(--spacing);
+    font-size: var(--font-size-md);
+  }
+</style>
