@@ -20,15 +20,21 @@
   },
   "dependencies": {
     "@astrojs/mdx": "^2.0.2",
+    "@astrojs/react": "^3.0.8",
     "@astrojs/rss": "^4.0.1",
     "@astrojs/sitemap": "^3.0.3",
     "@astrojs/vercel": "^6.1.0",
+    "@resvg/resvg-js": "^2.6.0",
     "astro": "^4.0.7",
-    "luxon": "^3.4.4"
+    "luxon": "^3.4.4",
+    "satori": "^0.10.11"
   },
   "devDependencies": {
     "@types/luxon": "^3.3.7",
+    "@types/react": "^18.2.45",
     "prettier": "^3.1.1",
-    "prettier-plugin-astro": "^0.12.2"
+    "prettier-plugin-astro": "^0.12.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   }
 }

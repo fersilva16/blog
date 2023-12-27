@@ -9,9 +9,16 @@ import { config } from '../config';
 export type Props = {
   title?: string;
   description?: string;
+  ogImage?: string;
 };
 
-const { title = config.TITLE, description = config.DESCRIPTION } = Astro.props;
+const {
+  title = config.TITLE,
+  description = config.DESCRIPTION,
+  ogImage,
+} = Astro.props;
+
+const ogURL = new URL(ogImage, Astro.url.origin).href;
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site).href;
 ---
@@ -40,11 +47,13 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site).href;
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonicalURL} />
+    <meta property="og:image" content={ogURL} />
 
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:url" content={canonicalURL} />
     <meta property="twitter:title" content={title} />
     <meta property="twitter:description" content={description} />
+    <meta property="twitter:image" content={ogURL} />
 
     <ViewTransitions />
   </head>
