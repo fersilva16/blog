@@ -15,7 +15,7 @@ export type Props = {
 const {
   title = config.TITLE,
   description = config.DESCRIPTION,
-  ogImage,
+  ogImage = 'og.png',
 } = Astro.props;
 
 const ogURL = new URL(ogImage, Astro.url.origin).href;
