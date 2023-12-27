@@ -3,7 +3,7 @@ import { getCollection, type CollectionEntry } from 'astro:content';
 import satori, { type SatoriOptions } from 'satori';
 import { Resvg } from '@resvg/resvg-js';
 
-import { post } from './_post';
+import PostOG from '../../components/PostOG';
 
 export const getStaticPaths = async () => {
   const posts = await getCollection('blog');
@@ -22,24 +22,38 @@ const svgBufferToPngBuffer = (svg: string) => {
   return png.asPng();
 };
 
-const merriweatherRegularFontFile = await fetch(
-  'https://www.1001fonts.com/download/font/merriweather.regular.ttf',
-);
-const merriweatherRegularFont = await merriweatherRegularFontFile.arrayBuffer();
+export const GET: APIRoute<CollectionEntry<'blog'>> = async ({
+  props,
+  url,
+}) => {
+  const cascadiaCodeRegularFont = await fetch(
+    new URL('/fonts/CascadiaCode-Regular.ttf', url),
+  ).then((res) => res.arrayBuffer());
 
-const options: SatoriOptions = {
-  width: 1200,
-  height: 630,
-  fonts: [
-    {
-      name: 'Merriweather',
-      data: merriweatherRegularFont,
-    },
-  ],
-};
+  const cascadiaCodeBoldFont = await fetch(
+    new URL('/fonts/CascadiaCode-Bold.ttf', url),
+  ).then((res) => res.arrayBuffer());
 
-export const GET: APIRoute<CollectionEntry<'blog'>> = async ({ props }) => {
-  const svg = await satori(post(props), options);
+  const options: SatoriOptions = {
+    width: 1200,
+    height: 630,
+    fonts: [
+      {
+        name: 'CascadiaCode',
+        data: cascadiaCodeRegularFont,
+        style: 'normal',
+        weight: 400,
+      },
+      {
+        name: 'CascadiaCode',
+        data: cascadiaCodeBoldFont,
+        style: 'normal',
+        weight: 700,
+      },
+    ],
+  };
+
+  const svg = await satori(PostOG(props), options);
   const png = svgBufferToPngBuffer(svg);
 
   return new Response(png, { headers: { 'Content-Type': 'image/png' } });

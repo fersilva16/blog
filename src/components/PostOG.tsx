@@ -1,8 +1,9 @@
 import type { CollectionEntry } from 'astro:content';
-import { config } from '../../config';
 import { DateTime } from 'luxon';
 
-export const post = (props: CollectionEntry<'blog'>) => {
+import { config } from '../config';
+
+const PostOG = (props: CollectionEntry<'blog'>) => {
   return (
     <div
       style={{
@@ -45,3 +46,5 @@ export const post = (props: CollectionEntry<'blog'>) => {
     </div>
   );
 };
+
+export default PostOG;
