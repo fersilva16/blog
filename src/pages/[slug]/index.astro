@@ -31,7 +31,7 @@ const { Content } = await post.render();
 
 <Layout
   title={`${post.data.title} | ${config.TITLE}`}
-  ogImage={`/${post.data.slug}.png`}
+  ogImage={`/${post.slug}.png`}
 >
   <article>
     <Link href="/">Home</Link>
