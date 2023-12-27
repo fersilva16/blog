@@ -1,8 +1,6 @@
 import type { APIRoute } from 'astro';
 import { getCollection, type CollectionEntry } from 'astro:content';
 import satori, { type SatoriOptions } from 'satori';
-import fs from 'node:fs';
-import path from 'node:path';
 import { Resvg } from '@resvg/resvg-js';
 
 import { post } from './_post';

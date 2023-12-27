@@ -11,7 +11,7 @@ export const get: APIRoute = async () => {
     title: config.TITLE,
     description: config.DESCRIPTION,
     site: config.SITE_URL,
-    items: posts.map(({ data, slug, body }) => ({
+    items: posts.map(({ data, slug }) => ({
       link: slug,
       title: data.title,
       description: data.description,
