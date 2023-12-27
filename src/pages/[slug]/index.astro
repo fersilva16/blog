@@ -29,7 +29,10 @@ const { post } = Astro.props;
 const { Content } = await post.render();
 ---
 
-<Layout title={`${post.data.title} | ${config.TITLE}`}>
+<Layout
+  title={`${post.data.title} | ${config.TITLE}`}
+  ogImage={`/${post.data.slug}.png`}
+>
   <article>
     <Link href="/">Home</Link>
     <h1>

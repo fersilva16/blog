@@ -1,8 +1,10 @@
+import type { APIRoute } from 'astro';
+
 import rss from '@astrojs/rss';
 import { getCollection } from 'astro:content';
 import { config } from '../config';
 
-export async function get() {
+export const get: APIRoute = async () => {
   const posts = await getCollection('blog', ({ data }) => !data.draft);
 
   return rss({
@@ -16,4 +18,4 @@ export async function get() {
       pubDate: data.pubDate,
     })),
   });
-}
+};
