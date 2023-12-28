@@ -18,8 +18,8 @@ dependencies:
     specifier: ^3.0.4
     version: 3.0.4
   '@astrojs/vercel':
-    specifier: ^6.1.0
-    version: 6.1.0(astro@4.0.7)
+    specifier: ^6.1.1
+    version: 6.1.1(astro@4.0.7)
   '@resvg/resvg-js':
     specifier: ^2.6.0
     version: 2.6.0
@@ -248,8 +248,8 @@ packages:
       - supports-color
     dev: false
 
-  /@astrojs/vercel@6.1.0(astro@4.0.7):
-    resolution: {integrity: sha512-KcXRn8zjl48jIyBThz7QwLmqfnyqeYOcHUstvb/IVF6LErw//9FGDSG6p+o1bfv25IzbMW2PaYer4EwevSGmGw==}
+  /@astrojs/vercel@6.1.1(astro@4.0.7):
+    resolution: {integrity: sha512-9y+rCO6LBAKP66/N2yogufTqgvy5cW4LDTFwJj1/DlZtKL+qIhEvp6GpkEbihd0BZdIkBxR/4OhMJBKMDx6ppQ==}
     peerDependencies:
       astro: ^4.0.2
     dependencies:
