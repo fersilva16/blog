@@ -23,7 +23,7 @@
     "@astrojs/react": "^3.0.9",
     "@astrojs/rss": "^4.0.1",
     "@astrojs/sitemap": "^3.0.4",
-    "@astrojs/vercel": "^6.1.1",
+    "@astrojs/vercel": "^6.1.2",
     "@resvg/resvg-js": "^2.6.0",
     "astro": "^4.0.9",
     "luxon": "^3.4.4",
