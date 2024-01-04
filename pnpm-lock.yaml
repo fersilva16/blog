@@ -47,8 +47,8 @@ devDependencies:
     specifier: ^0.3.4
     version: 0.3.4(prettier-plugin-astro@0.12.3)(prettier@3.1.1)(typescript@5.3.3)
   '@types/luxon':
-    specifier: ^3.3.7
-    version: 3.3.7
+    specifier: ^3.3.8
+    version: 3.3.8
   '@types/markdown-it':
     specifier: ^13.0.7
     version: 13.0.7
@@ -1335,8 +1335,8 @@ packages:
     resolution: {integrity: sha512-yg6E+u0/+Zjva+buc3EIb+29XEg4wltq7cSmd4Uc2EE/1nUVmxyzpX6gUXD0V8jIrG0r7YeOGVIbYRkxeooCtw==}
     dev: true
 
-  /@types/luxon@3.3.7:
-    resolution: {integrity: sha512-gKc9P2d4g5uYwmy4s/MO/yOVPmvHyvzka1YH6i5dM03UrFofHSmgc0D0ymbDRStFWHusk6cwwF6nhLm/ckBbbQ==}
+  /@types/luxon@3.3.8:
+    resolution: {integrity: sha512-jYvz8UMLDgy3a5SkGJne8H7VA7zPV2Lwohjx0V8V31+SqAjNmurWMkk9cQhfvlcnXWudBpK9xPM1n4rljOcHYQ==}
     dev: true
 
   /@types/markdown-it@13.0.7:
