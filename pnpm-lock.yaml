@@ -7,7 +7,7 @@ settings:
 dependencies:
   '@astrojs/mdx':
     specifier: ^2.0.6
-    version: 2.0.6(astro@4.2.3)
+    version: 2.0.6(astro@4.2.4)
   '@astrojs/react':
     specifier: ^3.0.9
     version: 3.0.9(@types/react-dom@18.2.18)(@types/react@18.2.48)(react-dom@18.2.0)(react@18.2.0)(vite@5.0.12)
@@ -19,13 +19,13 @@ dependencies:
     version: 3.0.5
   '@astrojs/vercel':
     specifier: ^7.0.1
-    version: 7.0.1(astro@4.2.3)
+    version: 7.0.1(astro@4.2.4)
   '@resvg/resvg-js':
     specifier: ^2.6.0
     version: 2.6.0
   astro:
-    specifier: ^4.2.3
-    version: 4.2.3(typescript@5.3.3)
+    specifier: ^4.2.4
+    version: 4.2.4(typescript@5.3.3)
   luxon:
     specifier: ^3.4.4
     version: 3.4.4
@@ -171,7 +171,7 @@ packages:
       - supports-color
     dev: false
 
-  /@astrojs/mdx@2.0.6(astro@4.2.3):
+  /@astrojs/mdx@2.0.6(astro@4.2.4):
     resolution: {integrity: sha512-PY6FYN5TN8dsRFSzcPIt5ofJ/w+v+5GtUUyDYbznu8zmFWlL9TkTLJ9U1zaQ3s2Qh6r1cAeLdEYjW/hW+vZzlw==}
     engines: {node: '>=18.14.1'}
     peerDependencies:
@@ -180,7 +180,7 @@ packages:
       '@astrojs/markdown-remark': 4.2.0
       '@mdx-js/mdx': 3.0.0
       acorn: 8.11.2
-      astro: 4.2.3(typescript@5.3.3)
+      astro: 4.2.4(typescript@5.3.3)
       es-module-lexer: 1.4.1
       estree-util-visit: 2.0.0
       github-slugger: 2.0.0
@@ -253,7 +253,7 @@ packages:
       - supports-color
     dev: false
 
-  /@astrojs/vercel@7.0.1(astro@4.2.3):
+  /@astrojs/vercel@7.0.1(astro@4.2.4):
     resolution: {integrity: sha512-Y6txgjSDtv5Jgch1hL5aDQ9q7ggu2UFprkvxz5lj0SkoZAMpjyebw+Wz0jX+sDNIerVvZwv63VC08u1Avp9vTw==}
     peerDependencies:
       astro: ^4.2.0
@@ -261,7 +261,7 @@ packages:
       '@astrojs/internal-helpers': 0.2.1
       '@vercel/analytics': 1.1.1
       '@vercel/nft': 0.24.4
-      astro: 4.2.3(typescript@5.3.3)
+      astro: 4.2.4(typescript@5.3.3)
       esbuild: 0.19.10
       fast-glob: 3.3.2
       set-cookie-parser: 2.6.0
@@ -1452,8 +1452,8 @@ packages:
     hasBin: true
     dev: false
 
-  /astro@4.2.3(typescript@5.3.3):
-    resolution: {integrity: sha512-6bfSogmcwMdaTRAxuhJ7aISGin/T3ovI/69JWPRYOHBkPZxA/EfsNQOI2TiRHFJSF9XtoMnFlgvT+iYapkhOwg==}
+  /astro@4.2.4(typescript@5.3.3):
+    resolution: {integrity: sha512-z1f52lXkHf71M5HSLKrd5G1PH5/Zfq4kMp0iUT7Na5VHcPDma/NYFPFPewDxqV6UPmyxupj3xuooFaN3j8zaow==}
     engines: {node: '>=18.14.1', npm: '>=6.14.0'}
     hasBin: true
     dependencies:
