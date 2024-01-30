@@ -29,7 +29,7 @@
     "luxon": "^3.4.4",
     "markdown-it": "^14.0.0",
     "sanitize-html": "^2.11.0",
-    "satori": "^0.10.11",
+    "satori": "^0.10.13",
     "typescript": "^5.3.3"
   },
   "devDependencies": {
