@@ -30,7 +30,7 @@
     "markdown-it": "^14.0.0",
     "sanitize-html": "^2.12.1",
     "satori": "^0.10.13",
-    "typescript": "^5.3.3"
+    "typescript": "^5.4.2"
   },
   "devDependencies": {
     "@astrojs/check": "^0.5.6",
