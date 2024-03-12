@@ -7,7 +7,7 @@ settings:
 dependencies:
   '@astrojs/mdx':
     specifier: ^2.2.0
-    version: 2.2.0(astro@4.4.15)
+    version: 2.2.0(astro@4.5.1)
   '@astrojs/react':
     specifier: ^3.1.0
     version: 3.1.0(@types/react-dom@18.2.18)(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)(vite@5.1.4)
@@ -19,13 +19,13 @@ dependencies:
     version: 3.1.1
   '@astrojs/vercel':
     specifier: ^7.3.6
-    version: 7.3.6(astro@4.4.15)
+    version: 7.3.6(astro@4.5.1)
   '@resvg/resvg-js':
     specifier: ^2.6.0
     version: 2.6.0
   astro:
-    specifier: ^4.4.15
-    version: 4.4.15(typescript@5.4.2)
+    specifier: ^4.5.1
+    version: 4.5.1(typescript@5.4.2)
   luxon:
     specifier: ^3.4.4
     version: 3.4.4
@@ -104,9 +104,10 @@ packages:
 
   /@astrojs/compiler@2.5.3:
     resolution: {integrity: sha512-jzj01BRv/fmo+9Mr2FhocywGzEYiyiP2GVHje1ziGNU6c97kwhYGsnvwMkHrncAy9T9Vi54cjaMK7UE4ClX4vA==}
+    dev: true
 
-  /@astrojs/internal-helpers@0.2.1:
-    resolution: {integrity: sha512-06DD2ZnItMwUnH81LBLco3tWjcZ1lGU9rLCCBaeUCGYe9cI0wKyY2W3kDyoW1I6GmcWgt1fu+D1CTvz+FIKf8A==}
+  /@astrojs/compiler@2.7.0:
+    resolution: {integrity: sha512-XpC8MAaWjD1ff6/IfkRq/5k1EFj6zhCNqXRd5J43SVJEBj/Bsmizkm8N0xOYscGcDFQkRgEw6/eKnI5x/1l6aA==}
     dev: false
 
   /@astrojs/internal-helpers@0.3.0:
@@ -147,27 +148,6 @@ packages:
       - typescript
     dev: true
 
-  /@astrojs/markdown-remark@4.2.1:
-    resolution: {integrity: sha512-2RQBIwrq+2qPYtp99bH+eL5hfbK0BoxXla85lHsRpIX/IsGqFrPX6pXI2cbWPihBwGbKCdxS6uZNX2QerZWwpQ==}
-    dependencies:
-      '@astrojs/prism': 3.0.0
-      github-slugger: 2.0.0
-      import-meta-resolve: 4.0.0
-      mdast-util-definitions: 6.0.0
-      rehype-raw: 7.0.0
-      rehype-stringify: 10.0.0
-      remark-gfm: 4.0.0
-      remark-parse: 11.0.0
-      remark-rehype: 11.0.0
-      remark-smartypants: 2.0.0
-      shikiji: 0.9.19
-      unified: 11.0.4
-      unist-util-visit: 5.0.0
-      vfile: 6.0.1
-    transitivePeerDependencies:
-      - supports-color
-    dev: false
-
   /@astrojs/markdown-remark@4.3.0:
     resolution: {integrity: sha512-iZOgYj/yNDvBRfKqkGuAvjeONhjQPq8Uk3HjyIgcTK5valq03NiUgSc5Ovq00yUVBeYJ/5EDx23c8xqtkkBlPw==}
     dependencies:
@@ -193,7 +173,7 @@ packages:
       - supports-color
     dev: false
 
-  /@astrojs/mdx@2.2.0(astro@4.4.15):
+  /@astrojs/mdx@2.2.0(astro@4.5.1):
     resolution: {integrity: sha512-EkcCniYdGwsh9k5LknqRrz/UyOnMNXdRk7fgDAw/zUDKnm7zgQAG8hIx0FxG1L2IINxLfu7IcjgZb3f5TFpxKw==}
     engines: {node: '>=18.14.1'}
     peerDependencies:
@@ -202,7 +182,7 @@ packages:
       '@astrojs/markdown-remark': 4.3.0
       '@mdx-js/mdx': 3.0.0
       acorn: 8.11.2
-      astro: 4.4.15(typescript@5.4.2)
+      astro: 4.5.1(typescript@5.4.2)
       es-module-lexer: 1.4.1
       estree-util-visit: 2.0.0
       github-slugger: 2.0.0
@@ -275,7 +255,7 @@ packages:
       - supports-color
     dev: false
 
-  /@astrojs/vercel@7.3.6(astro@4.4.15):
+  /@astrojs/vercel@7.3.6(astro@4.5.1):
     resolution: {integrity: sha512-dQj3cvTOsgOj/V8EVya16X1L3PCJ9aw0rWCggsFcERI72qEDXctd7l+K/iZC1dOvsM3k6VhwiacwsETowsctAA==}
     peerDependencies:
       astro: ^4.2.0
@@ -283,7 +263,7 @@ packages:
       '@astrojs/internal-helpers': 0.3.0
       '@vercel/analytics': 1.1.1
       '@vercel/nft': 0.26.4
-      astro: 4.4.15(typescript@5.4.2)
+      astro: 4.5.1(typescript@5.4.2)
       esbuild: 0.19.10
       fast-glob: 3.3.2
       set-cookie-parser: 2.6.0
@@ -838,10 +818,6 @@ packages:
       vfile: 6.0.1
     transitivePeerDependencies:
       - supports-color
-    dev: false
-
-  /@medv/finder@3.1.0:
-    resolution: {integrity: sha512-ojkXjR3K0Zz3jnCR80tqPL+0yvbZk/lEodb6RIVjLz7W8RVA2wrw8ym/CzCpXO9SYVUIKHFUpc7jvf8UKfIM3w==}
     dev: false
 
   /@nodelib/fs.scandir@2.1.5:
@@ -1503,14 +1479,14 @@ packages:
     hasBin: true
     dev: false
 
-  /astro@4.4.15(typescript@5.4.2):
-    resolution: {integrity: sha512-RTiAnlO8hDp6GqMVvaeJxyuCJhHNEho09lHshMNQBqgRabYPOJGW0HZZrbLRGNOqN9I14ivhZIunYGgAaGQpWw==}
+  /astro@4.5.1(typescript@5.4.2):
+    resolution: {integrity: sha512-xqSBxeDZFUUgHl+npNwgoe6taTOCI8sJNwqWJaK3t/vcCHdfYJX00Tr9g43w/cYKPoTN4wKbNktbKYJZAbE3ZQ==}
     engines: {node: '>=18.14.1', npm: '>=6.14.0'}
     hasBin: true
     dependencies:
-      '@astrojs/compiler': 2.5.3
-      '@astrojs/internal-helpers': 0.2.1
-      '@astrojs/markdown-remark': 4.2.1
+      '@astrojs/compiler': 2.7.0
+      '@astrojs/internal-helpers': 0.3.0
+      '@astrojs/markdown-remark': 4.3.0
       '@astrojs/telemetry': 3.0.4
       '@babel/core': 7.23.6
       '@babel/generator': 7.23.6
@@ -1518,7 +1494,7 @@ packages:
       '@babel/plugin-transform-react-jsx': 7.23.4(@babel/core@7.23.6)
       '@babel/traverse': 7.23.6
       '@babel/types': 7.23.6
-      '@medv/finder': 3.1.0
+      '@shikijs/core': 1.1.7
       '@types/babel__core': 7.20.5
       acorn: 8.11.2
       aria-query: 5.3.0
@@ -1560,8 +1536,7 @@ packages:
       rehype: 13.0.1
       resolve: 1.22.8
       semver: 7.5.4
-      shikiji: 0.9.19
-      shikiji-core: 0.9.19
+      shiki: 1.1.7
       string-width: 7.0.0
       strip-ansi: 7.1.0
       tsconfck: 3.0.0(typescript@5.4.2)
@@ -1572,6 +1547,7 @@ packages:
       which-pm: 2.1.1
       yargs-parser: 21.1.1
       zod: 3.22.4
+      zod-to-json-schema: 3.22.4(zod@3.22.4)
     optionalDependencies:
       sharp: 0.32.6
     transitivePeerDependencies:
@@ -4285,16 +4261,6 @@ packages:
       '@shikijs/core': 1.1.7
     dev: false
 
-  /shikiji-core@0.9.19:
-    resolution: {integrity: sha512-AFJu/vcNT21t0e6YrfadZ+9q86gvPum6iywRyt1OtIPjPFe25RQnYJyxHQPMLKCCWA992TPxmEmbNcOZCAJclw==}
-    dev: false
-
-  /shikiji@0.9.19:
-    resolution: {integrity: sha512-Kw2NHWktdcdypCj1GkKpXH4o6Vxz8B8TykPlPuLHOGSV8VkhoCLcFOH4k19K4LXAQYRQmxg+0X/eM+m2sLhAkg==}
-    dependencies:
-      shikiji-core: 0.9.19
-    dev: false
-
   /signal-exit@3.0.7:
     resolution: {integrity: sha512-wnD2ZE+l+SPC/uoS0vXeE9L1+0wuaMqKlfz9AMUo38JsyLSBWSFcHR1Rri62LZc12vLr1gb3jl7iwQhgwpAbGQ==}
     dev: false
@@ -5124,6 +5090,14 @@ packages:
 
   /yoga-wasm-web@0.3.3:
     resolution: {integrity: sha512-N+d4UJSJbt/R3wqY7Coqs5pcV0aUj2j9IaQ3rNj9bVCLld8tTGKRa2USARjnvZJWVx1NDmQev8EknoczaOQDOA==}
+    dev: false
+
+  /zod-to-json-schema@3.22.4(zod@3.22.4):
+    resolution: {integrity: sha512-2Ed5dJ+n/O3cU383xSY28cuVi0BCQhF8nYqWU5paEpl7fVdqdAmiLdqLyfblbNdfOFwFfi/mqU4O1pwc60iBhQ==}
+    peerDependencies:
+      zod: ^3.22.4
+    dependencies:
+      zod: 3.22.4
     dev: false
 
   /zod@3.22.4:
