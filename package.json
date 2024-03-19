@@ -27,7 +27,7 @@
     "@resvg/resvg-js": "^2.6.0",
     "astro": "^4.5.5",
     "luxon": "^3.4.4",
-    "markdown-it": "^14.0.0",
+    "markdown-it": "^14.1.0",
     "sanitize-html": "^2.12.1",
     "satori": "^0.10.13",
     "typescript": "^5.4.2"
