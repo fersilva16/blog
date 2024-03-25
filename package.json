@@ -36,7 +36,7 @@
     "@astrojs/check": "^0.5.10",
     "@types/luxon": "^3.4.2",
     "@types/markdown-it": "^13.0.7",
-    "@types/react": "^18.2.67",
+    "@types/react": "^18.2.69",
     "@types/sanitize-html": "^2.11.0",
     "prettier": "^3.2.5",
     "prettier-plugin-astro": "^0.13.0",

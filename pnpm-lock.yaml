@@ -10,7 +10,7 @@ dependencies:
     version: 2.2.1(astro@4.5.9)
   '@astrojs/react':
     specifier: ^3.1.0
-    version: 3.1.0(@types/react-dom@18.2.18)(@types/react@18.2.67)(react-dom@18.2.0)(react@18.2.0)(vite@5.1.4)
+    version: 3.1.0(@types/react-dom@18.2.18)(@types/react@18.2.69)(react-dom@18.2.0)(react@18.2.0)(vite@5.1.4)
   '@astrojs/rss':
     specifier: ^4.0.5
     version: 4.0.5
@@ -53,8 +53,8 @@ devDependencies:
     specifier: ^13.0.7
     version: 13.0.7
   '@types/react':
-    specifier: ^18.2.67
-    version: 18.2.67
+    specifier: ^18.2.69
+    version: 18.2.69
   '@types/sanitize-html':
     specifier: ^2.11.0
     version: 2.11.0
@@ -201,7 +201,7 @@ packages:
       prismjs: 1.29.0
     dev: false
 
-  /@astrojs/react@3.1.0(@types/react-dom@18.2.18)(@types/react@18.2.67)(react-dom@18.2.0)(react@18.2.0)(vite@5.1.4):
+  /@astrojs/react@3.1.0(@types/react-dom@18.2.18)(@types/react@18.2.69)(react-dom@18.2.0)(react@18.2.0)(vite@5.1.4):
     resolution: {integrity: sha512-KZhZyV+sUDZEjlrmPWNiPGeYowG9uq6/aMbCgVaeKEBlWT4Kg32TNwBOhZk6AcE4LY1l3mIwt3orUGE2JV96/g==}
     engines: {node: '>=18.14.1'}
     peerDependencies:
@@ -210,7 +210,7 @@ packages:
       react: ^17.0.2 || ^18.0.0
       react-dom: ^17.0.2 || ^18.0.0
     dependencies:
-      '@types/react': 18.2.67
+      '@types/react': 18.2.69
       '@types/react-dom': 18.2.18
       '@vitejs/plugin-react': 4.2.1(vite@5.1.4)
       react: 18.2.0
@@ -1238,6 +1238,14 @@ packages:
 
   /@types/react@18.2.67:
     resolution: {integrity: sha512-vkIE2vTIMHQ/xL0rgmuoECBCkZFZeHr49HeWSc24AptMbNRo7pwSBvj73rlJJs9fGKj0koS+V7kQB1jHS0uCgw==}
+    dependencies:
+      '@types/prop-types': 15.7.11
+      '@types/scheduler': 0.16.8
+      csstype: 3.1.3
+    dev: false
+
+  /@types/react@18.2.69:
+    resolution: {integrity: sha512-W1HOMUWY/1Yyw0ba5TkCV+oqynRjG7BnteBB+B7JmAK7iw3l2SW+VGOxL+akPweix6jk2NNJtyJKpn4TkpfK3Q==}
     dependencies:
       '@types/prop-types': 15.7.11
       '@types/scheduler': 0.16.8
