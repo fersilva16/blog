@@ -33,7 +33,7 @@
     "typescript": "^5.4.3"
   },
   "devDependencies": {
-    "@astrojs/check": "^0.5.9",
+    "@astrojs/check": "^0.5.10",
     "@types/luxon": "^3.4.2",
     "@types/markdown-it": "^13.0.7",
     "@types/react": "^18.2.67",
