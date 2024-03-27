@@ -19,7 +19,7 @@
     "start": "astro dev"
   },
   "dependencies": {
-    "@astrojs/mdx": "^2.2.1",
+    "@astrojs/mdx": "^2.2.2",
     "@astrojs/react": "^3.1.0",
     "@astrojs/rss": "^4.0.5",
     "@astrojs/sitemap": "^3.1.1",
