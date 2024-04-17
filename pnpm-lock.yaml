@@ -7,7 +7,7 @@ settings:
 dependencies:
   '@astrojs/mdx':
     specifier: ^2.3.1
-    version: 2.3.1(astro@4.6.1)
+    version: 2.3.1(astro@4.6.2)
   '@astrojs/react':
     specifier: ^3.3.0
     version: 3.3.0(@types/react-dom@18.2.18)(@types/react@18.2.79)(react-dom@18.2.0)(react@18.2.0)(vite@5.2.8)
@@ -19,13 +19,13 @@ dependencies:
     version: 3.1.2
   '@astrojs/vercel':
     specifier: ^7.5.3
-    version: 7.5.3(astro@4.6.1)
+    version: 7.5.3(astro@4.6.2)
   '@resvg/resvg-js':
     specifier: ^2.6.2
     version: 2.6.2
   astro:
-    specifier: ^4.6.1
-    version: 4.6.1(typescript@5.4.5)
+    specifier: ^4.6.2
+    version: 4.6.2(typescript@5.4.5)
   luxon:
     specifier: ^3.4.4
     version: 3.4.4
@@ -173,7 +173,7 @@ packages:
       - supports-color
     dev: false
 
-  /@astrojs/mdx@2.3.1(astro@4.6.1):
+  /@astrojs/mdx@2.3.1(astro@4.6.2):
     resolution: {integrity: sha512-BOQFKD2Pi9cRntNQJlpF2fh4xV8doNpmVy9NKI95r4jsitrY4X5aTOhAowi+fkQgP/zW1A4HwCyQ6Pdam6z8zQ==}
     engines: {node: ^18.17.1 || ^20.3.0 || >=21.0.0}
     peerDependencies:
@@ -182,7 +182,7 @@ packages:
       '@astrojs/markdown-remark': 5.1.0
       '@mdx-js/mdx': 3.0.0
       acorn: 8.11.2
-      astro: 4.6.1(typescript@5.4.5)
+      astro: 4.6.2(typescript@5.4.5)
       es-module-lexer: 1.4.1
       estree-util-visit: 2.0.0
       github-slugger: 2.0.0
@@ -255,7 +255,7 @@ packages:
       - supports-color
     dev: false
 
-  /@astrojs/vercel@7.5.3(astro@4.6.1):
+  /@astrojs/vercel@7.5.3(astro@4.6.2):
     resolution: {integrity: sha512-rIqcoGoW+SJv+rOjMjMq5ICdBZP+zbuenXyNhTa6UIUZldm4pZLLImuBDvTxB/A3JvJZRoTwZtsEgORXav1bbg==}
     peerDependencies:
       astro: ^4.2.0
@@ -264,7 +264,7 @@ packages:
       '@vercel/analytics': 1.1.1
       '@vercel/edge': 1.1.1
       '@vercel/nft': 0.26.4
-      astro: 4.6.1(typescript@5.4.5)
+      astro: 4.6.2(typescript@5.4.5)
       esbuild: 0.19.10
       fast-glob: 3.3.2
       set-cookie-parser: 2.6.0
@@ -1349,6 +1349,10 @@ packages:
       '@babel/types': 7.24.0
     dev: false
 
+  /@types/cookie@0.5.4:
+    resolution: {integrity: sha512-7z/eR6O859gyWIAjuvBWFzNURmf2oPBmJlfVWkwehU5nzIyjwBsTh7WMmEEV4JFnHuQ3ex4oyTvfKzcyJVDBNA==}
+    dev: false
+
   /@types/debug@4.1.12:
     resolution: {integrity: sha512-vIChWdVG3LG1SMxEvI/AK+FWJthlrqlTu7fbrlywTkkaONwk/UAGaULXRlf8vkzFBLVm0zkMdCquhL5aOjhXPQ==}
     dependencies:
@@ -1704,8 +1708,8 @@ packages:
     hasBin: true
     dev: false
 
-  /astro@4.6.1(typescript@5.4.5):
-    resolution: {integrity: sha512-gcL22NEhuRi4wu9/x5Kn2eJf7nT6GeU5BxdN6AHbUnX6UzEDIWtpgHs5lBIZYExKbHKN9PjEGXWQzQtFwLU+5g==}
+  /astro@4.6.2(typescript@5.4.5):
+    resolution: {integrity: sha512-Kl+Wd7MJMQFnI3+V0JxF4HPbs8M67eltqQgtztReOwDLSl0VnOd39rM61W/3LEh10FZ0F13xrDgtdgfXzuLVbg==}
     engines: {node: ^18.17.1 || ^20.3.0 || >=21.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0'}
     hasBin: true
     dependencies:
@@ -1720,6 +1724,7 @@ packages:
       '@babel/traverse': 7.24.1
       '@babel/types': 7.24.0
       '@types/babel__core': 7.20.5
+      '@types/cookie': 0.5.4
       acorn: 8.11.2
       aria-query: 5.3.0
       axobject-query: 4.0.0
