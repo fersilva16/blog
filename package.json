@@ -25,7 +25,7 @@
     "@astrojs/sitemap": "^3.1.4",
     "@astrojs/vercel": "^7.5.3",
     "@resvg/resvg-js": "^2.6.2",
-    "astro": "^4.6.3",
+    "astro": "^4.6.4",
     "luxon": "^3.4.4",
     "markdown-it": "^14.1.0",
     "sanitize-html": "^2.13.0",
