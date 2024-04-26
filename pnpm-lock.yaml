@@ -10,7 +10,7 @@ dependencies:
     version: 2.3.1(astro@4.7.0)
   '@astrojs/react':
     specifier: ^3.3.1
-    version: 3.3.1(@types/react-dom@18.2.18)(@types/react@18.2.79)(react-dom@18.2.0)(react@18.2.0)(vite@5.2.10)
+    version: 3.3.1(@types/react-dom@18.2.18)(@types/react@18.3.0)(react-dom@18.2.0)(react@18.3.0)(vite@5.2.10)
   '@astrojs/rss':
     specifier: ^4.0.5
     version: 4.0.5
@@ -19,7 +19,7 @@ dependencies:
     version: 3.1.4
   '@astrojs/vercel':
     specifier: ^7.5.4
-    version: 7.5.4(astro@4.7.0)(react@18.2.0)
+    version: 7.5.4(astro@4.7.0)(react@18.3.0)
   '@resvg/resvg-js':
     specifier: ^2.6.2
     version: 2.6.2
@@ -53,8 +53,8 @@ devDependencies:
     specifier: ^14.0.1
     version: 14.0.1
   '@types/react':
-    specifier: ^18.2.79
-    version: 18.2.79
+    specifier: ^18.3.0
+    version: 18.3.0
   '@types/sanitize-html':
     specifier: ^2.11.0
     version: 2.11.0
@@ -65,11 +65,11 @@ devDependencies:
     specifier: ^0.13.0
     version: 0.13.0
   react:
-    specifier: ^18.2.0
-    version: 18.2.0
+    specifier: ^18.3.0
+    version: 18.3.0
   react-dom:
     specifier: ^18.2.0
-    version: 18.2.0(react@18.2.0)
+    version: 18.2.0(react@18.3.0)
 
 packages:
 
@@ -206,7 +206,7 @@ packages:
       prismjs: 1.29.0
     dev: false
 
-  /@astrojs/react@3.3.1(@types/react-dom@18.2.18)(@types/react@18.2.79)(react-dom@18.2.0)(react@18.2.0)(vite@5.2.10):
+  /@astrojs/react@3.3.1(@types/react-dom@18.2.18)(@types/react@18.3.0)(react-dom@18.2.0)(react@18.3.0)(vite@5.2.10):
     resolution: {integrity: sha512-dwN6B+C0hQ1jpeQ5EckICpqv76t6RxEslldCP0UQ/ospolNk8GjqL11X/xQSbftiQvGWRMT0Tj5f0Xk17k5qJQ==}
     engines: {node: ^18.17.1 || ^20.3.0 || >=21.0.0}
     peerDependencies:
@@ -215,11 +215,11 @@ packages:
       react: ^17.0.2 || ^18.0.0
       react-dom: ^17.0.2 || ^18.0.0
     dependencies:
-      '@types/react': 18.2.79
+      '@types/react': 18.3.0
       '@types/react-dom': 18.2.18
       '@vitejs/plugin-react': 4.2.1(vite@5.2.10)
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
+      react: 18.3.0
+      react-dom: 18.2.0(react@18.3.0)
       ultrahtml: 1.5.3
     transitivePeerDependencies:
       - supports-color
@@ -256,13 +256,13 @@ packages:
       - supports-color
     dev: false
 
-  /@astrojs/vercel@7.5.4(astro@4.7.0)(react@18.2.0):
+  /@astrojs/vercel@7.5.4(astro@4.7.0)(react@18.3.0):
     resolution: {integrity: sha512-UHFlHxoK5iM6b9DJyiWntjVN97sYqFRfFLkb6vfxHVPgztAfb5R8o15XQiBMR4kOL/PZhWfuvQNu5wGpfpGK2w==}
     peerDependencies:
       astro: ^4.2.0
     dependencies:
       '@astrojs/internal-helpers': 0.4.0
-      '@vercel/analytics': 1.2.2(react@18.2.0)
+      '@vercel/analytics': 1.2.2(react@18.3.0)
       '@vercel/edge': 1.1.1
       '@vercel/nft': 0.26.4
       astro: 4.7.0(typescript@5.4.5)
@@ -1432,6 +1432,13 @@ packages:
     dependencies:
       '@types/prop-types': 15.7.11
       csstype: 3.1.3
+    dev: false
+
+  /@types/react@18.3.0:
+    resolution: {integrity: sha512-DiUcKjzE6soLyln8NNZmyhcQjVv+WsUIFSqetMN0p8927OztKT4VTfFTqsbAi5oAGIcgOmOajlfBqyptDDjZRw==}
+    dependencies:
+      '@types/prop-types': 15.7.11
+      csstype: 3.1.3
 
   /@types/sanitize-html@2.11.0:
     resolution: {integrity: sha512-7oxPGNQHXLHE48r/r/qjn7q0hlrs3kL7oZnGj0Wf/h9tj/6ibFyRkNbsDxaBBZ4XUZ0Dx5LGCyDJ04ytSofacQ==}
@@ -1457,7 +1464,7 @@ packages:
     resolution: {integrity: sha512-zuVdFrMJiuCDQUMCzQaD6KL28MjnqqN8XnAqiEq9PNm/hCPTSGfrXCOfwj1ow4LFb/tNymJPwsNbVePc1xFqrQ==}
     dev: false
 
-  /@vercel/analytics@1.2.2(react@18.2.0):
+  /@vercel/analytics@1.2.2(react@18.3.0):
     resolution: {integrity: sha512-X0rctVWkQV1e5Y300ehVNqpOfSOufo7ieA5PIdna8yX/U7Vjz0GFsGf4qvAhxV02uQ2CVt7GYcrFfddXXK2Y4A==}
     peerDependencies:
       next: '>= 13'
@@ -1468,7 +1475,7 @@ packages:
       react:
         optional: true
     dependencies:
-      react: 18.2.0
+      react: 18.3.0
       server-only: 0.0.1
     dev: false
 
@@ -3990,13 +3997,13 @@ packages:
   /queue-microtask@1.2.3:
     resolution: {integrity: sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==}
 
-  /react-dom@18.2.0(react@18.2.0):
+  /react-dom@18.2.0(react@18.3.0):
     resolution: {integrity: sha512-6IMTriUmvsjHUjNtEDudZfuDQUoWXVxKHhlEGSk81n4YFS+r/Kl99wXiwlVXtPBtJenozv2P+hxDsw9eA7Xo6g==}
     peerDependencies:
       react: ^18.2.0
     dependencies:
       loose-envify: 1.4.0
-      react: 18.2.0
+      react: 18.3.0
       scheduler: 0.23.0
 
   /react-refresh@0.14.0:
@@ -4004,8 +4011,8 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: false
 
-  /react@18.2.0:
-    resolution: {integrity: sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ==}
+  /react@18.3.0:
+    resolution: {integrity: sha512-RPutkJftSAldDibyrjuku7q11d3oy6wKOyPe5K1HA/HwwrXcEqBdHsLypkC2FFYjP7bPUa6gbzSBhw4sY2JcDg==}
     engines: {node: '>=0.10.0'}
     dependencies:
       loose-envify: 1.4.0
