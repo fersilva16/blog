@@ -35,7 +35,7 @@
   "devDependencies": {
     "@astrojs/check": "^0.5.10",
     "@types/luxon": "^3.4.2",
-    "@types/markdown-it": "^14.0.1",
+    "@types/markdown-it": "^14.1.1",
     "@types/react": "^18.2.79",
     "@types/sanitize-html": "^2.11.0",
     "prettier": "^3.2.5",
