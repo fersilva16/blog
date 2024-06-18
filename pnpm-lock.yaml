@@ -9,8 +9,8 @@ dependencies:
     specifier: ^3.1.0
     version: 3.1.0(astro@4.10.2)
   '@astrojs/react':
-    specifier: ^3.5.0
-    version: 3.5.0(@types/react-dom@18.2.18)(@types/react@18.2.79)(react-dom@18.2.0)(react@18.2.0)(vite@5.2.13)
+    specifier: ^3.6.0
+    version: 3.6.0(@types/react-dom@18.2.18)(@types/react@18.2.79)(react-dom@18.2.0)(react@18.2.0)(vite@5.2.13)
   '@astrojs/rss':
     specifier: ^4.0.6
     version: 4.0.6
@@ -201,8 +201,8 @@ packages:
       prismjs: 1.29.0
     dev: false
 
-  /@astrojs/react@3.5.0(@types/react-dom@18.2.18)(@types/react@18.2.79)(react-dom@18.2.0)(react@18.2.0)(vite@5.2.13):
-    resolution: {integrity: sha512-+xXL2kAvURlCOnWBem4CnoUuy1XW1u284esEHN+i7ds3zcs7lLquDQNRvPu2fSW/auUMcLdllAZC631seXwI8g==}
+  /@astrojs/react@3.6.0(@types/react-dom@18.2.18)(@types/react@18.2.79)(react-dom@18.2.0)(react@18.2.0)(vite@5.2.13):
+    resolution: {integrity: sha512-YGLxy5jCU9xKG/HAvYsWMcvrQVIhqVe0Sda3Z5UtP32rfXeG6B9J1xQvnx+kRSFTpIrj+7AwPSDSehLbCHJ56w==}
     engines: {node: ^18.17.1 || ^20.3.0 || >=21.0.0}
     peerDependencies:
       '@types/react': ^17.0.50 || ^18.0.21
@@ -212,7 +212,7 @@ packages:
     dependencies:
       '@types/react': 18.2.79
       '@types/react-dom': 18.2.18
-      '@vitejs/plugin-react': 4.3.0(vite@5.2.13)
+      '@vitejs/plugin-react': 4.3.1(vite@5.2.13)
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
       ultrahtml: 1.5.3
@@ -1745,8 +1745,8 @@ packages:
       - supports-color
     dev: false
 
-  /@vitejs/plugin-react@4.3.0(vite@5.2.13):
-    resolution: {integrity: sha512-KcEbMsn4Dpk+LIbHMj7gDPRKaTMStxxWRkRmxsg/jVdFdJCZWt1SchZcf0M4t8lIKdwwMsEyzhrcOXRrDPtOBw==}
+  /@vitejs/plugin-react@4.3.1(vite@5.2.13):
+    resolution: {integrity: sha512-m/V2syj5CuVnaxcUJOQRel/Wr31FFXRFlnOoq1TVtkCxsY5veGMTEmpWHndrhB2U8ScHtCQB1e+4hWYExQc6Lg==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
       vite: ^4.2.0 || ^5.0.0
