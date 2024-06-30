@@ -4,7 +4,7 @@ import { getCollection, type CollectionEntry } from 'astro:content';
 import satori, { type SatoriOptions } from 'satori';
 import { Resvg } from '@resvg/resvg-js';
 
-import PostOG from '../../components/PostOG';
+import PostOG from '../../../components/PostOG';
 
 export const getStaticPaths = async () => {
   const posts = await getCollection('blog');

@@ -33,7 +33,7 @@ const postsSorted = posts.sort((a, b) => b.data.pubDate - a.data.pubDate);
             <p>
               {DateTime.fromJSDate(post.data.pubDate).toFormat('yyyy-MM-dd')}
             </p>
-            <Link href={post.slug}>
+            <Link href={`/blog/${post.slug}`}>
               <p>{post.data.title}</p>
             </Link>
           </li>
