@@ -11,7 +11,7 @@ export const getStaticPaths = async () => {
 
   return posts.map((post) => ({
     params: {
-      slug: post.slug,
+      slug: post.data.slug,
     },
     props: post,
   }));
@@ -24,11 +24,11 @@ const svgBufferToPngBuffer = (svg: string) => {
 };
 const cascadiaCodeRegularFont = fs.readFileSync(
   'public/fonts/CascadiaCode-Regular.ttf',
-).buffer;
+).buffer as ArrayBuffer;
 
 const cascadiaCodeBoldFont = fs.readFileSync(
   'public/fonts/CascadiaCode-Bold.ttf',
-).buffer;
+).buffer as ArrayBuffer;
 
 const options: SatoriOptions = {
   width: 1200,

@@ -1,7 +1,7 @@
 ---
 import '../styles/global.css';
 
-import { ViewTransitions } from 'astro:transitions';
+import { ClientRouter } from 'astro:transitions';
 
 import Content from '../components/Content.astro';
 import { config } from '../config';
@@ -55,7 +55,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site).href;
     <meta property="twitter:description" content={description} />
     <meta property="twitter:image" content={ogURL} />
 
-    <ViewTransitions />
+    <ClientRouter />
   </head>
 
   <Content>
