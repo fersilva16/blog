@@ -7,13 +7,13 @@ My personal blog where I share my random thoughts and essays.
 1. Install dependencies
 
    ```bash
-   $ pnpm install
+   $ bun install
    ```
 
 2. Run
 
    ```bash
-   $ pnpm dev
+   $ bun dev
    ```
 
 ## Licenses
