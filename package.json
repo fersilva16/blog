@@ -19,27 +19,27 @@
     "start": "astro dev"
   },
   "dependencies": {
-    "@astrojs/mdx": "^3.1.2",
-    "@astrojs/react": "^3.6.0",
-    "@astrojs/rss": "^4.0.7",
-    "@astrojs/sitemap": "^3.1.6",
+    "@astrojs/mdx": "^4.0.2",
+    "@astrojs/react": "^4.1.0",
+    "@astrojs/rss": "^4.0.10",
+    "@astrojs/sitemap": "^3.2.1",
     "@resvg/resvg-js": "^2.6.2",
-    "astro": "^4.11.3",
-    "luxon": "^3.4.4",
+    "astro": "^5.0.5",
+    "luxon": "^3.5.0",
     "markdown-it": "^14.1.0",
-    "sanitize-html": "^2.13.0",
-    "satori": "^0.10.13",
-    "typescript": "^5.5.2"
+    "sanitize-html": "^2.13.1",
+    "satori": "^0.12.0",
+    "typescript": "^5.7.2"
   },
   "devDependencies": {
-    "@astrojs/check": "^0.7.0",
+    "@astrojs/check": "^0.9.4",
     "@types/luxon": "^3.4.2",
-    "@types/markdown-it": "^14.1.1",
-    "@types/react": "^18.2.79",
-    "@types/sanitize-html": "^2.11.0",
-    "prettier": "^3.3.2",
-    "prettier-plugin-astro": "^0.14.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "@types/markdown-it": "^14.1.2",
+    "@types/react": "^19.0.1",
+    "@types/sanitize-html": "^2.13.0",
+    "prettier": "^3.4.2",
+    "prettier-plugin-astro": "^0.14.1",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
   }
 }
