@@ -1,4 +1,5 @@
 ---
+slug: first-post
 title: 'First post'
 description: 'Lorem ipsum dolor sit amet'
 pubDate: 2023-12-26T21:22:34.850Z
@@ -17,7 +18,7 @@ export const getStaticPaths = async () => {
 
   return posts.map((post) => ({
     params: {
-      slug: post.slug,
+      slug: post.data.slug,
     },
     props: {
       post,

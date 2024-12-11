@@ -15,13 +15,13 @@ export const GET: APIRoute = async () => {
     title: config.TITLE,
     description: config.DESCRIPTION,
     site: config.SITE_URL,
-    items: posts.map(({ data, slug, body }) => ({
-      link: slug,
+    items: posts.map(({ data, body }) => ({
+      link: data.slug,
       title: data.title,
       description: data.description,
       pubDate: data.pubDate,
       author: config.AUTHOR,
-      content: sanitizeHtml(md.render(body)),
+      content: sanitizeHtml(md.render(body!)),
     })),
   });
 };
