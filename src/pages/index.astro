@@ -8,7 +8,9 @@ import { config } from '../config';
 
 const posts = await getCollection('blog', ({ data }) => !data.draft);
 
-const postsSorted = posts.sort((a, b) => b.data.pubDate - a.data.pubDate);
+const postsSorted = posts.sort(
+  (a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime(),
+);
 ---
 
 <Layout>

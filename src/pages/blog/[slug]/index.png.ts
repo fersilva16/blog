@@ -53,5 +53,7 @@ export const GET: APIRoute<CollectionEntry<'blog'>> = async ({ props }) => {
   const svg = await satori(PostOG(props), options);
   const png = svgBufferToPngBuffer(svg);
 
-  return new Response(png, { headers: { 'Content-Type': 'image/png' } });
+  return new Response(new Uint8Array(png), {
+    headers: { 'Content-Type': 'image/png' },
+  });
 };
