@@ -21,7 +21,7 @@
   "dependencies": {
     "@astrojs/mdx": "5.0.4",
     "@astrojs/react": "5.0.4",
-    "@astrojs/rss": "4.0.18",
+    "@astrojs/rss": "4.0.19",
     "@astrojs/sitemap": "3.7.2",
     "@resvg/resvg-js": "^2.6.2",
     "astro": "6.3.1",
